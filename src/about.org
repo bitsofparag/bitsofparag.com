@@ -1,0 +1,32 @@
+#+TITLE: Bitsofparag | About
+#+SETUPFILE: ~/.emacs.d/private/local/org-templates/org-base.setup
+#+SETUPFILE: ~/.emacs.d/private/local/org-templates/level-0.org
+
+#+begin_export html
+<!-- Article -->
+<section class="container intro-container">
+  <div class="flex flex-wrap">
+    <div class="lg:full mt-12">
+      <img src="/static/images/me.jpg" width="200" class="photo-me float-right ml-4 mb-4" />
+      <p class="intro">
+        That's me on a good-hair day. I have lived through the heydays of the internet when blogging was hip,
+        <a class="link-intro" href="https://www.facebook.com/paragmajum">Facebook</a> and <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a>
+        were cool and social media was sociable.
+      </p>
+      <p>&nbsp;</p>
+      <p class="intro">
+        In those days of yore, one would not just skim over the headlines but read through the discourse to inform oneself.
+        This site, thus, is my (second) attempt to help you find <a class="link-intro" href="/blog">interesting content</a> beneath the headlines.
+      </p>
+      <p>&nbsp;</p>
+      <p class="intro">
+        If the prose sinks you in a sea of ennui, perhaps you'd find my
+        <a class="link-intro" href="https://github.com/designgeef">other</a>
+        <a class="link-intro" href="https://www.facebook.com/scratchtheater/">creative</a>
+        <a class="link-intro" href="https://dribbble.com/paragm">streams</a>
+        more interesting.
+      </p>
+    </div>
+  </div>
+</section>
+#+end_export

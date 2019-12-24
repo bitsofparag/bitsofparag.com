@@ -1,0 +1,127 @@
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.link-intro {
+  @apply inline-block text-primary-700;
+  border-bottom: 1px solid;
+  @apply border-primary-700;
+}
+.link-intro:hover {
+  @apply text-primary-500;
+  border-bottom: 1px solid;
+  @apply border-primary-500;
+}
+
+.link-info, .org-ul a {
+  @apply inline-block text-primary-700;
+}
+.link-info:hover, .org-ul a:hover {
+  @apply text-primary-500;
+}
+
+#content {
+  @apply pt-20 m-auto px-5;
+  max-width: 800px;
+}
+
+#content h1.title {
+  font-size: 2rem;
+  @apply mb-6 leading-h1;
+}
+
+#content p, p.blog-body {
+  @apply font-blog text-body leading-body;
+  margin-bottom: 10px;
+}
+
+#content .timedate {
+  @apply font-text text-small flex justify-between -mt-2;
+  max-width: 270px;
+}
+
+#content .timedate .timedate-upd {
+  color: rgb(150, 150, 150);
+}
+
+#content span.blog-intro {
+  @apply font-blog text-body-large font-bold;
+  line-height: 2rem;
+}
+
+#content section {
+  @apply mt-10;
+}
+
+#content p.intro {
+  @apply font-text text-body leading-body-large;
+}
+
+#table-of-contents {
+  margin-bottom: 1em;
+}
+
+#table-of-contents h2 {
+  @apply text-body-large;
+}
+
+#text-table-of-contents a {
+  text-decoration: underline;
+  @apply text-body
+}
+
+#twitter-widget-0 {
+  /* most styles applied via Twitter */
+  @apply font-text text-small;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#linked-share-0 {
+  @apply font-text text-small mt-6 ml-3;
+  width: 110px;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #2867B2;
+  color: white;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+@screen xl {
+  .intro-container {
+    @apply -mx-24;
+  }
+
+  #content section {
+    @apply mt-8;
+  }
+
+  #content span.blog-intro {
+    line-height: 2.6rem;
+  }
+
+  #linked-share-0 {
+    @apply mt-3;
+  }
+}
+
+#footer {
+  @apply mt-20 pt-10 pb-8;
+  border-top: 1px solid #4f7b86;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.org-src-container {
+  border: 1px dashed rgb(120, 120, 120);
+  @apply mt-4 mb-4;
+  font-size: small;
+}
+
+.photo-me {
+  border: 3px dashed rgb(120,120,120);
+}

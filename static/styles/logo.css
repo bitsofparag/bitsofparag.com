@@ -1,0 +1,60 @@
+.logo {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
+  display: block;
+}
+
+.logo .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+}
+
+.logo .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  left: 17px;
+  top: 17px;
+}
+
+.logo .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.logo .circle-white {
+  width: 2.75em;
+  height: 2.75em;
+  border: 2px solid #fff;
+  border-radius: 1px;
+}
+
+.logo .circle-dark {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #4f7b86;
+  border-radius: 1.25em;
+  z-index: 1;
+  left: 0;
+}
+
+.logo .circle-dark-dashed {
+  border-radius: 2.75em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 2.75em;
+  height: 2.75em;
+}

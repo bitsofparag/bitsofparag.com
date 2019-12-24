@@ -1,0 +1,5 @@
+#+title: Bitsofparag blog
+#+author: Parag M.
+#+date: <2019-11-25 Mon>
+
+I think. I write.

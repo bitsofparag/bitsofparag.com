@@ -1,0 +1,9 @@
+#nav {
+  min-height: 100px;
+  margin: auto;
+  max-width: 960px;
+}
+
+#nav .logo {
+  position: relative;
+}
