@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": "Parag M. <admin@bitsofparag.com>",
   "dependencies": {
     "animejs": "^3.1.0",
