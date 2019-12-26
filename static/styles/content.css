@@ -68,19 +68,19 @@ html { font-family: 'Inter', sans-serif; }
 
 #text-table-of-contents a {
   text-decoration: underline;
-  @apply text-body
+  @apply text-body;
 }
 
-#twitter-widget-0 {
+#twitter-widget-0, .twitter-share-button {
   /* most styles applied via Twitter */
-  @apply font-text text-small;
+  @apply font-text text-small align-middle;
   font-weight: bold;
   display: inline-block;
 }
 
-#linked-share-0 {
+#linkedin-share-0 {
   @apply font-text text-small mt-6 ml-3;
-  width: 110px;
+  width: 61px;
   display: inline-block;
   padding: 2px 6px;
   border-radius: 3px;
@@ -88,6 +88,12 @@ html { font-family: 'Inter', sans-serif; }
   color: white;
   font-weight: bold;
   line-height: 1rem;
+  fill: white;
+}
+
+#linkedin-share-0 svg {
+  @apply w-3 h-3 inline mr-1;
+  vertical-align: text-top;
 }
 
 @screen xl {

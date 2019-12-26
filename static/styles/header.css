@@ -7,3 +7,12 @@
 #nav .logo {
   position: relative;
 }
+
+#nav a.nav-link {
+  @apply block mt-4 mr-10 text-text-900;
+}
+
+#nav a.nav-link:hover,
+#nav a.nav-link:focus {
+  @apply text-primary-700;
+}
