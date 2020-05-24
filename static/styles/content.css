@@ -27,8 +27,18 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 #content h1.title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   @apply mb-6 leading-h1;
+}
+
+#content h2 {
+    font-size: 1.5rem;
+    @apply mb-3 leading-h2;
+}
+
+#content h3 {
+    font-size: 1.25rem;
+    @apply mb-2 leading-h3;
 }
 
 #content p, p.blog-body {
@@ -56,6 +66,25 @@ html { font-family: 'Inter', sans-serif; }
 
 #content p.intro {
   @apply font-text text-body leading-body-large;
+}
+
+#content ul {
+    @apply text-info;
+    @apply list-disc list-inside;
+    @apply mb-4;
+}
+
+#content table {
+    @apply table-auto mb-12;
+}
+
+#content table td {
+    @apply border px-4 py-2;
+    @apply text-info;
+}
+
+#content table tr:nth-child(even) {
+    @apply bg-gray-100;
 }
 
 #table-of-contents {

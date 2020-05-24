@@ -5,7 +5,7 @@ module.exports = {
     fontFamily: {
       heading: ['Inter', 'sans-serif'],
       text: ['Inter', 'sans-serif'],
-      blog: ['Baskervville', 'georgia', 'serif']
+      blog: ['Inter', 'sans-serif']
     },
     fontSize: {
       'h1': '4.6rem',
@@ -49,6 +49,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    listStyleType: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 };
