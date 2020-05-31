@@ -9,22 +9,16 @@
     <div class="lg:full mt-12">
       <img src="/static/images/me.jpg" width="200" class="photo-me float-right ml-4 mb-4" />
       <p class="intro">
-        That's me on a good-hair day. I have lived through the heydays of the internet when blogging was hip,
+        I was one of the early adopters of
         <a class="link-intro" href="https://www.facebook.com/paragmajum">Facebook</a> and <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a>
-        were cool and social media was sociable.
+        when they were cool. Don't use them anymore. Hence, this website.
       </p>
       <p>&nbsp;</p>
       <p class="intro">
-        In those days of yore, one would not just skim over the headlines but read through the discourse to inform oneself.
-        This site, thus, is my (second) attempt to help you find <a class="link-intro" href="/blog">interesting content</a> beneath the headlines.
-      </p>
-      <p>&nbsp;</p>
-      <p class="intro">
-        If the prose sinks you in a sea of ennui, perhaps you'd find my
+        I will write about myself in detail later. In the meantime, check out some of my
         <a class="link-intro" href="https://github.com/designgeef">other</a>
         <a class="link-intro" href="https://www.facebook.com/scratchtheater/">creative</a>
-        <a class="link-intro" href="https://dribbble.com/paragm">streams</a>
-        more interesting.
+        <a class="link-intro" href="https://dribbble.com/paragm">streams</a>.
       </p>
     </div>
   </div>
