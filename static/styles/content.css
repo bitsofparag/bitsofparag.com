@@ -1,49 +1,92 @@
 html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+/* @supports (font-variation-settings: normal) { */
+/*   html { font-family: 'Inter var', sans-serif; } */
+/* } */
 
-.link-intro {
-  @apply inline-block text-primary-700;
-  border-bottom: 1px solid;
-  @apply border-primary-700;
-}
-.link-intro:hover {
-  @apply text-primary-500;
-  border-bottom: 1px solid;
-  @apply border-primary-500;
-}
-
-.link-info, .org-ul a {
-  @apply inline-block text-primary-700;
-}
-.link-info:hover, .org-ul a:hover {
-  @apply text-primary-500;
-}
-
+/* normalizing the normalized css */
 #content {
-  @apply pt-20 m-auto px-5;
+  @apply font-normal pt-20 m-auto px-5;
   max-width: 800px;
 }
 
 #content h1.title {
-  font-size: 2.5rem;
-  @apply mb-6 leading-h1;
+  @apply font-bold text-h1 mb-6 leading-h1;
 }
 
 #content h2 {
-    font-size: 1.5rem;
-    @apply mb-3 leading-h2;
+    @apply font-semibold text-h2 mb-3 leading-h2;
 }
 
 #content h3 {
-    font-size: 1.25rem;
-    @apply mb-2 leading-h3;
+    @apply font-semibold text-h3 mb-2 leading-h3;
 }
 
-#content p, p.blog-body {
-  @apply font-blog text-body leading-body;
-  margin-bottom: 10px;
+#content p, #content p.blog-body {
+  @apply font-blog text-body leading-body mb-2;
+}
+
+#content p a {
+    @apply text-primary-500;
+}
+#content p a:hover {
+    @apply: underline;
+}
+
+#content ul {
+    @apply text-body list-none list-inside mb-4;
+}
+
+#content ul li {
+    @apply mb-2 leading-body;
+}
+
+#content p.intro {
+    @apply font-text text-body leading-body-large;
+}
+
+#content table {
+    @apply table-auto mb-12 mt-4;
+}
+
+#content table thead {
+    @apply bg-gray-800 text-white;
+}
+
+#content table th {
+    @apply w-1/3 text-left py-2 px-4 font-semibold text-body;
+}
+
+#content table td {
+    @apply border px-4 py-2 text-body;
+}
+
+#content table tr:nth-child(even) {
+    @apply bg-gray-100;
+}
+
+/* --------- custom classes ----------- */
+.link-intro {
+    @apply inline-block text-primary-700 border-primary-700;
+    border-bottom: 1px solid;
+}
+.link-intro:hover {
+    @apply text-primary-500 border-primary-500;
+    border-bottom: 1px solid;
+}
+
+.link-info, .org-ul a {
+    @apply inline-block text-primary-700;
+}
+.link-info:hover, .org-ul a:hover {
+    @apply text-primary-500;
+}
+
+#content .gallery {
+    @apply flex flex-auto flex-wrap;
+}
+
+#text-Actions ul {
+    @apply list-disc;
 }
 
 #content .timedate {
@@ -57,34 +100,11 @@ html { font-family: 'Inter', sans-serif; }
 
 #content span.blog-intro {
   @apply font-blog text-body-large font-bold;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 #content section {
   @apply mt-10;
-}
-
-#content p.intro {
-  @apply font-text text-body leading-body-large;
-}
-
-#content ul {
-    @apply text-info;
-    @apply list-disc list-inside;
-    @apply mb-4;
-}
-
-#content table {
-    @apply table-auto mb-12;
-}
-
-#content table td {
-    @apply border px-4 py-2;
-    @apply text-info;
-}
-
-#content table tr:nth-child(even) {
-    @apply bg-gray-100;
 }
 
 #table-of-contents {
