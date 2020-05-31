@@ -1,7 +1,9 @@
-function enableMobileMenu() {
+function enableMobileMenu() {}
 
+function prepareDOM() {
+  document.querySelectorAll('.gallery-item:nth-child(1)')
+    .forEach(item => item.closest('p').classList.add('gallery'));
 }
-
 
 function animateLogo() {
   anime.timeline({loop: false})
@@ -39,6 +41,7 @@ function animateLogo() {
 }
 
 function init() {
+  prepareDOM();
   animateLogo();
   enableMobileMenu();
 }
