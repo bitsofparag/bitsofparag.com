@@ -271,20 +271,18 @@ Temp 23 °C and humidity 55%.
 {{{img(/static/images/breaking-bread/25052020-bread-top.png, height:300px;)}}}
 {{{img(/static/images/breaking-bread/25052020-slices.jpg, height:400px;)}}}
 
-Compared to previous-day bread:
+Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
 
 {{{img(/static/images/breaking-bread/25052020-slices-2.jpg, width:400px;)}}}
 
-- *Dough:*
-  Clearly, the gluten structure was strong because of higher than usual proportion of white flour.
+- *Dough:* Clearly, the gluten structure was strong because of higher than usual proportion of white flour.
   However, my manly hands broke the structure after adding the starter and salt - /I should
   be careful with the kneading/. What was lost in brute force was gained in
   patience and technique later on with many rounds of stretch and fold. The
   gluten was mostly restored but I didn't have a great feeling about it. And
   that ruined my plan to do fewer stretch and folds than last time, as I had noted.
 
-- *Baking*
-  After pre-heating at 250°C, I set the final dough over a tray of boiling water
+- *Baking* After pre-heating at 250°C, I set the final dough over a tray of boiling water
   for about 20 min. The browning was good. The oven-spring seemed to look good
   as well. I am not gonna lie, I sat next to the oven to watch it grow in front
   of my eyes. The scariest part was when the dough stayed flat for a good 15min
@@ -292,8 +290,7 @@ Compared to previous-day bread:
   proofing in the fridge. But around the 20 minute mark, /*poof*/, lo and
   behold, the dough rose like dead angels!
 
-- *Taste and texture*
-  Definitely in the top three of what I've made so far (/which would be six/),
+- *Taste and texture* Definitely in the top three of what I've made so far (/which would be six/),
   in terms of taste. The texture, hmmm, not so sure. The crumb wasn't very open.
   With almost complete white flour and around 60-65% hydration, I expected a better
   crumb. /Should experiment with lower water for white flour next time./ Or
@@ -301,8 +298,7 @@ Compared to previous-day bread:
   dependent on many variables, the brand of white flour being one of them. So,
   gotta be patient and keep baking and learn from trials and errors.
 
-- *Presentation*
-  I was confident that the scoring would work this time. It looked very
+- *Presentation* I was confident that the scoring would work this time. It looked very
   promising through the hazy oven window as I watched the rise of the dough
   (/Heh, "Rise of the Dough" could be a sequel to "The Dough".)/ But, from the
   picture you can see what happened. The yeasty gases didn't push out; hence, no
@@ -366,8 +362,8 @@ Compared to previous-day bread:
   {{{img(/static/images/breaking-bread/24052020-slices.jpg, height:400px;)}}}
   {{{img(/static/images/breaking-bread/24052020-bread-score.jpg, height:418px;)}}}
 
-  - *Dough:* Soft and wet dough. Super easy to knead, stretch and fold.
-  The soaked chia seeds probably increased the hydration beyond 70%. The
+  - *Dough:* Soft and wet dough. Super easy to knead, stretch and fold. The
+    soaked chia seeds probably increased the hydration beyond 70%. The
   Rubaud knead technique helped soak all the water up. Though it seemed that it
   got wetter through the stretch and folds, not sure why. I will admit that I
   love this part of the bread-making process - working the dough and then
@@ -386,7 +382,7 @@ Compared to previous-day bread:
   /(see first photo above)/. The dark color of the bread was prominent due to
   the addition of the salt.
 
-  [[#ToC][Back to contents]]
+[[#ToC][Back to contents]]
 
 * Overnight Mixed W-M ST-S
   :PROPERTIES:
