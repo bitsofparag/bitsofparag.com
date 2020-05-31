@@ -18,7 +18,8 @@
     "postcss-modules": "^1.5.0",
     "postcss-syntax": "^0.36.2",
     "postcss-url": "^8.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sharp": "^0.25.3"
   },
   "engineStrict": true,
   "engines": {
@@ -51,6 +52,7 @@
     "build:js": "npx babel static/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
     "build:js:live": "npx babel static/scripts/index.js --out-file dist/static/scripts/index.js --minified",
     "build": "npm run build:org && npm run build:css && npm run build:js",
-    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:live"
+    "optimize": "node sharp-optimizer.js",
+    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:live && npm run optimize"
   }
 }
