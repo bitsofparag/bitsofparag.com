@@ -69,6 +69,7 @@
   :END:
   - [[#References][References]]
   - [[#Actions][Actions]]
+  - [[#Mixed W-L ST-S][Mixed W-L ST-S]]
   - [[#Overnight Proof Mixed W-S ST-M][Overnight Proof Mixed W-S ST-M]]
   - [[#Overnight Proof White W-S ST-M][Overnight Proof White W-S ST-M]]
   - [[#Overnight Proof W-Mixed W-M ST-M][Overnight Proof W-Mixed W-M ST-M]]
@@ -141,6 +142,65 @@
      bread is kept. The idea is to mimic the dutch oven to obtain a good oven-spring.
    - *Cool*
    - *Cut*
+
+* Mixed W-L ST-S
+  :PROPERTIES:
+  :CUSTOM_ID: Mixed W-L ST-S
+  :END:
+
+Fed Starter.
+
+Temp 23 °C and humidity 55%.
+
+*Ingredients*
+
+Starter - activated
+
+Spelt flour - [[https://shop.rewe.de/p/rewe-bio-dinkel-vollkornmehl-1kg/3100603][Rewe Bio]].
+
+Whole wheat - [[https://shop.rewe.de/p/rewe-bio-weizen-vollkornmehl-1kg/3100598][Rewe Bio]].
+
+Rye flour - [[https://www.navoco.de/bauckhof-lichtkorn-roggenmehl-vollkorn-demeter-1000g][Demeter]].
+
+Table salt
+
+#+TBLNAME: bread_items
+| Item                               |  Qt |     % |
+|------------------------------------+-----+-------|
+| Starter                            |  80 | 17.98 |
+| Spelt flour                        | 263 | 59.10 |
+| Whole wheat                        | 173 | 38.88 |
+| Rye flour                          |  43 |  9.66 |
+| Salt                               |   9 |  2.02 |
+| Water                              | 362 | 81.35 |
+| Seasoning - poppy, garlic, linseed |     |        |                                    |     |       |
+#+TBLFM: $3=($2 * 100)/(@3$2 + @4$2 + @6$2);%.2f
+
+#+TBLNAME: bread_process
+|  Time | Requirements                               | State/Results              |
+|-------+--------------------------------------------+----------------------------|
+| 16:00 | Water, Spelt flour, Whole wheat, Rye flour | [[#Actions][Autolyse]]. Rest.            |
+| 16:30 | Salt, starter                              | Mix and light knead. Rest. |
+| 17:00 | Seasoning                                  | Stretch and fold.          |
+| 17:30 |                                            | Stretch and fold.          |
+|   ... | Set a timer for every 30min                | Stretch and fold.          |
+| 21:00 |                                            | Bulk rise in room          |
+| 06:50 |                                            | Final shape.               |
+| 07:00 |                                            | Proof.                     |
+|       |                                            |                            |
+
+** Verdict
+
+{{{img(/static/images/breaking-bread/25052020-bread-top.jpg, height:300px;)}}}
+
+- *Dough:*
+  Some comment about dough.
+- *Baking:*
+- *Taste and texture:*
+- *Presentation:*
+
+[[#ToC][Back to contents]]
+
 
 * Overnight Proof Mixed W-S ST-M
   :PROPERTIES:
