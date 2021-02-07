@@ -9,16 +9,20 @@
     <div class="lg:full mt-12">
       <img src="/static/images/me.jpg" width="200" class="photo-me float-right ml-4 mb-4" />
       <p class="intro">
-        I was one of the early adopters of
-        <a class="link-intro" href="https://www.facebook.com/paragmajum">Facebook</a> and <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a>
-        when they were cool. Don't use them anymore. Hence, this website.
+        You'll find bits of me in this website, peppered over the pages and writings (coming soon). I write code, wherever possible.
+        and I encourage others, including the corporate team I lead, to write code, while thinking about how to automate workflows
+        so that there is more time for other creative endeavours -
+        <a class="link-intro" href="https://www.facebook.com/scratchtheater/">improvised theater</a>,
+        <a class="link-intro" href="https://dribbble.com/paragm">design</a>,
+        painting, doodling, bouldering, slacklining,
+        <a class="link-intro" href="/breaking-bread.html">baking bread</a>,
+        supporting non-profit and sustainability projects.
       </p>
       <p>&nbsp;</p>
       <p class="intro">
-        I will write about myself in detail later. In the meantime, check out some of my
-        <a class="link-intro" href="https://github.com/designgeef">other</a>
-        <a class="link-intro" href="https://www.facebook.com/scratchtheater/">creative</a>
-        <a class="link-intro" href="https://dribbble.com/paragm">streams</a>.
+        You could follow me on at
+        <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a> or
+        <a class="link-intro" href="https://github.com/designgeef">Github</a>
       </p>
     </div>
   </div>
