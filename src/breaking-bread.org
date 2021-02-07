@@ -167,31 +167,33 @@ Table salt
 #+TBLNAME: bread_items
 | Item                               |  Qt |     % |
 |------------------------------------+-----+-------|
-| Starter                            |  80 | 17.98 |
-| Spelt flour                        | 263 | 59.10 |
-| Whole wheat                        | 173 | 38.88 |
-| Rye flour                          |  43 |  9.66 |
-| Salt                               |   9 |  2.02 |
-| Water                              | 362 | 81.35 |
-| Seasoning - poppy, garlic, linseed |     |        |                                    |     |       |
-#+TBLFM: $3=($2 * 100)/(@3$2 + @4$2 + @6$2);%.2f
+| Starter                            |  45 |  8.20 |
+| White flour                        | 160 | 29.14 |
+| Spelt flour                        | 322 | 58.65 |
+| Rye flour                          |  67 | 12.20 |
+| Salt                               |   8 |  1.46 |
+| Water                              | 395 | 71.95 |
+| Seasoning - poppy, garlic, linseed |  10 |  1.82 |
+#+TBLFM: $3=($2 * 100)/(@3$2 + @4$2 + @5$2);%.2f
 
 #+TBLNAME: bread_process
-|  Time | Requirements                               | State/Results              |
-|-------+--------------------------------------------+----------------------------|
-| 16:00 | Water, Spelt flour, Whole wheat, Rye flour | [[#Actions][Autolyse]]. Rest.            |
-| 16:30 | Salt, starter                              | Mix and light knead. Rest. |
-| 17:00 | Seasoning                                  | Stretch and fold.          |
-| 17:30 |                                            | Stretch and fold.          |
-|   ... | Set a timer for every 30min                | Stretch and fold.          |
-| 21:00 |                                            | Bulk rise in room          |
-| 06:50 |                                            | Final shape.               |
-| 07:00 |                                            | Proof.                     |
-|       |                                            |                            |
+|  Time | Requirements                               | State/Results                 |
+|-------+--------------------------------------------+-------------------------------|
+| 12:30 |                                            | Feed starter.                 |
+| 13:00 | Water, Spelt flour, White flour, Rye flour | [[#Actions][Autolyse]]. Rest.               |
+| 16:00 | Starter and seasoning                      | Mix. Stretch and fold.        |
+| 16:30 |                                            | Stretch and fold.             |
+|   ... | Set a timer for every 30min                | Stretch and fold.             |
+| 18:00 |                                            | Bulk rise in room.            |
+| 06:30 |                                            | Stretch and fold. Bench rest. |
+| 07:00 |                                            | Final shape.                  |
+| 08:30 |                                            | Pre-heat oven.                |
+| 09:00 |                                            | Bake with steam.              |
+| 23:30 |                                            | Cool.                         |
 
 ** Verdict
 
-{{{img(/static/images/breaking-bread/25052020-bread-top.jpg, height:300px;)}}}
+{{{img(/static/images/breaking-bread/25052020-bread-top.png, height:300px;)}}}
 
 - *Dough:*
   Some comment about dough.
