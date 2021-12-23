@@ -22,7 +22,7 @@
       <p class="intro">
         You could follow me on at
         <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a> or
-        <a class="link-intro" href="https://github.com/designgeef">Github</a>
+        <a class="link-intro" href="https://github.com/bitsofparag">Github</a>
       </p>
     </div>
   </div>
