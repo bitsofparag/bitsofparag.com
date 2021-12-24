@@ -115,8 +115,14 @@ html { font-family: 'Inter', sans-serif; }
 .link-info, .org-ul a {
     @apply inline-block text-primary-700;
 }
+
 .link-info:hover, .org-ul a:hover {
     @apply text-primary-500;
+}
+
+.link-badge {
+    max-width: 200px;
+    margin-left: -2px;
 }
 
 #content .gallery {
