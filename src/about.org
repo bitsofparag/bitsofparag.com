@@ -15,8 +15,8 @@
         team-building and operations over the last 5 years.
         <br />
         My other hobbies and interests include
-        <a class="link-intro" href="https://www.facebook.com/scratchtheater/">improvised theater</a>,
-        <a class="link-intro" href="https://dribbble.com/paragm">design</a>,
+        <a class="link-intro" href="https://www.facebook.com/scratchtheater/" target="_blank">improvised theater</a>,
+        <a class="link-intro" href="https://dribbble.com/paragm" target="_blank">design</a>,
         painting, doodling, bouldering, slacklining,
         <a class="link-intro" href="/breaking-bread.html">baking bread</a>,
         supporting non-profit and sustainability projects.
@@ -24,8 +24,8 @@
       <p>&nbsp;</p>
       <p class="intro">
         You can follow me on
-        <a class="link-intro" href="https://twitter.com/paragmajum">Twitter</a> or
-        <a class="link-intro" href="https://github.com/bitsofparag">Github</a>
+        <a class="link-intro" href="https://twitter.com/paragmajum" target="_blank">Twitter</a> or
+        <a class="link-intro" href="https://github.com/bitsofparag" target="_blank">Github</a>
         or reach me directly at
         <em>
         <!--
