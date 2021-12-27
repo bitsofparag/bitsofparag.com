@@ -12,6 +12,10 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
       - name: Get changed styling files
         id: changed-styling-files
         uses: tj-actions/changed-files@v2.0.0
@@ -21,9 +25,6 @@ jobs:
 
       - name: Build styles if changed
         if: steps.changed-styling-files.outputs.any_changed == 'true'
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
         run: |
           npm i -D
           npm run build:css
@@ -37,9 +38,6 @@ jobs:
 
       - name: Build scripts if changed
         if: steps.changed-script-files.outputs.any_changed == 'true'
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
         run: |
           npm i -D
           npm run build:js:prod
