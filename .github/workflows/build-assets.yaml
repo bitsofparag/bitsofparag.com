@@ -1,0 +1,49 @@
+# References:
+# For emacs builds -
+# https://developers.cloudflare.com/pages/platform/build-configuration#language-support-and-tools
+#
+name: build-assets
+on: [pull_request]
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Get changed styling files
+        id: changed-styling-files
+        uses: tj-actions/changed-files@v2.0.0
+        with:
+          files: |
+            static/styles
+
+      - name: Build styles if changed
+        if: steps.changed-styling-files.outputs.any_changed == 'true'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+        run: |
+          npm i -D
+          npm run build:css
+
+      - name: Get changed script files
+        id: changed-script-files
+        uses: tj-actions/changed-files@v2.0.0
+        with:
+          files: |
+            static/scripts
+
+      - name: Build scripts if changed
+        if: steps.changed-script-files.outputs.any_changed == 'true'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+        run: |
+          npm i -D
+          npm run build:js:prod
+
+      - name: List dist files
+        run: |
+          ls -la dist
