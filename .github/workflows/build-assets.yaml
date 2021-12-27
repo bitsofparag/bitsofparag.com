@@ -21,7 +21,7 @@ jobs:
         uses: tj-actions/changed-files@v2.0.0
         with:
           files: |
-            static/styles
+            ./static/styles
 
       - name: Build styles if changed
         if: steps.changed-styling-files.outputs.any_changed == 'true'
@@ -34,7 +34,7 @@ jobs:
         uses: tj-actions/changed-files@v2.0.0
         with:
           files: |
-            static/scripts
+            ./static/scripts
 
       - name: Build scripts if changed
         if: steps.changed-script-files.outputs.any_changed == 'true'
