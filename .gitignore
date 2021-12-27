@@ -1,8 +1,3 @@
-### Project specific ###
-/deploy
-/dist/static/styles/*.css
-!/dist/static/styles/index.css
-
 ### Emacs ###
 *~
 \#*\#
@@ -81,3 +76,11 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+
+### Project specific ###
+/deploy
+/dist/static/styles/*.css
+!/dist/static/styles/index.css
+wrangler.toml
+!wrangler.toml.tpl

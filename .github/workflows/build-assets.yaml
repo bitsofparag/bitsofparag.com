@@ -24,7 +24,7 @@ jobs:
             ./static/styles
 
       - name: Build styles if changed
-        if: steps.changed-styling-files.outputs.any_changed == 'true'
+        if: steps.changed-styling-files.outputs.only_changed == 'true'
         run: |
           npm i -D
           npm run build:css
