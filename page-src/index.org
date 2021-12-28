@@ -1,0 +1,16 @@
+#+TITLE: Bitsofparag | Personal Weblog
+#+SETUPFILE: ~/.emacs.d/private/local/org-templates/org-base.setup
+#+SETUPFILE: ~/.emacs.d/private/local/org-templates/level-0.org
+
+#+begin_export html
+<!-- Article -->
+<section class="container intro-container">
+  <div class="flex flex-wrap">
+    <div class="lg:w-full mt-12">
+      <p class="intro">My name is Parag. I dabble in software and improvised theater. I will share more of my works in the near future but in the meantime, please read my
+      <a class="link-intro" href="/blog">writings</a>.
+      </p>
+    </div>
+  </div>
+</section>
+#+end_export

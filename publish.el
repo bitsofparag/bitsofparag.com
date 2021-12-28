@@ -22,13 +22,13 @@
 ;;   )
 
 (defvar *weblog-html-postamble* (with-temp-buffer
-                                  (insert-file-contents "./src/postamble.html")
+                                  (insert-file-contents "./page-src/postamble.html")
                                   (buffer-string)))
 (defvar *weblog-html-preamble* (with-temp-buffer
-                                 (insert-file-contents "./src/preamble.html")
+                                 (insert-file-contents "./page-src/preamble.html")
                                  (buffer-string)))
 (defvar *weblog-html-common-head* (with-temp-buffer
-                                    (insert-file-contents "./src/common-head.html")
+                                    (insert-file-contents "./page-src/common-head.html")
                                     (buffer-string)))
 (defvar *weblog-html-extra-head* "")
 
@@ -54,12 +54,12 @@
 (setq org-publish-project-alist
       (list
        (list "bitsofparag"
-             :base-directory (concat bp "src")
+             :base-directory (concat bp "page-src")
              :base-extension "org"
              :recursive t
              :publishing-function '(org-html-publish-to-html)
              :publishing-directory (concat bp "dist")
-             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "yml" "src"))
+             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "yml" "page-src"))
              :auto-sitemap nil
              :html-doctype "html5"
              :language "en"
@@ -80,7 +80,7 @@
              :tex t
              :sitemap-sort-files 'anti-chronologically)
        (list "bitsofparag-blog"
-             :base-directory (concat bp "src/blog")
+             :base-directory (concat bp "page-src/blog")
              :base-extension "org"
              :recursive t
              :publishing-function '(org-html-publish-to-html)  ;; Output directory
@@ -111,7 +111,7 @@
              :sitemap-sort-files 'anti-chronologically
              )
        (list "bitsofparag-static"
-             :base-directory (concat bp "static")
+             :base-directory (concat bp "site-assets")
              :base-extension site-attachments
              :publishing-directory (concat bp "dist/static")
              :publishing-function 'org-publish-attachment

@@ -1,0 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
+@import './type.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Skeleton styles */
+@import './base.css';
+@import './header.css';
+@import './logo.css';
+@import './content.css';
+@import './footer.css';
+
+/* Misc styles */
+@import './code.css';

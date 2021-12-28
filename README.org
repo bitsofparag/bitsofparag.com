@@ -1,5 +1,9 @@
 #+title: Bitsofparag blog
 #+author: Parag M.
 #+date: <2019-11-25 Mon>
+#+Time-stamp: <2021-12-26 16:04:21 parag>
+
 
 I think. I write.
+
+See [[./docs][docs]] for details about this site.

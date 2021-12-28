@@ -1,0 +1,12 @@
+#footer {
+    @apply mt-20 pt-10 pb-8;
+    border-top: 1px solid #4f7b86;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer .badge {
+    max-width: 200px;
+    margin-left: -2px;
+}

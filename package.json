@@ -1,6 +1,7 @@
 {
   "version": "2.6.1",
   "author": "Parag M. <admin@bitsofparag.com>",
+  "main": "index.js",
   "dependencies": {
     "animejs": "^3.2.0",
     "tailwindcss": "^1.4.6"
@@ -23,7 +24,7 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": "16.13.0"
+    "node": "16.13.1"
   },
   "keywords": [
     "parag",
@@ -45,14 +46,14 @@
   },
   "scripts": {
     "clean": "find dist/ -maxdepth 0 ! -name manifest.json ! -name favicon.ico | xargs rimraf",
-    "lint": " ./src/** --ignore tests/**/*.*",
+    "lint": " ./site-assets/** --ignore tests/**/*.*",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss static/styles/index.css -o dist/static/styles/index.css",
+    "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
     "build:org": "emacs --batch -l ~/.spacemacs --load publish.el --eval '(org-publish \"personal-website\")'",
-    "build:js": "npx babel static/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
-    "build:js:live": "npx babel static/scripts/index.js --out-file dist/static/scripts/index.js --minified",
+    "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
+    "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
     "build": "npm run build:org && npm run build:css && npm run build:js",
     "optimize": "node sharp-optimizer.js",
-    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:live && npm run optimize"
+    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:prod && npm run optimize"
   }
 }
