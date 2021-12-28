@@ -80,3 +80,6 @@ node_modules/
 
 ### Project specific ###
 dist
+workers-site
+wrangler.toml
+!wranger.toml.tpl
