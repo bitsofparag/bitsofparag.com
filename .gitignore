@@ -79,8 +79,4 @@ node_modules/
 
 
 ### Project specific ###
-/deploy
-/dist/static/styles/*.css
-!/dist/static/styles/index.css
-wrangler.toml
-!wrangler.toml.tpl
+dist
