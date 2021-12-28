@@ -49,7 +49,7 @@
     "lint": " ./site-assets/** --ignore tests/**/*.*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
-    "build:org": "emacs --batch -l $EMACS_CONFIG --load publish.el --eval '(org-publish \"personal-website\")'",
+    "build:org": "emacs --batch --load publish.el --eval '(org-publish \"personal-website\")' $EXTRA_EMACS_ARGS",
     "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
     "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
     "build": "npm run build:org && npm run build:css && npm run build:js",
