@@ -1,1 +1,3 @@
 #+TITLE: 404
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options

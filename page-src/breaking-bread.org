@@ -1,11 +1,9 @@
 #+title: Breaking Bread
 #+author: Parag M.
 #+date: <2020-05-24 Sun>
-#+SETUPFILE: ~/.emacs.d/private/local/org-templates/org-base.setup
-#+SETUPFILE: ~/.emacs.d/private/local/org-templates/level-2.org
-#+OPTIONS: toc:nil broken-links:mark
-#+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
+#+OPTIONS: toc:nil broken-links:mark H:2
 
 * COMMENT Template
 

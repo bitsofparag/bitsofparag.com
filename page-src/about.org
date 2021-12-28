@@ -1,6 +1,6 @@
 #+TITLE: Bitsofparag | About
-#+SETUPFILE: ~/.emacs.d/private/local/org-templates/org-base.setup
-#+SETUPFILE: ~/.emacs.d/private/local/org-templates/level-0.org
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
 
 #+begin_export html
 <!-- Article -->

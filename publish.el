@@ -12,11 +12,11 @@
 ;;; If using f.el, uncomment the following lines
 ;; (require 'f)
 ;; (defvar *weblog-html-preamble*
-;;   (f-read-text "./src/preamble.html" 'utf-8))
+;;   (f-read-text "./page-src/preamble.html" 'utf-8))
 ;; (defvar *weblog-html-postamble*
-;;   (f-read-text "./src/postamble.html" 'utf-8))
+;;   (f-read-text "./page-src/postamble.html" 'utf-8))
 ;; (defvar *weblog-html-common-head*
-;;   (f-read-text "./src/common-head.html" 'utf-8))
+;;   (f-read-text "./page-src/common-head.html" 'utf-8))
 ;; (defvar *weblog-html-extra-head*
 ;;   ""
 ;;   )
@@ -59,7 +59,7 @@
              :recursive t
              :publishing-function '(org-html-publish-to-html)
              :publishing-directory (concat bp "dist")
-             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "yml" "page-src"))
+             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "yml" "page-src" ".setup"))
              :auto-sitemap nil
              :html-doctype "html5"
              :language "en"
