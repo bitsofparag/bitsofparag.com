@@ -1,8 +1,9 @@
-#+TITLE: Bitsofparag | About
+#+title: Bitsofparag | About
+#+author: Parag M.
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
 
-#+begin_export html
+#+BEGIN_EXPORT html
 <!-- Article -->
 <section class="container intro-container">
   <div class="flex flex-wrap">
@@ -44,4 +45,4 @@
     </div>
   </div>
 </section>
-#+end_export
+#+END_EXPORT
