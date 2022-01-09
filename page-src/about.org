@@ -1,4 +1,4 @@
-#+title: Bitsofparag | About
+#+title: About
 #+author: Parag M.
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
