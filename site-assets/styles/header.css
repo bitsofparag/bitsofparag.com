@@ -9,10 +9,10 @@
 }
 
 #nav a.nav-link {
-  @apply block mt-4 mr-10 text-text-900;
+  @apply block mt-4 mr-10 text-content-color-900;
 }
 
 #nav a.nav-link:hover,
 #nav a.nav-link:focus {
-  @apply text-primary-700;
+  @apply text-primary-color-700;
 }

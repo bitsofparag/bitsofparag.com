@@ -1,7 +1,7 @@
 /* normalizing the normalized css */
 #content {
-  @apply font-normal pt-20 m-auto px-5;
-  max-width: 800px;
+    @apply font-normal pt-20 m-auto px-5;
+    max-width: 800px;
 }
 
 #content code {
@@ -42,8 +42,13 @@
     color: #e74c3c;
 }
 
+#content p.intro {
+    @apply font-text text-body leading-body-large;
+}
+
+/* Heading text */
 #content h1.title {
-  @apply font-bold text-h1 mb-6 leading-h1;
+    @apply font-bold text-h1 mb-6 leading-h1;
 }
 
 #content h2 {
@@ -54,27 +59,30 @@
     @apply text-h3 mb-2 mt-8 leading-h3;
 }
 
+/* Paragraph text */
 #content p, #content p.blog-body {
-  @apply font-blog text-body leading-body mb-2;
+    @apply font-blog text-body-blog leading-body-blog mb-6;
+}
+
+#content p + ul, #content p.blog-body + ul {
+    @apply -mt-4;
 }
 
 #content p a {
-    @apply text-primary-500;
-}
-#content p a:hover {
-    @apply: underline;
+    @apply text-primary-color-500;
 }
 
+#content p a:hover {
+    @apply underline;
+}
+
+/* Content list text */
 #content ul {
-    @apply text-body list-none list-inside mb-4;
+    @apply font-blog text-body-blog list-inside list-square mb-4;
 }
 
 #content ul li {
-    @apply mb-2 leading-body;
-}
-
-#content p.intro {
-    @apply font-text text-body leading-body-large;
+    @apply mb-2;
 }
 
 #content table {
@@ -97,89 +105,135 @@
     @apply bg-gray-100;
 }
 
+/* Inline footnotes */
+#content label {
+    cursor: pointer;
+    vertical-align: super;
+    line-height: 1;
+    font-size: .9em;
+    padding-left: .1em;
+    @apply text-primary-color-500;
+}
+
+#content label:before {
+    content:"[";
+}
+
+#content label:after {
+    content:"]";
+}
+
+#content label + input,
+#content label + input + small {
+    display: none;
+}
+
+#content input:checked + small {
+    display: block;
+    padding: .8em 0 1em 2.5vw;;
+}
+
+#content .footdef sup {
+    top: -1rem;
+}
+
+#content .footdef {
+    line-height: 3em;
+    margin-top: 3rem;
+}
+
+#content .footpara {
+    width: 99%;
+    text-align: left;
+    float: right;
+    padding: 0;
+    margin: 0;
+    background-color: #d3f7fd;
+}
+
 /* --------- custom classes ----------- */
 #content .gallery {
     @apply flex flex-auto flex-wrap;
 }
 
 #text-Actions ul {
-    @apply list-disc;
+    @apply list-square;
 }
 
 #content .timedate {
-  @apply font-text text-small flex justify-between -mt-2;
-  max-width: 270px;
+    @apply font-text text-small flex justify-between -mt-2;
+    max-width: 270px;
 }
 
 #content .timedate .timedate-upd {
-  color: rgb(150, 150, 150);
+    color: rgb(150, 150, 150);
 }
 
 #content span.blog-intro {
-  @apply font-blog text-body-large font-bold;
-  line-height: 2.5rem;
+    @apply font-blog text-body-large font-bold;
+    line-height: 2.5rem;
 }
 
 #content section {
-  @apply mt-10;
+    @apply mt-10;
 }
 
 #table-of-contents {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 #table-of-contents h2 {
-  @apply text-body-large;
+    @apply text-body-large;
 }
 
 #text-table-of-contents a {
-  text-decoration: underline;
-  @apply text-body;
+    text-decoration: underline;
+    @apply text-body;
 }
 
 #twitter-widget-0, .twitter-share-button {
-  /* most styles applied via Twitter */
-  @apply font-text text-small align-middle;
-  font-weight: bold;
-  display: inline-block;
+    /* most styles applied via Twitter */
+    @apply font-text text-small align-middle;
+    font-weight: bold;
+    display: inline-block;
 }
 
 #linkedin-share-0 {
-  @apply font-text text-small mt-6 ml-3;
-  width: 61px;
-  display: inline-block;
-  padding: 2px 6px;
-  border-radius: 3px;
-  background: #2867B2;
-  color: white;
-  font-weight: bold;
-  line-height: 1rem;
-  fill: white;
+    @apply font-text text-small mt-6 ml-3;
+    width: 61px;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #2867B2;
+    color: white;
+    font-weight: bold;
+    line-height: 1rem;
+    fill: white;
 }
 
 #linkedin-share-0 svg {
-  @apply w-3 h-3 inline mr-1;
-  vertical-align: text-top;
+    @apply w-3 h-3 inline mr-1;
+    vertical-align: text-top;
 }
 
 @screen xl {
-  .intro-container {
-    @apply -mx-24;
-  }
+    .intro-container {
+        @apply -mx-24;
+    }
 
-  #content section {
-    @apply mt-8;
-  }
+    #content section {
+        @apply mt-8;
+    }
 
-  #content span.blog-intro {
-    line-height: 2.6rem;
-  }
+    #content span.blog-intro {
+        line-height: 2.6rem;
+    }
 
-  #linked-share-0 {
-    @apply mt-3;
-  }
+    #linked-share-0 {
+        @apply mt-3;
+    }
 }
 
 .photo-me {
-  border: 3px dashed rgb(120,120,120);
+    border: 3px dashed rgb(120,120,120);
 }
