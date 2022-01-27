@@ -1,9 +1,39 @@
-/* normalizing the normalized css */
+/* ====================================================
+   Styles for content in all pages
+   ====================================================*/
 #content {
-    @apply font-normal pt-20 m-auto px-5;
+    @apply font-sans pt-20 m-auto px-5;
     max-width: 800px;
 }
 
+
+/* Home page content */
+#content #bio p,
+#content #bio ul,
+#content #intro p,
+#content #intro a {
+    @apply font-sans text-body tracking-normal;
+}
+
+#content #bio a[href*="//"]::after {
+    content: "\2197";
+}
+
+#content #bio ul {
+    @apply list-none;
+}
+
+#content .phonetic {
+    @apply mb-0;
+}
+
+#content .filter {
+    @apply absolute -top-6 right-2 bg-gray-50/50 backdrop-grayscale-0 backdrop-blur;
+    width: 184px;
+    height: 37px;
+}
+
+/* Element styling in content pages */
 #content code {
     color: brown;
 }
@@ -42,10 +72,6 @@
     color: #e74c3c;
 }
 
-#content p.intro {
-    @apply font-text text-body leading-body-large;
-}
-
 /* Heading text */
 #content h1.title {
     @apply font-bold text-h1 mb-6 leading-h1;
@@ -60,8 +86,10 @@
 }
 
 /* Paragraph text */
-#content p, #content p.blog-body {
-    @apply font-blog text-body-blog leading-body-blog mb-6;
+#content p,
+#content p.blog-body,
+#content ul {
+    @apply font-serif text-body-blog leading-body-blog mb-6 tracking-[-.015em];
 }
 
 #content p + ul, #content p.blog-body + ul {
@@ -78,7 +106,7 @@
 
 /* Content list text */
 #content ul {
-    @apply font-blog text-body-blog list-inside list-square mb-4;
+    @apply list-inside list-square mb-4;
 }
 
 #content ul li {
@@ -161,7 +189,7 @@
 }
 
 #content .timedate {
-    @apply font-text text-small flex justify-between -mt-2;
+    @apply text-small flex justify-between -mt-2;
     max-width: 270px;
 }
 
@@ -170,7 +198,7 @@
 }
 
 #content span.blog-intro {
-    @apply font-blog text-body-large font-bold;
+    @apply font-serif text-body-large font-bold;
     line-height: 2.5rem;
 }
 
@@ -191,36 +219,47 @@
     @apply text-body;
 }
 
-#twitter-widget-0, .twitter-share-button {
-    /* most styles applied via Twitter */
-    @apply font-text text-small align-middle;
-    font-weight: bold;
-    display: inline-block;
+#content .share > p {
+    @apply float-right flex flex-row-reverse items-end justify-between mt-2 w-2/5;
 }
 
-#linkedin-share-0 {
-    @apply font-text text-small mt-6 ml-3;
+#content .metadata > p {
+    @apply border-b-2 border-content-color-500 mb-0 text-body;
+}
+
+#twitter-share-button {
+    /* most styles applied via Twitter */
+    @apply font-sans text-small align-middle;
+    width: 50px;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #1da1f2;
+    color: white !important;
+    line-height: 1rem;
+    fill: white;
+}
+
+#linkedin-share-button {
+    @apply font-sans text-small;
     width: 61px;
     display: inline-block;
     padding: 2px 6px;
     border-radius: 3px;
     background: #2867B2;
-    color: white;
+    color: white !important;
     font-weight: bold;
     line-height: 1rem;
     fill: white;
 }
 
-#linkedin-share-0 svg {
+#linkedin-share-button svg {
     @apply w-3 h-3 inline mr-1;
     vertical-align: text-top;
 }
 
 @screen xl {
-    .intro-container {
-        @apply -mx-24;
-    }
-
     #content section {
         @apply mt-8;
     }
@@ -229,8 +268,14 @@
         line-height: 2.6rem;
     }
 
-    #linked-share-0 {
-        @apply mt-3;
+    #content .share > p {
+        @apply w-1/6;
+    }
+}
+
+@screen lg {
+    #content .share > p {
+        @apply w-1/6;
     }
 }
 

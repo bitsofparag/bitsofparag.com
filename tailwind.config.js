@@ -2,25 +2,23 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./page-src/**/*.{html,js}', './site-assets/**/*.js'],
+  content: ['./page-src/**/*.{html,js,org}', './site-assets/**/*.js'],
   theme: {
     fontFamily: {
-      display: ['Inter var', ...defaultTheme.fontFamily.sans],
-      heading: ['Inter var', ...defaultTheme.fontFamily.sans],
-      text: ['Inter var', ...defaultTheme.fontFamily.sans],
-      blog: ['Newsreader', ...defaultTheme.fontFamily.serif],
+      sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
+      serif: ['Newsreader', ...defaultTheme.fontFamily.serif],
     },
     fontSize: {
-      display: '4rem',
-      h1: '2.6rem',
-      h2: '2rem',
-      h3: '1.3rem',
+      hero: '5rem',
+      display: '3.6rem',
+      h1: '2.4rem',
+      h2: '1.8rem',
+      h3: '1.4rem',
       h4: '1.1rem',
       'button-text': '2.2rem',
-      body: '0.94rem',
-      body2: '1.05rem',
+      body: '1rem',
       'body-large': '1.325rem',
-      'body-blog': '1.2rem',
+      'body-blog': '1.125rem',
       info: '0.82rem',
       small: '0.7rem',
     },
@@ -35,10 +33,9 @@ module.exports = {
       h3: '1.8rem',
       h4: '1.625rem',
       'button-text': '26px',
-      body: '1.5rem',
-      body2: '1.85rem',
+      body: '1.7rem',
       'body-large': '2rem',
-      'body-blog': '1.75rem',
+      'body-blog': '1.8rem',
       info: '1.125rem',
     },
     // extend
