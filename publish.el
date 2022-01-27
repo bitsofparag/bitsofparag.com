@@ -63,8 +63,10 @@
              :auto-sitemap nil
              :html-doctype "html5"
              :language "en"
-             :description "Bitsofparag | Personal weblog of Parag M."
+             :title "Parag's Personal Weblog"
+             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
              :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
              :html-head *weblog-html-common-head*
@@ -88,8 +90,9 @@
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
-             :description "Bitsofparag | Personal weblog of Parag M."
+             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
              :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
              :html-head *weblog-html-common-head*
