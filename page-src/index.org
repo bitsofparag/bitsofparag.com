@@ -1,16 +1,69 @@
-#+TITLE: Hey there...
+#+TITLE: Parag's Website
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
+#+Time-stamp: <2022-01-27 13:28:36 parag>
+#+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
-<!-- Article -->
-<section class="container intro-container">
-  <div class="flex flex-wrap">
-    <div class="lg:w-full mt-12">
-      <p class="intro">My name is Parag. I dabble in software and improvised theater. I will share more of my works in the near future but in the meantime, please read my
-      <a class="link-intro" href="/blog">writings</a>.
-      </p>
+<section id="intro" class="container intro-container">
+  <div class="flex flex-wrap relative">
+    <div class="text-hero">I'm Parag</div>
+    <p class="phonetic">pə ˈraːɡ</p>
+    <img src="/static/images/me.jpg" width="200" class="absolute top-0 right-0 -z-10" />
+    <div class="w-full mt-12 lg:mt-8">
+      <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
+      <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
+        and enabled new ventures and startups to ideate and scale technologically.</p>
+      <p class="intro">Please feel free to look around. I am not much on social-media. But you can best reach me via email.</p>
+      <div class="filter">&nbsp;</div>
     </div>
   </div>
 </section>
+#+end_export
+
+#+begin_export html
+<section id="bio" class="container font-sans">
+  <div class="grid grid-cols-2 grid-flow-row gap-4 place-items-stretch">
+#+end_export
+* Connect
+
+-
+  #+begin_export html
+  <span>
+  <!--
+  -->
+  admin
+  <!--
+  -->
+  (at)
+  <!--
+  -->
+  bitsofparag
+  <!--
+  -->
+  .com
+  </span>
+  #+end_export
+
+- [[https://twitter.com/paragmajum][Twitter]]
+- [[https://github.com/bitsofparag][Github]]
+- [[https://fosstodon.org/@parag][Fosstodon]]
+- [[https://www.are.na/parag-m][Are.na]]
+
+
+* Interests
+
+- [[https://dribbble.com/paragm][Dribbble]]
+- [[https://www.scratchtheater.com][Theater]]
+
+* COMMENT Upcoming posts
+
+#+INCLUDE: blog/index.org :lines "3-8"
+[[file:blog/index.org][See archives →]]
+
+* Projects
+
+In progress
+#+begin_export html
+</div></section>
 #+end_export
