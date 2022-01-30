@@ -1,15 +1,15 @@
 #nav {
+  @apply flex flex-wrap items-center justify-between px-6 m-auto;
   min-height: 100px;
-  margin: auto;
   max-width: 800px;
 }
 
-#nav .logo {
-  position: relative;
+#nav .menu {
+  @apply w-3/4 lg:order-2 flex justify-end items-center
 }
 
 #nav a.nav-link {
-  @apply block mt-4 mr-10 text-content-color-900;
+  @apply block text-content-color-900;
 }
 
 #nav a.nav-link:hover,

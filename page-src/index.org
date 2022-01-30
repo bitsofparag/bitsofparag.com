@@ -1,7 +1,7 @@
 #+TITLE: Parag's Website
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-01-27 13:28:36 parag>
+#+Time-stamp: <2022-01-27 14:45:24 parag>
 #+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
@@ -10,7 +10,7 @@
     <div class="text-hero">I'm Parag</div>
     <p class="phonetic">pə ˈraːɡ</p>
     <img src="/static/images/me.jpg" width="200" class="absolute top-0 right-0 -z-10" />
-    <div class="w-full mt-12 lg:mt-8">
+    <div class="w-full mt-12 lg:mt-9">
       <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
       <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
         and enabled new ventures and startups to ideate and scale technologically.</p>
