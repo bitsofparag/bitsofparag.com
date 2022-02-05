@@ -1,15 +1,13 @@
 #logo {
-  @apply block relative font-serif italic font-bold w-20 h-20 text-content-color-300;
+  @apply block relative font-serif italic font-bold w-20 h-20 text-palette-nutty-light;
 }
 
 #logo .letters-container {
-  @apply absolute inset-0 m-auto w-full;
+  @apply absolute z-10 inset-0 m-auto w-[91%] overflow-hidden rounded-half;
 }
 
 #logo .letters {
-  @apply relative z-20 inline-block;
-  left: 17px;
-  top: 17px;
+  @apply relative top-0 left-0 inline-block text-logo leading-none;
 }
 
 #logo .circle {
@@ -17,7 +15,7 @@
 }
 
 #logo .circle-inner {
-  @apply w-[90%] h-[90%] rounded-full z-10;
+  @apply w-[90%] h-[90%] rounded-full;
 }
 
 #logo .circle-outer {
@@ -26,4 +24,12 @@
 
 #logo #path-circle {
   @apply stroke-primary-color-900 fill-transparent;
+}
+
+#header.scrolling #logo {
+  @apply w-8 h-8;
+}
+
+#header.scrolling #logo .letters {
+  @apply text-logo-small;
 }

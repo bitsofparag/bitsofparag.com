@@ -21,6 +21,8 @@ module.exports = {
       'body-blog': '1.125rem',
       info: '0.82rem',
       small: '0.7rem',
+      logo: '4.6rem',
+      'logo-small': '1.95rem',
     },
     container: {
       center: false,
