@@ -1,29 +1,27 @@
-#+TITLE: Parag's Website
+#+TITLE: I'm Parag
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-01-27 14:45:24 parag>
+#+Time-stamp: <2022-01-31 17:57:54 parag>
 #+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
-<section id="intro" class="container intro-container">
-  <div class="flex flex-wrap relative">
-    <div class="text-hero">I'm Parag</div>
-    <p class="phonetic">pə ˈraːɡ</p>
-    <img src="/static/images/me.jpg" width="200" class="absolute top-0 right-0 -z-10" />
-    <div class="w-full mt-12 lg:mt-9">
-      <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
-      <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
-        and enabled new ventures and startups to ideate and scale technologically.</p>
-      <p class="intro">Please feel free to look around. I am not much on social-media. But you can best reach me via email.</p>
-      <div class="filter">&nbsp;</div>
-    </div>
+<p class="phonetic">\ pə •raːg</p>
+<section id="intro" class="bp-grid-3">
+  <div class="col-span-2">
+    <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
+    <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
+      and enabled new ventures and startups to technically ideate and scale.</p>
+    <p class="intro">Please feel free to look around. I am hardly on social-media. But you can best reach me via email.</p>
+  </div>
+  <div class="photo-me">
+    <div class="sticky-tape">&nbsp;</div>
+    <img src="/static/images/me.jpg" width="200" class="-mt-3" />
   </div>
 </section>
 #+end_export
 
 #+begin_export html
-<section id="bio" class="container font-sans">
-  <div class="grid grid-cols-2 grid-flow-row gap-4 place-items-stretch">
+<section id="bio" class="bp-grid-2">
 #+end_export
 * Connect
 
@@ -65,5 +63,5 @@
 
 In progress
 #+begin_export html
-</div></section>
+</section>
 #+end_export

@@ -2,4 +2,4 @@
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
 
-** Sorry, the page was not found :(
+* Sorry, the page was not found :(
