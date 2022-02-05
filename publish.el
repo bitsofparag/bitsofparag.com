@@ -35,6 +35,7 @@
 (defvar site-attachments (regexp-opt '("gif" "jpg" "jpeg" "png" "svg"
                                        "ico" "cur" "css" "js" "html"
                                        "woff2" "woff" "ttf" "pdf")))
+(defvar site-misc (regexp-opt '("webmanifest")))
 
 (setq org-html-htmlize-output-type 'css)
 (setq display-time-day-and-date t)
@@ -120,7 +121,14 @@
              :publishing-directory (concat bp "dist/static")
              :publishing-function 'org-publish-attachment
              :recursive t)
+       (list "bitsofparag-misc"
+             :base-directory (concat bp)
+             :base-extension site-misc
+             :publishing-directory (concat bp "dist")
+             :publishing-function 'org-publish-attachment
+             :recursive t)
        (list "personal-website" :components '("bitsofparag"
                                               "bitsofparag-blog"
                                               "bitsofparag-static"
+                                              "bitsofparag-misc"
                                               ))))
