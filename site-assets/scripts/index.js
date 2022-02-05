@@ -1,49 +1,41 @@
-function enableMobileMenu() {}
+(function () {
+  const body = document.body;
 
-function prepareDOM() {
-  document.querySelectorAll('.gallery-item:nth-child(1)')
-    .forEach(item => item.closest('p').classList.add('gallery'));
-}
+  function enableScrollableHeader() {
+    const scrollUp = 'scroll-up';
+    const scrollDown = 'scroll-down';
+    let lastScroll = 0;
 
-function animateLogo() {
-  anime.timeline({loop: false})
-    .add({
-      targets: '.logo .circle-dark',
-      scale: [0, 1],
-      duration: 1100,
-      easing: "easeOutExpo",
-      offset: '-=600'
-    }).add({
-      targets: '.logo .letters-left',
-      scale: [0, 1],
-      duration: 450,
-      offset: '+=550'
-    }).add({
-      targets: '.logo .letters-right',
-      scale: [0, 1],
-      duration: 500,
-      offset: '-=10'
-    }).add({
-      targets: '.logo',
-      opacity: 1,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1400
-    });
+    window.onscroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll <= 0) {
+        body.classList.remove(scrollUp);
+        return;
+      }
 
-  anime({
-    targets: '.logo .circle-dark-dashed',
-    rotateZ: 360,
-    duration: 8000,
-    easing: "linear",
-    loop: true
-  });
-}
+      if (
+        // going down (or scrolling up on Mac)
+        currentScroll > lastScroll &&
+        !body.classList.contains(scrollDown) &&
+        currentScroll > 50
+      ) {
+        body.classList.remove(scrollUp);
+        body.classList.add(scrollDown);
+      } else if (
+        // going up (or scrolling down on Mac)
+        currentScroll < lastScroll &&
+        body.classList.contains(scrollDown)
+      ) {
+        body.classList.remove(scrollDown);
+        body.classList.add(scrollUp);
+      }
+      lastScroll = currentScroll;
+    };
+  } /* enableScrollableHeader */
 
-function init() {
-  prepareDOM();
-  animateLogo();
-  enableMobileMenu();
-}
+  function init() {
+    enableScrollableHeader();
+  }
 
-document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded', init);
+})();

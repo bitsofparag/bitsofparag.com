@@ -1,44 +1,56 @@
-html { font-family: 'Inter', sans-serif; }
-/* @supports (font-variation-settings: normal) { */
-/*   html { font-family: 'Inter var', sans-serif; } */
-/* } */
+/* Tailwind styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import 'tailwindcss/base'; */
+/* @import 'tailwindcss/components'; */
+/* @import 'tailwindcss/utilities'; */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+}
+
+html {
+  @apply bg-palette-nutty-light text-content-color-900;
+}
 
 /* -------Links ---------- */
 a[href*="//"]::after {
     font-weight: 300;
     font-size: .85em;
-    content: "\2197";
     opacity: .3;
     margin-left: 1px;
 }
-
-a[href*="//"]:hover:after {
-    opacity: 1;
-}
-
-a[href$=".pdf"]:before { content: "PDF"; }
-a[href$=".txt"]:before { content: "TXT"; }
-a[href$=".mp3"]:before { content: "MP3"; }
-a[href$=".zip"]:before { content: "ZIP"; }
-a[href$=".rar"]:before { content: "RAR"; }
+a[href*="//"]:hover:after { opacity: 1; }
+a[href$=".pdf"]:before { content: "[PDF]"; }
+a[href$=".txt"]:before { content: "[TXT]"; }
+a[href$=".mp3"]:before { content: "[MP3]"; }
+a[href$=".zip"]:before { content: "[ZIP]"; }
+a[href$=".rar"]:before { content: "[RAR]"; }
 a[href$=".jpeg"]:before,
 a[href$=".jpg"]:before,
 a[href$=".gif"]:before,
-a[href$=".png"]:before { content: "IMG"; }
+a[href$=".png"]:before { content: "[IMG]"; }
 
+/* add arrow icon to some links that need to be
+   opened in a new tab */
+.footpara a[href*="//"]::after,
+a.ext[href*="//"]::after {
+    content: "\2197";
+}
 
 /* Custom classes for base elements */
 .link-intro {
-    @apply inline-block text-primary-700 border-primary-700;
+    @apply inline-block text-primary-color-700 border-primary-color-700;
 }
 .link-intro:hover {
-    @apply text-primary-500 border-primary-500;
+    @apply text-primary-color-500 border-primary-color-500;
 }
 
 .link-info, .org-ul a {
-    @apply inline-block text-primary-700;
+    @apply inline-block text-primary-color-700;
 }
 
 .link-info:hover, .org-ul a:hover {
-    @apply text-primary-500;
+    @apply text-primary-color-500;
 }

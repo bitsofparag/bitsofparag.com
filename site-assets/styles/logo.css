@@ -1,61 +1,35 @@
-.logo {
-  font-weight: 900;
-  font-size: 1.5em;
-  color: #fff;
-  width: 3em;
-  height: 3em;
-  display: block;
+#logo {
+  @apply block relative font-serif italic font-bold w-20 h-20 text-palette-nutty-light;
 }
 
-.logo .letters-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  width: 3em;
+#logo .letters-container {
+  @apply absolute z-10 inset-0 m-auto w-[91%] overflow-hidden rounded-half;
 }
 
-.logo .letters {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  line-height: 0.7em;
-  left: 17px;
-  top: 17px;
-  font-family: 'Newsreader';
-  font-weight: 600;
+#logo .letters {
+  @apply relative top-0 left-0 inline-block text-logo leading-none;
 }
 
-.logo .circle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
+#logo .circle {
+  @apply absolute inset-0 m-auto bg-primary-color-900;
 }
 
-.logo .circle-white {
-  width: 2.75em;
-  height: 2.75em;
-  border-radius: 1px;
+#logo .circle-inner {
+  @apply w-[90%] h-[90%] rounded-full;
 }
 
-.logo .circle-dark {
-  width: 2.5em;
-  height: 2.5em;
-  background-color: #4f7b86;
-  border-radius: 1.25em;
-  z-index: 1;
-  left: 0;
+#logo .circle-outer {
+  @apply bg-transparent;
 }
 
-.logo .circle-dark-dashed {
-  border-radius: 2.75em;
-  background-color: transparent;
-  border: 2px dashed #4f7b86;
-  width: 2.75em;
-  height: 2.75em;
+#logo #path-circle {
+  @apply stroke-primary-color-900 fill-transparent;
+}
+
+#header.scrolling #logo {
+  @apply w-8 h-8;
+}
+
+#header.scrolling #logo .letters {
+  @apply text-logo-small;
 }

@@ -1,16 +1,67 @@
-#+TITLE: Hey there...
+#+TITLE: I'm Parag
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
+#+Time-stamp: <2022-01-31 17:57:54 parag>
+#+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
-<!-- Article -->
-<section class="container intro-container">
-  <div class="flex flex-wrap">
-    <div class="lg:w-full mt-12">
-      <p class="intro">My name is Parag. I dabble in software and improvised theater. I will share more of my works in the near future but in the meantime, please read my
-      <a class="link-intro" href="/blog">writings</a>.
-      </p>
-    </div>
+<p class="phonetic">\ pə •raːg</p>
+<section id="intro" class="bp-grid-3">
+  <div class="col-span-2">
+    <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
+    <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
+      and enabled new ventures and startups to technically ideate and scale.</p>
+    <p class="intro">Please feel free to look around. I am hardly on social-media. But you can best reach me via email.</p>
   </div>
+  <div class="photo-me">
+    <div class="sticky-tape">&nbsp;</div>
+    <img src="/static/images/me.jpg" width="200" class="-mt-3" />
+  </div>
+</section>
+#+end_export
+
+#+begin_export html
+<section id="bio" class="bp-grid-2">
+#+end_export
+* Connect
+
+-
+  #+begin_export html
+  <span>
+  <!--
+  -->
+  admin
+  <!--
+  -->
+  (at)
+  <!--
+  -->
+  bitsofparag
+  <!--
+  -->
+  .com
+  </span>
+  #+end_export
+
+- [[https://twitter.com/paragmajum][Twitter]]
+- [[https://github.com/bitsofparag][Github]]
+- [[https://fosstodon.org/@parag][Fosstodon]]
+- [[https://www.are.na/parag-m][Are.na]]
+
+
+* Interests
+
+- [[https://dribbble.com/paragm][Dribbble]]
+- [[https://www.scratchtheater.com][Theater]]
+
+* COMMENT Upcoming posts
+
+#+INCLUDE: blog/index.org :lines "3-8"
+[[file:blog/index.org][See archives →]]
+
+* Projects
+
+In progress
+#+begin_export html
 </section>
 #+end_export

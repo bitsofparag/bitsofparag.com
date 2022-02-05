@@ -1,18 +1,56 @@
-#nav {
-  min-height: 100px;
-  margin: auto;
-  max-width: 960px;
+:root {
+  --header-height: 6rem;
+  --header-scrolling-height: 2.6rem;
 }
 
-#nav .logo {
-  position: relative;
+#header {
+  height: var(--header-height);
+  @apply sticky w-full top-0 z-50;
+  @apply bg-palette-nutty-light opacity-95;
+  @apply border-0 border-solid border-b border-b-palette-nutty-dark;
+  @apply transition duration-300 ease-in-out;
+}
+
+.scroll-down #header {
+  @apply -translate-y-full transform-gpu;
+}
+
+.scroll-up #header {
+  @apply transform-none;
+}
+
+@supports (backdrop-filter: blur()) {
+  #header {
+    @apply backdrop-blur;
+  }
+}
+
+#nav {
+  @apply flex flex-wrap h-full items-center justify-between;
+  max-width: 880px;
+}
+
+#nav .menu {
+  @apply w-3/4 lg:order-2 flex justify-end items-center;
 }
 
 #nav a.nav-link {
-  @apply block mt-4 mr-10 text-text-900;
+  @apply block relative text-content-color-900 ml-6;
+}
+
+#nav a.nav-link::after {
+  @apply absolute block left-0 -bottom-0.5 w-full h-[2px];
+  @apply transition-transform ease-in-out duration-200;
+  transform: scalex(0);
+  background-color: currentColor;
+  content: "";
 }
 
 #nav a.nav-link:hover,
 #nav a.nav-link:focus {
-  @apply text-primary-700;
+  @apply text-primary-color-700;
+}
+
+#nav a.nav-link:hover::after {
+  transform: scalex(1);
 }
