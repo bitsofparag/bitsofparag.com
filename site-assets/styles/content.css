@@ -2,10 +2,19 @@
    Styles for content in all pages
    ====================================================*/
 #content {
-    @apply font-sans pt-20 m-auto px-5;
-    max-width: 800px;
+  @apply container;
+  @apply font-sans pt-16 m-auto;
+  max-width: 880px;
 }
 
+#content .bp-grid-2 {
+  @apply grid grid-cols-1 gap-4 place-items-stretch;
+  @apply md:grid-cols-2;
+}
+
+#content .bp-grid-3 {
+  @apply grid grid-cols-1 gap-4 place-items-stretch md:grid-cols-3;
+}
 
 /* Home page content */
 #content #bio p,
@@ -24,57 +33,26 @@
 }
 
 #content .phonetic {
-    @apply mb-0;
+  @apply float-left mt-0 mb-6;
+  @apply lg:-mt-2;
+  @apply text-primary-color-700 font-light italic text-h3;
 }
 
-#content .filter {
-    @apply absolute -top-6 right-2 bg-gray-50/50 backdrop-grayscale-0 backdrop-blur;
-    width: 184px;
-    height: 37px;
+#content .photo-me {
+  @apply flex items-start flex-col;
+  @apply md:-z-10;
 }
 
-/* Element styling in content pages */
-#content code {
-    color: brown;
+#content .sticky-tape {
+  @apply ml-2 z-10 bg-gray-50/50 backdrop-grayscale-0 backdrop-blur;
+  width: 184px;
+  height: 37px;
 }
 
-#content blockquote {
-    display: block;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: #eee;
-    padding: 1.5em 0 0.5em;
-    margin: 1.5em 0;
-    position: relative;
-    font-style: italic;
-    color: #798088;
-}
 
-#content blockquote:before {
-    content: '\201C';
-    position: absolute;
-    top: 0em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    width: 3rem;
-    height: 2rem;
-    font: 6em/1.08em 'PT Sans', sans-serif;
-    color: #666;
-    text-align: center;
-}
-
-#content blockquote:after {
-    content: "\2013 \2003" attr(cite);
-    display: block;
-    text-align: right;
-    font-size: 0.875em;
-    color: #e74c3c;
-}
-
-/* Heading text */
+/* Headings */
 #content h1.title {
-    @apply font-bold text-h1 mb-6 leading-h1;
+    @apply text-display lg:text-hero leading-hero font-semibold;
 }
 
 #content h2 {
@@ -85,11 +63,16 @@
     @apply text-h3 mb-2 mt-8 leading-h3;
 }
 
+/* Sections */
+#content section {
+  @apply w-full mt-10 lg:mt-8;
+}
+
 /* Paragraph text */
 #content p,
 #content p.blog-body,
 #content ul {
-    @apply font-serif text-body-blog leading-body-blog mb-6 tracking-[-.015em];
+    @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
 }
 
 #content p + ul, #content p.blog-body + ul {
@@ -104,7 +87,8 @@
     @apply underline;
 }
 
-/* Content list text */
+
+/* Content list */
 #content ul {
     @apply list-inside list-square mb-4;
 }
@@ -113,6 +97,8 @@
     @apply mb-2;
 }
 
+
+/* Content tables */
 #content table {
     @apply table-auto mb-12 mt-4;
 }
@@ -179,11 +165,8 @@
     background-color: #d3f7fd;
 }
 
-/* --------- custom classes ----------- */
-#content .gallery {
-    @apply flex flex-auto flex-wrap;
-}
 
+/* --------- custom classes ----------- */
 #text-Actions ul {
     @apply list-square;
 }
@@ -202,10 +185,6 @@
     line-height: 2.5rem;
 }
 
-#content section {
-    @apply mt-10;
-}
-
 #table-of-contents {
     margin-bottom: 1em;
 }
@@ -220,11 +199,12 @@
 }
 
 #content .share > p {
-    @apply float-right flex flex-row-reverse items-end justify-between mt-2 w-2/5;
+  @apply float-right flex flex-row-reverse items-end justify-between mt-2 w-2/5;
+  @apply md:w-1/6;
 }
 
 #content .metadata > p {
-    @apply border-b-2 border-content-color-500 mb-0 text-body;
+    @apply border-b border-content-color-500 mb-0 text-body;
 }
 
 #twitter-share-button {
@@ -257,28 +237,4 @@
 #linkedin-share-button svg {
     @apply w-3 h-3 inline mr-1;
     vertical-align: text-top;
-}
-
-@screen xl {
-    #content section {
-        @apply mt-8;
-    }
-
-    #content span.blog-intro {
-        line-height: 2.6rem;
-    }
-
-    #content .share > p {
-        @apply w-1/6;
-    }
-}
-
-@screen lg {
-    #content .share > p {
-        @apply w-1/6;
-    }
-}
-
-.photo-me {
-    border: 3px dashed rgb(120,120,120);
 }
