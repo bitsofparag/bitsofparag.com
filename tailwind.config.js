@@ -9,7 +9,7 @@ module.exports = {
       serif: ['Newsreader', ...defaultTheme.fontFamily.serif],
     },
     fontSize: {
-      hero: '5rem',
+      hero: '4rem',
       display: '3.6rem',
       h1: '2.4rem',
       h2: '1.8rem',
@@ -25,11 +25,19 @@ module.exports = {
       'logo-small': '1.95rem',
     },
     container: {
-      center: false,
-      padding: '1.5rem',
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        md: '4rem',
+        lg: '6rem',
+        xl: '6rem',
+        '2xl': '6rem',
+      },
     },
     lineHeight: {
-      display: '4.6rem',
+      hero: '4.8rem',
+      display: '4.2rem',
       h1: '3.2rem',
       h2: '2.6rem',
       h3: '1.8rem',
@@ -39,6 +47,7 @@ module.exports = {
       'body-large': '2rem',
       'body-blog': '1.8rem',
       info: '1.125rem',
+      none: 1,
     },
     // extend
     extend: {
@@ -47,14 +56,29 @@ module.exports = {
       },
       borderRadius: {
         button: 'none',
+        half: '50%',
       },
       colors: {
         'primary-color': {
-          ...colors.teal,
+          500: '#66a7b7',
+          700: '#5d93a0',
+          900: '#0081a7',
+        },
+        palette: {
+          grayish: '#dfd5ca',
+          nutty: {
+            light: '#fed9b7',
+            dark: '#d1b79b',
+          },
         },
         'content-color': {
-          ...colors.gray,
+          900: '#202e4c',
+          700: '#2a3d67',
+          500: '#344c82',
         },
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },
