@@ -32,8 +32,9 @@
                                     (buffer-string)))
 (defvar *weblog-html-extra-head* "")
 
-(defvar site-attachments (regexp-opt '("jpg" "jpeg" "gif" "png" "svg"
-                                       "ico" "cur" "css" "js" "woff" "html" "pdf")))
+(defvar site-attachments (regexp-opt '("gif" "jpg" "jpeg" "png" "svg"
+                                       "ico" "cur" "css" "js" "html"
+                                       "woff2" "woff" "ttf" "pdf")))
 
 (setq org-html-htmlize-output-type 'css)
 (setq display-time-day-and-date t)
