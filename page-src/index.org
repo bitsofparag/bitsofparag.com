@@ -1,17 +1,18 @@
 #+TITLE: I'm Parag
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-01-31 17:57:54 parag>
+#+Time-stamp: <2022-02-06 12:46:19 parag>
 #+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
-<p class="phonetic">\ pə •raːg</p>
+<p class="phonetic">\ pə •rāg</p>
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
-    <p class="intro">Software developer. Currently, Director of Software Engineering at ████████.</p>
-    <p class="intro">For the last 15+ years I have developed web and mobile apps to solve problems across industry domains,
-      and enabled new ventures and startups to technically ideate and scale.</p>
-    <p class="intro">Please feel free to look around. I am hardly on social-media. But you can best reach me via email.</p>
+    <p class="intro">Software developer. Ex co-founder. Currently, Director of Software Engineering at ████████.</p>
+    <p class="intro">For the past 15+ years I have written software for startups and SMEs,
+    on mobile devices, IoT devices & cloud platforms. I have also guided startup founders on technology & team-building.</p>
+    <p class="intro">Please see below for more of my projects and interests. I am hardly on social-media.
+    But you can best reach me via email.</p>
   </div>
   <div class="photo-me">
     <div class="sticky-tape">&nbsp;</div>
@@ -43,21 +44,23 @@
   </span>
   #+end_export
 
-- [[https://twitter.com/paragmajum][Twitter]]
-- [[https://github.com/bitsofparag][Github]]
-- [[https://fosstodon.org/@parag][Fosstodon]]
-- [[https://www.are.na/parag-m][Are.na]]
+- {{{extlink(https://twitter.com/paragmajum, Twitter)}}}
+- {{{extlink(https://github.com/bitsofparag, Github)}}}
+- {{{extlink(https://fosstodon.org/@parag, Fosstodon)}}}
+- {{{extlink(https://www.are.na/parag-m, Are.na)}}}
 
 
 * Interests
 
-- [[https://dribbble.com/paragm][Dribbble]]
-- [[https://www.scratchtheater.com][Theater]]
+- {{{extlink(https://dribbble.com/paragm, Dribbble)}}}
+- {{{extlink(https://www.scratchtheater.com, Improvised Theater)}}}
+
 
 * COMMENT Upcoming posts
 
 #+INCLUDE: blog/index.org :lines "3-8"
 [[file:blog/index.org][See archives →]]
+
 
 * Projects
 
