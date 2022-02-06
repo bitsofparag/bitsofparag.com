@@ -1,12 +1,8 @@
 # -*- mode: org; -*-
 
-#+MACRO: bgcolor @@html:<div style="background-color: $1;">$2</div>@@
-
 #+MACRO: clearpage @@latex:\\clearpage@@@@odt:<text:p text:style-name="PageBreak"/>@@
 
 #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name="$1">$2</text:span>@@
-
-#+MACRO: fixme @@html:<span class="fixme">FIXME</span>@@
 
 #+MACRO: highlight @@html:<span style="background-color: $1;">$2</span>@@
 
@@ -62,6 +58,9 @@ git log --pretty=format:"%h%x09%ad%x09%an%x09%s" --date=short | head -n 5
 
 #+MACRO: begin_share @@html:<div class="share">@@
 #+MACRO: end_share @@html:</div>@@
+
+#+MACRO: extlink @@html:<a href="$1" class="ext" target=_blank">$2</a>@@
+#+MACRO: intlink @@html:<a href="$1" class="int">$2</a>@@
 
 #+MACRO: tweet @@html:<a id="twitter-share-button" href="https://twitter.com/share?url=$1&amp;text=$2&amp;hashtags=blog,opinion" data-via="paragmajum" data-show-count="true" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>@@
 

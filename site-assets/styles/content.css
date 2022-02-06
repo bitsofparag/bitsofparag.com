@@ -24,10 +24,6 @@
     @apply font-sans text-body tracking-normal;
 }
 
-#content #bio a[href*="//"]::after {
-    content: "\2197";
-}
-
 #content #bio ul {
     @apply list-none;
 }

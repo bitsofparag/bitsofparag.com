@@ -38,6 +38,11 @@ a[href$=".png"]:before { content: "[IMG]"; }
 a.ext[href*="//"]::after {
     content: "\2197";
 }
+/* add rightwards arrow on other links which point
+   to pages within this site */
+a.int::after {
+  content: "\27A1";
+}
 
 /* Custom classes for base elements */
 .link-intro {
