@@ -122,7 +122,7 @@
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "bitsofparag-misc"
-             :base-directory (concat bp)
+             :base-directory (concat bp "page-src")
              :base-extension site-misc
              :publishing-directory (concat bp "dist")
              :publishing-function 'org-publish-attachment
