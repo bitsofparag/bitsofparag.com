@@ -1,7 +1,7 @@
 #+TITLE: Colophon
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-02-06 16:00:45 parag>
+#+Time-stamp: <2022-02-06 16:10:25 parag>
 #+OPTIONS: broken-links:mark H:2
 
 @@html:<!-- colophon -->@@
@@ -19,7 +19,10 @@ There's no analytics or cookies for tracking, so no annoying consent popups. The
 with javascript disabled.
 
 The size of the website is small, just around 100kB. And scores high on web performance
-metrics.{{{fni(2,<a class="ext" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com" target="_blank">Pagespeed stats</a>)}}}
+metrics.{{{fni(2,<a class="ext"
+href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com"
+target="_blank">Pagespeed stats</a> and <a class="ext"
+href="https://gtmetrix.com/reports/www.bitsofparag.com/vKO3v4o4/" target="_blank">GTMetrix</a>)}}}
 
 The website is hosted on Cloudflare Pages, which supports [[https://jamstack.org/what-is-jamstack/][JAMstack]], but with [[https://orgmode.org/manual/Publishing.html][Emacs publishing]].
 
