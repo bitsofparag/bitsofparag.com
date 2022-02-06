@@ -1,0 +1,26 @@
+#+TITLE: Colophon
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
+#+Time-stamp: <2022-02-06 16:00:45 parag>
+#+OPTIONS: broken-links:mark H:2
+
+@@html:<!-- colophon -->@@
+
+This personal website is a way to [[http://info.cern.ch/hypertext/WWW/Summary.html][share information]] besides serving as my "business card on the
+internet".
+
+The website is hand-coded{{{fni(1,Given that there are so many "nocode" website builders out there\,
+I feel I need to stress how each and every line of this website's source code was hand-written)}}}
+with [[https://orgmode.org/][Orgmode]] (for the content) and [[https://tailwindcss.com/][Tailwindcss]] (for styling). Power [[https://www.gnu.org/software/emacs/][Emacs]]-users might find the
+content-generation code interesting. The source code is on [[https://github.com/bitsofparag/bitsofparag.com/][GitHub]]; feel
+free to fork and use as you see fit (PRs are most welcome).
+
+There's no analytics or cookies for tracking, so no annoying consent popups. The site can be used
+with javascript disabled.
+
+The size of the website is small, just around 100kB. And scores high on web performance
+metrics.{{{fni(2,<a class="ext" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com" target="_blank">Pagespeed stats</a>)}}}
+
+The website is hosted on Cloudflare Pages, which supports [[https://jamstack.org/what-is-jamstack/][JAMstack]], but with [[https://orgmode.org/manual/Publishing.html][Emacs publishing]].
+
+The content on this website is copyrighted with a permissive [[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]] license.
