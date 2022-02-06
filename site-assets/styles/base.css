@@ -13,6 +13,16 @@ html {
   @apply bg-palette-nutty-light text-content-color-900;
 }
 
+/* ------ Grids ---------- */
+.bp-grid-2 {
+  @apply grid grid-cols-1 gap-4 place-items-stretch;
+  @apply md:grid-cols-2;
+}
+
+.bp-grid-3 {
+  @apply grid grid-cols-1 gap-4 place-items-stretch md:grid-cols-3;
+}
+
 /* -------Links ---------- */
 a[href*="//"]::after {
     font-weight: 300;
@@ -35,7 +45,7 @@ a[href$=".png"]:before { content: "[IMG]"; }
    opened in a new tab */
 .footpara a[href*="//"]::after,
 a.ext[href*="//"]::after {
-    content: "\2197";
+  content: "\2197";
 }
 /* add rightwards arrow on other links which point
    to pages within this site */
@@ -44,17 +54,10 @@ a.int::after {
 }
 
 /* Custom classes for base elements */
-.link-intro {
-    @apply inline-block text-primary-color-700 border-primary-color-700;
-}
-.link-intro:hover {
-    @apply text-primary-color-500 border-primary-color-500;
+a, .org-ul a {
+  @apply inline-block text-primary-color-700;
 }
 
-.link-info, .org-ul a {
-    @apply inline-block text-primary-color-700;
-}
-
-.link-info:hover, .org-ul a:hover {
-    @apply text-primary-color-500;
+a:hover, .org-ul a:hover {
+  @apply text-primary-color-500;
 }
