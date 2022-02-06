@@ -10,4 +10,5 @@
 
 #footer .badge {
   max-width: 200px;
+  margin-left: -2px;
 }
