@@ -8,11 +8,11 @@
 }
 
 /* Home page content */
-#content #bio p,
-#content #bio ul,
+#content #bio p, #content #colophon p,
+#content #bio ul, #content #colophon ul,
 #content #intro p,
-#content #intro a {
-  @apply font-sans text-body tracking-normal;
+#content #intro a, #content #colophon a {
+  @apply font-sans text-body leading-body tracking-normal;
 }
 
 #content #bio ul {
@@ -57,12 +57,11 @@
 
 /* Paragraph text */
 #content p,
-#content p.blog-body,
 #content ul {
   @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
 }
 
-#content p + ul, #content p.blog-body + ul {
+#content p + ul {
   @apply -mt-4;
 }
 

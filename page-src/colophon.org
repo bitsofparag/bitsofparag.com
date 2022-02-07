@@ -1,10 +1,10 @@
 #+TITLE: Colophon
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-02-06 16:10:25 parag>
+#+Time-stamp: <2022-02-07 18:20:02 parag>
 #+OPTIONS: broken-links:mark H:2
 
-@@html:<!-- colophon -->@@
+@@html:<div id="colophon">@@
 
 This personal website is a way to [[http://info.cern.ch/hypertext/WWW/Summary.html][share information]] besides serving as my "business card on the
 internet".
@@ -27,3 +27,5 @@ href="https://gtmetrix.com/reports/www.bitsofparag.com/vKO3v4o4/" target="_blank
 The website is hosted on Cloudflare Pages, which supports [[https://jamstack.org/what-is-jamstack/][JAMstack]], but with [[https://orgmode.org/manual/Publishing.html][Emacs publishing]].
 
 The content on this website is copyrighted with a permissive [[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]] license.
+
+@@html:</div>@@
