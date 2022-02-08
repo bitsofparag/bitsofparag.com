@@ -61,7 +61,7 @@
              :recursive t
              :publishing-function '(org-html-publish-to-html)
              :publishing-directory (concat bp "dist")
-             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "yml" "page-src" ".setup"))
+             :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "drafts" "yml" "page-src" ".setup"))
              :auto-sitemap nil
              :html-doctype "html5"
              :language "en"

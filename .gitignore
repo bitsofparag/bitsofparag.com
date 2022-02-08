@@ -80,3 +80,5 @@ node_modules/
 
 ### Project specific ###
 dist
+**/drafts/*
+!**/drafts/.gitkeep
