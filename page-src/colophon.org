@@ -1,7 +1,7 @@
 #+TITLE: Colophon
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-02-07 18:20:02 parag>
+#+Time-stamp: <2022-02-08 23:41:22 parag>
 #+OPTIONS: broken-links:mark H:2
 
 @@html:<div id="colophon">@@
@@ -24,7 +24,7 @@ href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com"
 target="_blank">Pagespeed stats</a> and <a class="ext"
 href="https://gtmetrix.com/reports/www.bitsofparag.com/vKO3v4o4/" target="_blank">GTMetrix</a>)}}}
 
-The website is hosted on Cloudflare Pages, which supports [[https://jamstack.org/what-is-jamstack/][JAMstack]], but with [[https://orgmode.org/manual/Publishing.html][Emacs publishing]].
+I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https://jamstack.org/what-is-jamstack/][JAMstack]] to publish the website on [[https://pages.cloudflare.com/][Cloudflare Pages]] 🤯
 
 The content on this website is copyrighted with a permissive [[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]] license.
 

@@ -36,10 +36,21 @@
   height: 37px;
 }
 
+/* ----- Blog intro ----- */
+#content section:first-of-type h2:first-child {
+  @apply leading-body-blog inline-block;
+}
+
+#content span.blog-intro {
+  @apply font-serif font-bold;
+  font-size:1.2rem;
+  line-height: 1.812rem;
+}
 
 /* Headings */
 #content h1.title {
-  @apply text-display lg:text-hero leading-hero font-semibold;
+  @apply text-h1 leading-h1 font-semibold;
+  @apply lg:text-display lg:leading-display;
 }
 
 #content h2 {
@@ -65,11 +76,8 @@
   @apply -mt-4;
 }
 
-#content p a {
-  @apply text-primary-color-500;
-}
-
-#content p a:hover {
+#content p a:hover,
+#content ul a:hover {
   @apply underline;
 }
 
@@ -81,6 +89,10 @@
 
 #content ul li {
   @apply mb-2;
+}
+
+#content > .title ~ ul {
+  @apply font-sans mt-8;
 }
 
 
@@ -166,22 +178,12 @@
   color: rgb(150, 150, 150);
 }
 
-#content span.blog-intro {
-  @apply font-serif text-body-large font-bold;
-  line-height: 2.5rem;
-}
-
 #table-of-contents {
   margin-bottom: 1em;
 }
 
-#table-of-contents h2 {
-  @apply text-body-large;
-}
-
 #text-table-of-contents a {
   text-decoration: underline;
-  @apply text-body;
 }
 
 #content .share > p {
@@ -190,7 +192,7 @@
 }
 
 #content .metadata > p {
-  @apply border-b border-content-color-500 mb-0 text-body;
+  @apply border-b border-palette-nutty-dark mb-0 text-body;
 }
 
 #twitter-share-button {
