@@ -42,7 +42,7 @@ module.exports = {
       h3: '2.2rem',
       h4: '1.825rem',
       'button-text': '26px',
-      body: '1.675rem',
+      body: '1.6875rem',
       'body-blog': '1.875rem',
       info: '1.125rem',
       none: 1,
