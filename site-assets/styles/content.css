@@ -68,7 +68,8 @@
 
 /* Paragraph text */
 #content p,
-#content ul {
+#content ul,
+#content li {
   @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
 }
 

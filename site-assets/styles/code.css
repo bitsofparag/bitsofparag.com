@@ -1,10 +1,11 @@
 pre.example,
+code,
 .org-src-container {
     @apply mt-4 mb-4;
     font-size: small;
     display: block;
-    background: #e5e5e5;
-    white-space: pre;
+    background: #4a4a4a;
+    color: #e8e8e8;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
     max-width: 100%;
@@ -16,5 +17,10 @@ pre.example {
 }
 
 .org-src-container {
-    @apply px-4;
+    @apply p-4;
+}
+
+code {
+  display: inline;
+  @apply px-2 py-1;
 }
