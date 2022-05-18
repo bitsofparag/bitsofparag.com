@@ -1,0 +1,3 @@
+#+TITLE: Notes
+
+- [[file:mac-setup.org][Mac Setup]]
