@@ -22,7 +22,7 @@
 #content .phonetic {
   @apply float-left mt-0 mb-6;
   @apply lg:-mt-2;
-  @apply text-primary-color-700 font-light italic text-h3;
+  @apply text-primary-color-700 font-light italic text-h4;
 }
 
 #content .photo-me {

@@ -1,7 +1,7 @@
 #+TITLE: I'm Parag
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-02-06 14:41:52 parag>
+#+Time-stamp: <2022-05-18 17:32:32 parag>
 #+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
@@ -9,8 +9,9 @@
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
     <p class="intro">Software developer. Ex co-founder. Currently, Director of Software Engineering at ████████.</p>
-    <p class="intro">For the past 15+ years I have written software for startups and SMEs,
-    on mobile devices, IoT devices & cloud platforms. I have also guided startup founders on technology & team-building.</p>
+    <p class="intro">For the past 16+ years I have written software for startups and SMEs,
+    on mobile devices, IoT devices & cloud platforms.</p>
+    <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
     <p class="intro">Please see below for more of my projects and interests. I am hardly on social-media.
     But you can best reach me via email.</p>
   </div>

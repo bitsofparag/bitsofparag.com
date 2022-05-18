@@ -1,7 +1,7 @@
 #+TITLE: Colophon
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-02-08 23:41:22 parag>
+#+Time-stamp: <2022-05-18 17:28:31 parag>
 #+OPTIONS: broken-links:mark H:2
 
 @@html:<div id="colophon">@@
@@ -11,8 +11,7 @@ internet".
 
 The website is hand-coded{{{fni(1,Given that there are so many "nocode" website builders out there\,
 I feel I need to stress how each and every line of this website's source code was hand-written)}}}
-with [[https://orgmode.org/][Orgmode]] (for the content) and [[https://tailwindcss.com/][Tailwindcss]] (for styling). Power [[https://www.gnu.org/software/emacs/][Emacs]]-users might find the
-content-generation code interesting. The source code is on [[https://github.com/bitsofparag/bitsofparag.com/][GitHub]]; feel
+with [[https://orgmode.org/][Orgmode]] (for the content) and [[https://tailwindcss.com/][Tailwindcss]] (for styling). The source code is on [[https://github.com/bitsofparag/bitsofparag.com/][GitHub]]; feel
 free to fork and use as you see fit (PRs are most welcome).
 
 There's no analytics or cookies for tracking, so no annoying consent popups. The site can be used
@@ -24,8 +23,10 @@ href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com"
 target="_blank">Pagespeed stats</a> and <a class="ext"
 href="https://gtmetrix.com/reports/www.bitsofparag.com/vKO3v4o4/" target="_blank">GTMetrix</a>)}}}
 
-I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https://jamstack.org/what-is-jamstack/][JAMstack]] to publish the website on [[https://pages.cloudflare.com/][Cloudflare Pages]] 🤯
+I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https://jamstack.org/what-is-jamstack/][JAMstack]] to publish the website on [[https://pages.cloudflare.com/][Cloudflare Pages]] (because why not).
 
 The content on this website is copyrighted with a permissive [[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]] license.
+
+@@html:<img width="200" height="90" class="badge row-span-2" src="https://api.thegreenwebfoundation.org/greencheckimage/www.bitsofparag.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org" />@@
 
 @@html:</div>@@
