@@ -5,7 +5,6 @@
 ;;; package --- publish settings for local dev server
 ;;; Code:
 (require 'org)
-(require 'ox-publish)
 
 (defconst bp (file-name-directory (or load-file-name buffer-file-name)))
 
@@ -115,6 +114,38 @@
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              )
+       (list "bitsofparag-notes"
+             :base-directory (concat bp "page-src/notes")
+             :base-extension "org"
+             :recursive t
+             :publishing-function '(org-html-publish-to-html)  ;; Output directory
+             :publishing-directory (concat bp "dist/notes")
+             :exclude "index.org~"
+             :html-doctype "html5"
+             :language "en"
+             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
+             :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :with-date t
+             :html-head-include-default-style nil      ;; Do not include predefined header scripts.
+             :html-head-include-scripts nil
+             :html-head *weblog-html-common-head*
+             :html-head-extra *weblog-html-extra-head*
+             :html-preamble *weblog-html-preamble*
+             :html-container "section"
+             :html-container-class "blog"
+             :html-postamble *weblog-html-postamble*
+             :html-link-use-abs-url nil
+             :htmlized-source t
+             :html-scripts: nil
+             :html-style: t
+             :html5-fancy: t
+             :auto-sitemap t
+             :sitemap-filename "index.org"
+             :sitemap-title "Notes"
+             ;; :sitemap-file-entry-format "%d *%t*"
+             :sitemap-style 'list
+             :sitemap-sort-files 'anti-chronologically
+             )
        (list "bitsofparag-static"
              :base-directory (concat bp "site-assets")
              :base-extension site-attachments
@@ -129,6 +160,7 @@
              :recursive t)
        (list "personal-website" :components '("bitsofparag"
                                               "bitsofparag-blog"
+                                              "bitsofparag-notes"
                                               "bitsofparag-static"
                                               "bitsofparag-misc"
                                               ))))
