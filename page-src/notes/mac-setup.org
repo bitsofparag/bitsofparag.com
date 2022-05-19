@@ -134,7 +134,6 @@ Choose what you're most comfortable with. This guide will set up ZSH on top of [
 
           cat <<EOF > $HOME/.zshenv
           source $HOME/.zshenv.common
-          export ZSH_THEME="powerlevel9k/powerlevel9k"
           EOF
 
           cat <<EOF > $HOME/.zshrc
@@ -334,14 +333,13 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    14. Install [[https://podman.io][Podman]] with =brew install podman=.
    15. Install Virtualbox with =brew install --cask virtualbox=.
    16. Install [[https://www.vagrantup.com/][Vagrant]] with =brew install --cask vagrant=.
-   17. [REMOVED] Install [[https://oldj.github.io/SwitchHosts/][Switchhosts]] to manage local hosts with =brew install --cask switchhosts=.
-   18. Install Gas Mask with =brew install --cask gas-mask=.
-   19. Install [[https://www.postman.com/][Postman app]] with =brew install --cask Postman=.
-   20. Install Parquet tools for AWS deser with =brew install parquet-tools=.
-   21. Install [[https://github.com/containers/skopeo/blob/main/install.md][Skopeo]] with =brew install skopeo=.
-   22. Install [[https://multipass.run][Multipass]] with =brew install --cask multipass=.
-   23. Install [[https://github.com/xxh/xxh][xxh]] with =brew install xxh=.
-   24. Install [[https://github.com/wagoodman/dive][dive]] with =brew install dive=.
+   17. Install Gas Mask with =brew install --cask gas-mask=.
+   18. Install [[https://www.postman.com/][Postman app]] with =brew install --cask Postman=.
+   19. Install Parquet tools for AWS deser with =brew install parquet-tools=.
+   20. Install [[https://github.com/containers/skopeo/blob/main/install.md][Skopeo]] with =brew install skopeo=.
+   21. Install [[https://multipass.run][Multipass]] with =brew install --cask multipass=.
+   22. Install [[https://github.com/xxh/xxh][xxh]] with =brew install xxh=.
+   23. Install [[https://github.com/wagoodman/dive][dive]] with =brew install dive=.
 
 ** X11 support setup
    - Install [[https://www.redhat.com/sysadmin/getting-started-socat][socat]] with =brew install socat=. It might be already installed.
