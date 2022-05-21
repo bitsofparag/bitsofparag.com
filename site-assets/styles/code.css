@@ -22,5 +22,7 @@ pre.example {
 
 code {
   display: inline;
+  background: rgba(217, 92, 0, 0.3);
+  color: inherit;
   @apply px-2 py-1;
 }
