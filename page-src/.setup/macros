@@ -59,6 +59,8 @@ git log --pretty=format:"%h%x09%ad%x09%an%x09%s" --date=short | head -n 5
 #+MACRO: begin_share @@html:<div class="share">@@
 #+MACRO: end_share @@html:</div>@@
 
+#+MACRO: collapse_title @@html:<input class="collapse-checkbox" type="checkbox" id="collapse-$1" aria-hidden="true" hidden="" /><label class="collapse-label" for="collapse-$1">$2</label>@@
+
 #+MACRO: extlink @@html:<a href="$1" class="ext" target=_blank">$2</a>@@
 #+MACRO: intlink @@html:<a href="$1" class="int">$2</a>@@
 
