@@ -1,7 +1,7 @@
 #+TITLE: Macbook Setup
 #+author: Parag M.
 #+date: 18-05-2022
-#+Time-stamp: 18-05-2022
+#+Time-stamp: <2022-05-26 12:04:08 parag>
 #+SETUPFILE: ../.setup/macros
 #+SETUPFILE: ../.setup/options
 #+OPTIONS: broken-links:mark H:2 title:t
