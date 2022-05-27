@@ -55,5 +55,9 @@
     "build": "npm run build:org && npm run build:css && npm run build:js",
     "optimize": "node sharp-optimizer.js",
     "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:prod && npm run optimize"
+  },
+  "volta": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
   }
 }
