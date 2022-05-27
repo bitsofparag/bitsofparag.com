@@ -2,9 +2,10 @@ name = "static-assets-manager"
 main = "src/index.js"
 compatibility_date = "2022-05-27"
 
-account_id = "<YOUR ACCOUNT ID>"
+account_id = "<your-account-id>"
 workers_dev = true
 
 [[r2_buckets]]
 binding = "STATIC_BUCKET" # <~ JS variable used in script for this bucket
-bucket_name = "<YOUR_BUCKET_NAME>"
+bucket_name = "<your-bucket-name>"
+preview_bucket_name = "dev-<your-bucket-name>"
