@@ -8,10 +8,9 @@
 }
 
 /* Home page content */
-#content #bio p, #content #colophon p,
-#content #bio ul, #content #colophon ul,
-#content #intro p,
-#content #intro a, #content #colophon a {
+#content #bio :not(h1, h2, h3, h4, h5, small, code, pre),
+#content #colophon :not(h1, h2, h3, h4, h5, small, code, pre),
+#content #intro :not(h1, h2, h3, h4, h5, small, code, pre) {
   @apply font-sans text-body leading-body tracking-normal;
 }
 
@@ -69,7 +68,8 @@
 /* Paragraph text */
 #content p,
 #content ul,
-#content li {
+#content li,
+#content label.collapse-label {
   @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
 }
 
@@ -125,13 +125,16 @@
   line-height: 1;
   font-size: .9em;
   padding-left: .1em;
+  @apply text-primary-color-700;
+}
+
+#content label:hover {
   @apply text-primary-color-500;
 }
 
 #content label:before {
   content:"[";
 }
-
 #content label:after {
   content:"]";
 }
@@ -164,6 +167,33 @@
   background-color: #d3f7fd;
 }
 
+/* Collapsible components */
+#content label.collapse-label:before {
+  content:"‣";
+  display: inline-block;
+  @apply transition-transform transform-gpu rotate-0 scale-110;
+}
+#content label.collapse-label:after {
+  content:"";
+}
+
+#content .collapse-panel {
+  padding-left: 0.9rem;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .2s, visibility .3s, opacity .3s;
+}
+
+#content input.collapse-checkbox:checked ~ .collapse-panel {
+  max-height: 100%;
+  opacity: 100;
+  visibility: visible;
+}
+
+#content input.collapse-checkbox:checked ~ label.collapse-label:before {
+  @apply transform-gpu rotate-90;
+}
 
 /* --------- custom classes ----------- */
 #text-Actions ul {

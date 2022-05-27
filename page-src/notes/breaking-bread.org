@@ -1,9 +1,11 @@
 #+title: Breaking Bread
 #+author: Parag M.
-#+date: <2020-05-24 Sun>
-#+SETUPFILE: ./.setup/macros
-#+SETUPFILE: ./.setup/options
-#+OPTIONS: toc:nil broken-links:mark H:2
+#+date: 24-05-2020
+#+Time-stamp: <2022-05-26 12:03:53 parag>
+#+SETUPFILE: ../.setup/macros
+#+SETUPFILE: ../.setup/options
+#+OPTIONS: broken-links:mark H:2 title:t
+#+STARTUP: fninline
 
 * COMMENT Template
 
@@ -200,7 +202,6 @@ Table salt
 - *Presentation:*
 
 [[#ToC][Back to contents]]
-
 
 * Overnight Proof Mixed W-S ST-M
   :PROPERTIES:
