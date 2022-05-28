@@ -35,7 +35,7 @@ upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images
 		curl -o /tmp/_cf_put.tmp -# \
 			-X PUT \
 			--data-binary @$$filepath \
-			--user $$(cat basic-auth) \
+			--user $$(cat secret) \
 			-H "X-Custom-Auth-Key: ${AUTH_KEY_SECRET}" \
 			"${BUCKET_URL}/${FOLDER_NAME}/`basename $$filepath`"; \
 	done

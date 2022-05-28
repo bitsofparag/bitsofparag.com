@@ -83,3 +83,5 @@ dist
 **/drafts/*
 !**/drafts/.gitkeep
 **/*.toml
+site-assets/images/*
+**secret*
