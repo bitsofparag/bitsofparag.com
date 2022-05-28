@@ -73,3 +73,5 @@ git log --pretty=format:"%h%x09%ad%x09%an%x09%s" --date=short | head -n 5
 #+MACRO: img @@html:<img src="$1" class="gallery-item" style="$2" />@@
 
 #+MACRO: fni @@html:<label class="fnote" for="fnr.$1">*</label><input type="checkbox" id="fnr.$1"><small>$2</small>@@
+
+#+MACRO: thinking @@html:<span style="font-size:2rem;">🤔</span><sup style="font-size:1.5rem">💭</sup>@@
