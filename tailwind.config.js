@@ -6,7 +6,14 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
-      serif: ['Newsreader', ...defaultTheme.fontFamily.serif],
+      serif: [
+        'Newsreader',
+        'Iowan Old Style',
+        'Apple Garamond',
+        'Baskerville',
+        'Droid Serif',
+        ...defaultTheme.fontFamily.serif,
+      ],
     },
     fontSize: {
       hero: '4rem',
