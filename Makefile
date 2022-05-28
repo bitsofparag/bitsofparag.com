@@ -30,7 +30,7 @@ help:
 get-version: ## Get project version
 	@if [[ -f package.json ]]; then awk -F \" '/"version": ".+"/ { print $$4; exit; }' package.json; fi
 
-upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images
+upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images from folder
 	for filepath in $^; do \
 		curl -o /tmp/_cf_put.tmp -# \
 			-X PUT \
@@ -39,4 +39,17 @@ upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images
 			-H "X-Custom-Auth-Key: ${AUTH_KEY_SECRET}" \
 			"${BUCKET_URL}/${FOLDER_NAME}/`basename $$filepath`"; \
 	done
+	rm -f /tmp/_cf_put.tmp
+
+upload-image: ## Upload single image
+ifeq ($(IMAGE_PATH), )
+	@echo "Usage: IMAGE_PATH=/path/to/cat-pic.jpg make upload-image"
+	@exit 1
+endif
+	curl -o /tmp/_cf_put.tmp -# \
+		-X PUT \
+		--data-binary @${IMAGE_PATH} \
+		--user $$(cat secret) \
+		-H "X-Custom-Auth-Key: ${AUTH_KEY_SECRET}" \
+		"${BUCKET_URL}/`basename ${IMAGE_PATH}`";
 	rm -f /tmp/_cf_put.tmp
