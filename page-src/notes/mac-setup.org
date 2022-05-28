@@ -1,7 +1,7 @@
 #+TITLE: Macbook Setup
 #+author: Parag M.
 #+date: 18-05-2022
-#+Time-stamp: <2022-05-26 12:04:08 parag>
+#+Time-stamp: <2022-05-29 00:32:13 parag>
 #+SETUPFILE: ../.setup/macros
 #+SETUPFILE: ../.setup/options
 #+OPTIONS: broken-links:mark H:2 title:t
@@ -97,6 +97,7 @@ PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/no
    12. /(Optional)/ Install [[https://docs.fastlane.tools/][Fastlane]] with =gem install --user-install fastlane -NV=.
    13. Install make essentials with =brew install pkg-config automake=.
    14. Install [[https://stedolan.github.io/jq/][jq]] with =brew install jq=.
+   15. Install [[https://github.com/mikefarah/yq][yq]] with =brew install yq=.
 
 
 ** Shell setup
@@ -311,8 +312,7 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
 ** Postgres setup
    1. Install postgresql with =brew install postgresql=.
    2. Start postgres (not as a background service) with =pg_ctl -D /usr/local/var/postgres start=.
-   3. Install [[https://github.com/Paxa/postbird][Postbird app]] as the GUI utility for Postgres with =brew install --cask postbird=. [UNINSTALLED]
-   4. Install [[https://tableplus.com/][TablePlus]] app (paid) as the GUI utility for all DBs with =brew install --cask tableplus=.
+   3. Install [[https://tableplus.com/][TablePlus]] app (paid) as the GUI utility for all DBs with =brew install --cask tableplus=.
 
 ** Devops setup
    1. Install aws-cli with =brew tap aws/tap && brew install awscli=.
