@@ -1,7 +1,7 @@
 #+TITLE: Colophon
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-05-28 13:33:03 parag>
+#+Time-stamp: <2022-05-28 13:39:04 parag>
 #+OPTIONS: broken-links:mark H:2
 
 @@html:<div id="colophon">@@
@@ -27,6 +27,6 @@ I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https:/
 
 The content on this website is copyrighted with a permissive [[https://creativecommons.org/licenses/by-sa/4.0/][CC BY-SA 4.0]] license.
 
-@@html:<img src="https://api.thegreenwebfoundation.org/greencheckimage/bitsofparag.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">@@
+@@html:<img width="200" height="90" class="badge row-span-2" src="https://api.thegreenwebfoundation.org/greencheckimage/bitsofparag.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org" />@@
 
 @@html:</div>@@
