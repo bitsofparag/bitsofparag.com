@@ -1,7 +1,7 @@
 #+TITLE: I'm Parag
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+Time-stamp: <2022-05-26 16:49:46 parag>
+#+Time-stamp: <2022-05-28 15:19:27 parag>
 #+OPTIONS: broken-links:mark H:2
 
 #+begin_export html
@@ -46,7 +46,7 @@
   </span>
   #+end_export
 
-- {{{extlink(https://twitter.com/paragmajum, Twitter)}}}
+- {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
 - {{{extlink(https://github.com/bitsofparag, Github)}}}
 - {{{extlink(https://fosstodon.org/@parag, Fosstodon)}}}
 - {{{extlink(https://www.are.na/parag-m, Are.na)}}}

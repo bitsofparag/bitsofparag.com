@@ -61,7 +61,7 @@ git log --pretty=format:"%h%x09%ad%x09%an%x09%s" --date=short | head -n 5
 
 #+MACRO: collapse_title @@html:<input class="collapse-checkbox" type="checkbox" id="collapse-$1" aria-hidden="true" hidden="" /><label class="collapse-label" for="collapse-$1">$2</label>@@
 
-#+MACRO: extlink @@html:<a href="$1" class="ext" target=_blank">$2</a>@@
+#+MACRO: extlink @@html:<a href="$1" class="ext" target=_blank" $3>$2</a>@@
 #+MACRO: intlink @@html:<a href="$1" class="int">$2</a>@@
 
 #+MACRO: tweet @@html:<a id="twitter-share-button" href="https://twitter.com/share?url=$1&amp;text=$2&amp;hashtags=blog,opinion" data-via="paragmajum" data-show-count="true" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>@@
