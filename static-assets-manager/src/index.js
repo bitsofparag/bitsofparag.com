@@ -47,7 +47,9 @@ export default {
           return new Response('Object Not Found', { status: 404 });
         }
 
-        return new Response(object.body);
+        const res = new Response(object.body);
+        res.headers.set('Content-Type', 'image/jpeg');
+        return res;
 
       default:
         return new Response('Method Not Allowed', { status: 405 });
