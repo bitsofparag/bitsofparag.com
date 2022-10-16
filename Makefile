@@ -30,6 +30,14 @@ help:
 get-version: ## Get project version
 	@if [[ -f package.json ]]; then awk -F \" '/"version": ".+"/ { print $$4; exit; }' package.json; fi
 
+# The corresponding AWS Sig4 curl command looks like so:
+#
+# curl --location --request PUT 'https://<account-id>.r2.cloudflarestorage.com' \
+# --header 'X-Amz-Content-Sha256: <generated hash>' \
+# --header 'X-Amz-Date: 20221015T171516Z' \
+# --header 'Authorization: AWS4-HMAC-SHA256 Credential=<api key>/20221015/auto/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=<sign>' \
+# --data-binary <image file>
+#
 upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images from folder
 	for filepath in $^; do \
 		curl -o /tmp/_cf_put.tmp -# \

@@ -8,7 +8,7 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-const ALLOW_REGEX = /(jpg|jpeg|png|gif)$/;
+const ALLOW_REGEX = /(jpg|jpeg|png|gif|webp|avif)$/;
 
 export default {
   async fetch(request, env) {
