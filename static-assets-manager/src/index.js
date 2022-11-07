@@ -28,7 +28,7 @@ export default {
       return new Response('Forbidden', { status: 403 });
     }
 
-    const key = pathname.replace('/static/images', '');
+    const key = pathname.replace('/static/images', 'images');
     switch (request.method) {
       case 'PUT':
       case 'DELETE':
@@ -48,7 +48,7 @@ export default {
         }
 
         const res = new Response(object.body);
-        res.headers.set('Content-Type', 'image/jpeg');
+        res.headers.set('Content-Type', object.httpMetadata.contentType);
         return res;
 
       default:
