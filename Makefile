@@ -56,8 +56,10 @@ ifeq ($(IMAGE_PATH), )
 endif
 	curl -o /tmp/_cf_put.tmp -# \
 		-X PUT \
+		--user "${R2_ACCESS_KEY_ID}:${R2_SECRET_ACCESS_KEY}" \
 		--data-binary @${IMAGE_PATH} \
-		--user $$(cat secret) \
-		-H "X-Custom-Auth-Key: ${AUTH_KEY_SECRET}" \
+		--aws-sigv4 "aws:amz" \
 		"${BUCKET_URL}/`basename ${IMAGE_PATH}`";
-	rm -f /tmp/_cf_put.tmp
+	@echo "======= cURL output ======"
+	@cat /tmp/_cf_put.tmp && echo
+	@rm -f /tmp/_cf_put.tmp
