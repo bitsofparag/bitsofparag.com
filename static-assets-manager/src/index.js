@@ -43,7 +43,6 @@ export default {
         });
 
       case 'GET':
-        console.log(hostname);
         const object = await env.STATIC_BUCKET.get(key)
 
         if (!object) {
