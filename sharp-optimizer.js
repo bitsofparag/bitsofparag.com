@@ -9,23 +9,25 @@ const mainImagesDir = path.join(
 );
 const sharp = require('sharp');
 
-function writeImage(err, buffer) {
+function writeImage(err, buffer, info) {
 
   if (err) {
     console.log('Error in optimization', err);
     return;
   }
 
-  console.log(buffer);
+  const outName = info.imageName.replace(/\.\S+/, `.${info.format}`);
+  const outDir = info.imageDir;
+  const outPath = `${outDir}/${outName}`;
 
-  // fs.writeFile(imagePath, buffer, function(e) {
-  //   if (e) {
-  //     console.log('Error in writing ' + imagePath + ' to disk:', e);
-  //     return;
-  //   }
+  fs.writeFile(outPath, buffer, function(e) {
+    if (e) {
+      console.log('Error in writing ' + outPath + ' to disk:', e);
+      return;
+    }
 
-  //   console.log('optimized file ' + imagePath + ' written to disk');
-  // });
+    console.log(`${outPath} written to disk`);
+  });
 }
 
 fs.readdir(mainImagesDir, (err, images) => {
@@ -34,11 +36,12 @@ fs.readdir(mainImagesDir, (err, images) => {
   } else {
     images.forEach(function(image) {
       const imagePath = path.join(mainImagesDir, image);
-      sharp(imagePath).webp().toBuffer(writeImage)
-      sharp(imagePath)
-        .resize({ width: 500 })
-        .jpeg({ quality: 90 })
-        .toBuffer(writeImage);
+      const imageName = path.basename(imagePath);
+      const imageDir = path.dirname(imagePath);
+
+      sharp(imagePath).webp().toBuffer((err, buffer, info) => {
+        writeImage(err, buffer, { imageDir, imageName, ...info });
+      });
     });
   }
 });
