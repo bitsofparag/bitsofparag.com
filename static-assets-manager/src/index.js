@@ -33,17 +33,10 @@ export default {
     switch (request.method) {
       case 'PUT':
       case 'DELETE':
-        if (hostname === "bitsofparag.com") {
-          await env.STATIC_BUCKET[request.method.toLowerCase()](
-            key,
-            request.body
-          );
-        } else {
-          await env.DEV_STATIC_BUCKET[request.method.toLowerCase()](
-            key,
-            request.body
-          );
-        }
+        await env.STATIC_BUCKET[request.method.toLowerCase()](
+          key,
+          request.body
+        );
 
         return new Response(`${request.method} ${key} successfully!`, {
           status: 200,
@@ -51,12 +44,7 @@ export default {
 
       case 'GET':
         console.log(hostname);
-        let object = {}
-        if (hostname === "bitsofparag.com") {
-          object = await env.STATIC_BUCKET.get(key)
-        } else {
-          object = await env.DEV_STATIC_BUCKET.get(key)
-        }
+        const object = await env.STATIC_BUCKET.get(key)
 
         if (!object) {
           return new Response('Object Not Found', { status: 404 });
