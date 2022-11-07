@@ -12,7 +12,8 @@ const ALLOW_REGEX = /(jpg|jpeg|png|gif|webp|avif)$/;
 
 export default {
   async fetch(request, env) {
-    const { protocol, pathname } = new URL(request.url);
+    const { hostname, protocol, pathname } = new URL(request.url);
+
 
     // In the case of a Basic authentication, the exchange
     // MUST happen over an HTTPS (TLS) connection to be secure.
@@ -32,16 +33,30 @@ export default {
     switch (request.method) {
       case 'PUT':
       case 'DELETE':
-        await env.STATIC_BUCKET[request.method.toLowerCase()](
-          key,
-          request.body
-        );
+        if (hostname === "bitsofparag.com") {
+          await env.STATIC_BUCKET[request.method.toLowerCase()](
+            key,
+            request.body
+          );
+        } else {
+          await env.DEV_STATIC_BUCKET[request.method.toLowerCase()](
+            key,
+            request.body
+          );
+        }
+
         return new Response(`${request.method} ${key} successfully!`, {
           status: 200,
         });
 
       case 'GET':
-        const object = await env.STATIC_BUCKET.get(key);
+        console.log(hostname);
+        let object = {}
+        if (hostname === "bitsofparag.com") {
+          object = await env.STATIC_BUCKET.get(key)
+        } else {
+          object = await env.DEV_STATIC_BUCKET.get(key)
+        }
 
         if (!object) {
           return new Response('Object Not Found', { status: 404 });
