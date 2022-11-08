@@ -6,6 +6,5 @@ account_id = "<your account id>"
 workers_dev = true
 
 r2_buckets = [
-  { binding = "STATIC_BUCKET", bucket_name = "<your bucket name>", preview_bucket_name = "<your bucket name>" },
-  { binding = "DEV_STATIC_BUCKET", bucket_name = "<your dev bucket name>", preview_bucket_name = "<your dev bucket name>" },
+  { binding = "STATIC_BUCKET", bucket_name = "<your bucket name>", preview_bucket_name = "<your dev bucket name>" }
 ]
