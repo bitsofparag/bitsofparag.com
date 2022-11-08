@@ -8,11 +8,12 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-const ALLOW_REGEX = /(jpg|jpeg|png|gif)$/;
+const ALLOW_REGEX = /(jpg|jpeg|png|gif|webp|avif)$/;
 
 export default {
   async fetch(request, env) {
-    const { protocol, pathname } = new URL(request.url);
+    const { hostname, protocol, pathname } = new URL(request.url);
+
 
     // In the case of a Basic authentication, the exchange
     // MUST happen over an HTTPS (TLS) connection to be secure.
@@ -28,7 +29,7 @@ export default {
       return new Response('Forbidden', { status: 403 });
     }
 
-    const key = pathname.replace('/static/images', '');
+    const key = pathname.replace('/static/images', 'images');
     switch (request.method) {
       case 'PUT':
       case 'DELETE':
@@ -36,18 +37,21 @@ export default {
           key,
           request.body
         );
+
         return new Response(`${request.method} ${key} successfully!`, {
           status: 200,
         });
 
       case 'GET':
-        const object = await env.STATIC_BUCKET.get(key);
+        const object = await env.STATIC_BUCKET.get(key)
 
         if (!object) {
           return new Response('Object Not Found', { status: 404 });
         }
 
-        return new Response(object.body);
+        const res = new Response(object.body);
+        res.headers.set('Content-Type', object.httpMetadata.contentType);
+        return res;
 
       default:
         return new Response('Method Not Allowed', { status: 405 });

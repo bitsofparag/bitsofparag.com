@@ -30,6 +30,14 @@ help:
 get-version: ## Get project version
 	@if [[ -f package.json ]]; then awk -F \" '/"version": ".+"/ { print $$4; exit; }' package.json; fi
 
+# The corresponding AWS Sig4 curl command looks like so:
+#
+# curl --location --request PUT 'https://<account-id>.r2.cloudflarestorage.com' \
+# --header 'X-Amz-Content-Sha256: <generated hash>' \
+# --header 'X-Amz-Date: 20221015T171516Z' \
+# --header 'Authorization: AWS4-HMAC-SHA256 Credential=<api key>/20221015/auto/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=<sign>' \
+# --data-binary <image file>
+#
 upload-images-folder: dist/static/images/$(FOLDER_NAME)/* ## Upload images from folder
 	for filepath in $^; do \
 		curl -o /tmp/_cf_put.tmp -# \
@@ -48,8 +56,10 @@ ifeq ($(IMAGE_PATH), )
 endif
 	curl -o /tmp/_cf_put.tmp -# \
 		-X PUT \
+		--user "${R2_ACCESS_KEY_ID}:${R2_SECRET_ACCESS_KEY}" \
 		--data-binary @${IMAGE_PATH} \
-		--user $$(cat secret) \
-		-H "X-Custom-Auth-Key: ${AUTH_KEY_SECRET}" \
+		--aws-sigv4 "aws:amz" \
 		"${BUCKET_URL}/`basename ${IMAGE_PATH}`";
-	rm -f /tmp/_cf_put.tmp
+	@echo "======= cURL output ======"
+	@cat /tmp/_cf_put.tmp && echo
+	@rm -f /tmp/_cf_put.tmp
