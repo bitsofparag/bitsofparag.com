@@ -50,8 +50,8 @@
   #+end_export
 
 - {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
-- {{{extlink(https://github.com/bitsofparag, Github)}}}
-- {{{extlink(https://fosstodon.org/@parag, Fosstodon)}}}
+- {{{extlink(https://github.com/bitsofparag, Github, rel="me")}}}
+- {{{extlink(https://fosstodon.org/@parag, Mastodon, rel="me")}}}
 - {{{extlink(https://www.are.na/parag-m, Are.na)}}}
 
 
