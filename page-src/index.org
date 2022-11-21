@@ -132,10 +132,6 @@
   programming and quantum mechanics alive!
   @@html:</div>@@
 
-* Upcoming posts
-
-{{{thinking}}}
-
 #+begin_export html
 </section>
 #+end_export
