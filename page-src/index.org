@@ -31,28 +31,31 @@
 * Connect
 
 -
-  #+begin_export html
-  <span>
-  <!-- --
-  -->
-  admin
-  <!--
-  -->
-  (at)
-  <!--
-  -->
-  <!-- -->
-  bitsofparag
-  <!--
-  -->
-  .com
-  </span>
-  #+end_export
+   #+begin_export html
+   <span>
+   <!-- --
+   -->
+   admin
+   <!--
+   -->
+   (at)
+   <!--
+   -->
+   <!-- -->
+   bitsofparag
+   <!--
+   -->
+   <!-- -->
+   .com
+   </span>
+   #+end_export
 
-- {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
 - {{{extlink(https://github.com/bitsofparag, Github, rel="me")}}}
-- {{{extlink(https://fosstodon.org/@parag, Mastodon, rel="me")}}}
+- {{{extlink(https://fosstodon.org/@parag, Fosstodon, rel="me")}}}
+- {{{extlink(https://mastodon.social/@parag, Mastodon, rel="me")}}}
+- {{{extlink(https://berlin.social/@parag, Berlin Social, rel="me")}}}
 - {{{extlink(https://www.are.na/parag-m, Are.na)}}}
+- {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
 
 
 * Interests
