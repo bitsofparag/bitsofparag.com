@@ -8,7 +8,7 @@
 <p class="phonetic">\ pə •rāg</p>
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
-    <p class="intro">Software developer. Ex co-founder. Currently, Director of Software Engineering at ████████.</p>
+    <p class="intro">Software developer. Ex co-founder. Ex Director of Software Engineering.</p>
     <p class="intro">For the past 16+ years I have written software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
