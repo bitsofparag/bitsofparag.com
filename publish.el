@@ -65,7 +65,7 @@
              :html-doctype "html5"
              :language "en"
              :title "Parag's Personal Weblog"
-             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
+             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
              :keywords "parag, blog, opinion, thoughts, technology, experiments"
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
@@ -91,7 +91,7 @@
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
-             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
+             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
              :keywords "parag, blog, opinion, thoughts, technology, experiments"
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
@@ -123,7 +123,7 @@
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
-             :description "I am Parag and this is my collection of thoughts, opinions on various topics as well as a space to promote OSS, theater, art & other creative projects"
+             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
              :keywords "parag, blog, opinion, thoughts, technology, experiments"
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.

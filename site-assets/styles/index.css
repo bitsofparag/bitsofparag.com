@@ -1,11 +1,11 @@
-@import './type.css';
+@import url("./type.css");
 
 /* Skeleton styles */
-@import './base.css';
-@import './header.css';
-@import './logo.css';
-@import './content.css';
-@import './footer.css';
+@import url("./base.css");
+@import url("./header.css");
+@import url("./logo.css");
+@import url("./content.css");
+@import url("./footer.css");
 
 /* Misc styles */
-@import './code.css';
+@import url("./code.css");

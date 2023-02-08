@@ -24,6 +24,22 @@
   @apply text-primary-color-700 font-light italic text-h4;
 }
 
+#content .photo-box {
+  @apply relative;
+}
+
+#content .highlight-photo {
+  @apply mt-2;
+}
+
+#content .highlight-photo-tooltip {
+  @apply invisible w-full bg-white text-left z-10 absolute bottom-0 p-2.5;
+}
+
+#content .photo-box:hover .highlight-photo-tooltip {
+  @apply visible;
+}
+
 #content .photo-me {
   @apply flex items-start flex-col;
   @apply md:-z-10;
