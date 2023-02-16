@@ -33,11 +33,11 @@
 }
 
 #content .highlight-photo-tooltip {
-  @apply invisible w-full bg-white text-left z-10 absolute bottom-0 p-2.5;
+  @apply block lg:invisible w-full bg-white text-left z-10 lg:absolute lg:bottom-0 p-2.5;
 }
 
 #content .photo-box:hover .highlight-photo-tooltip {
-  @apply visible;
+  @apply lg:visible;
 }
 
 #content .photo-me {

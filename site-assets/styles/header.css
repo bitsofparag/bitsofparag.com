@@ -41,6 +41,11 @@
   content: "";
 }
 
+#nav a.nav-link::before {
+  content: "/";
+  padding-right: 5px;
+}
+
 #nav a.nav-link:hover,
 #nav a.nav-link:focus {
   @apply text-primary-color-700;

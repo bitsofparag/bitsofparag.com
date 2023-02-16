@@ -12,3 +12,8 @@
   max-width: 200px;
   margin-left: -2px;
 }
+
+#footer a.nav-link::before {
+  content: "/";
+  padding-right: 5px;
+}
