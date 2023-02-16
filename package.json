@@ -13,6 +13,7 @@
     "@fullhuman/postcss-purgecss": "^4.1.0",
     "autoprefixer": "^10.0.2",
     "cssnano": "^5.1.14",
+    "eslint": "^8.33.0",
     "postcss": ">=8.3.3 <9.0.0",
     "postcss-cli": ">= 8.0",
     "postcss-import": "^12.0.1",
@@ -47,7 +48,7 @@
   },
   "scripts": {
     "clean": "find dist/ -maxdepth 0 ! -name manifest.json ! -name favicon.ico | xargs rimraf",
-    "lint": " ./site-assets/** --ignore tests/**/*.*",
+    "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
     "build:org": "emacs --batch --load publish.el --eval '(org-publish \"personal-website\")' $EXTRA_EMACS_ARGS",
