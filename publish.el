@@ -24,13 +24,13 @@
 ;;   ""
 ;;   )
 
-(defvar bip-url-home "https://bitsofparag.com/"
+(defconst bip-url-home "https://bitsofparag.com/"
   "The home page url of the website.")
-(defvar bip-title "Parag's Personal Weblog"
+(defconst bip-title "Parag's Personal Weblog"
   "Title of the website.")
-(defvar bip-desc "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
+(defconst bip-desc "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
   "Description of the website.")
-(defvar bip-keywords "parag, blog, opinion, thoughts, technology, experiments"
+(defconst bip-keywords "parag, blog, opinion, thoughts, technology, experiments"
   "Website keywords for SEO.")
 
 (defvar *weblog-html-postamble* (with-temp-buffer
@@ -81,8 +81,8 @@ PROJECT is the current project."
     (message "%s %s" pubdate entry)
     (format "%s
 :properties:
-:rss_permalink: %s
-:pubdate: %s
+:RSS_PERMALINK: %s
+:PUBDATE: %s
 :end:\n"
             title
             (concat bip-url-home link)
@@ -203,14 +203,19 @@ PUB-DIR is when the output will be placed."
        (list "bitsofparag-rss"
              :base-directory (concat bip-root "page-src")
              :base-extension "org"
+             :rss-image-url (concat bip-url-home "static/images/og-logo.png")
              :rss-extension "xml"
+             :rss-feed-url (concat bip-url-home "rss.xml")
              :recursive t
              :exclude (regexp-opt '("colophon.org" "rss.org" "index.org" "drafts" "404.org"))
+             :table-of-contents nil
              :publishing-function 'org-rss-publish-to-rss
              :publishing-directory (concat bip-root "dist")
              :auto-sitemap t
+             :html-link-home bip-url-home
              :html-link-use-abs-url t
              :html-link-org-files-as-html t
+             :section-numbers nil
              :sitemap-filename "rss.org"
              :sitemap-title bip-title
              :sitemap-style 'list
