@@ -1,6 +1,6 @@
 #+title: Breaking Bread
 #+author: Parag M.
-#+date: 24-05-2020
+#+DATE: <2020-05-24 Sun>
 #+Time-stamp: <2022-05-26 12:03:53 parag>
 #+SETUPFILE: ../.setup/macros
 #+SETUPFILE: ../.setup/options

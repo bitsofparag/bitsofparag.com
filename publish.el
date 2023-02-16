@@ -5,8 +5,12 @@
 ;;; package --- publish settings for local dev server
 ;;; Code:
 (require 'org)
+(require 'ox-publish)
 
 (defconst bip-root (file-name-directory (or load-file-name buffer-file-name)))
+
+(add-to-list 'load-path (concat bip-root "lib"))
+(require 'ox-rss)
 
 ;;; If using f.el, uncomment the following lines
 ;; (require 'f)
@@ -20,6 +24,8 @@
 ;;   ""
 ;;   )
 
+(defvar bip-url-home "https://bitsofparag.com/"
+  "The home page url of the website.")
 (defvar bip-title "Parag's Personal Weblog"
   "Title of the website.")
 (defvar bip-desc "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
@@ -58,6 +64,44 @@
                       (postamble "footer" "footer"))
       org-html-metadata-timestamp-format "%d-%m-%Y"
       org-html-checkbox-type 'html)
+
+;; --------------------------------
+;; Custom rss feed generator code.
+;; Derived from https://nicolasknoebber.com/posts/blogging-with-emacs-and-org.html#org9edef43
+(defun bip-format-rss-feed-entry (entry _style project)
+  "Format ENTRY for the RSS feed.
+ENTRY is a file name.
+STYLE is either 'list' or 'tree'.
+PROJECT is the current project."
+  (let* (
+         (title (org-publish-find-title entry project))
+         (link (concat (file-name-sans-extension entry) ".html"))
+         (pubdate (format-time-string (car org-time-stamp-formats)
+          (org-publish-find-date entry project))))
+    (message "%s %s" pubdate entry)
+    (format "%s
+:properties:
+:rss_permalink: %s
+:pubdate: %s
+:end:\n"
+            title
+            (concat bip-url-home link)
+            pubdate)))
+
+(defun bip-generate-rss-feed (title list)
+  "Generate RSS feed, as a string.
+TITLE is the title of the RSS feed.
+LIST is an internal representation for the files to include,
+as returned by `org-list-to-subtree'.
+PROJECT is the current project."
+  (concat "#+TITLE: " title "\n\n"
+          (org-list-to-subtree list 1 '(:icount "" :istart ""))))
+
+(defun bip-org-rss-publish-to-rss (plist filename pub-dir)
+  "Publish RSS with PLIST, only when FILENAME is 'rss.org'.
+PUB-DIR is when the output will be placed."
+  (if (equal "rss.org" (file-name-nondirectory filename))
+      (org-rss-publish-to-rss plist filename pub-dir)))
 
 ;; ---------------------------------------
 ;; Publish list
@@ -156,6 +200,26 @@
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              )
+       (list "bitsofparag-rss"
+             :base-directory (concat bip-root "page-src")
+             :base-extension "org"
+             :rss-extension "xml"
+             :recursive t
+             :exclude (regexp-opt '("colophon.org" "rss.org" "index.org" "drafts" "404.org"))
+             :publishing-function 'org-rss-publish-to-rss
+             :publishing-directory (concat bip-root "dist")
+             :auto-sitemap t
+             :html-link-use-abs-url t
+             :html-link-org-files-as-html t
+             :sitemap-filename "rss.org"
+             :sitemap-title bip-title
+             :sitemap-style 'list
+             :sitemap-sort-files 'anti-chronologically
+             :sitemap-function 'bip-generate-rss-feed
+             :sitemap-format-entry 'bip-format-rss-feed-entry
+             :author user-full-name
+             :email ""
+             )
        (list "bitsofparag-static"
              :base-directory (concat bip-root "site-assets")
              :base-extension site-attachments
@@ -171,6 +235,7 @@
        (list "personal-website" :components '("bitsofparag"
                                               "bitsofparag-blog"
                                               "bitsofparag-notes"
+                                              "bitsofparag-rss"
                                               "bitsofparag-static"
                                               "bitsofparag-misc"
                                               ))))
