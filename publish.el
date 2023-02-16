@@ -6,7 +6,7 @@
 ;;; Code:
 (require 'org)
 
-(defconst bp (file-name-directory (or load-file-name buffer-file-name)))
+(defconst bip-root (file-name-directory (or load-file-name buffer-file-name)))
 
 ;;; If using f.el, uncomment the following lines
 ;; (require 'f)
@@ -19,6 +19,13 @@
 ;; (defvar *weblog-html-extra-head*
 ;;   ""
 ;;   )
+
+(defvar bip-title "Parag's Personal Weblog"
+  "Title of the website.")
+(defvar bip-desc "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
+  "Description of the website.")
+(defvar bip-keywords "parag, blog, opinion, thoughts, technology, experiments"
+  "Website keywords for SEO.")
 
 (defvar *weblog-html-postamble* (with-temp-buffer
                                   (insert-file-contents "./page-src/postamble.html")
@@ -52,21 +59,23 @@
       org-html-metadata-timestamp-format "%d-%m-%Y"
       org-html-checkbox-type 'html)
 
+;; ---------------------------------------
+;; Publish list
 (setq org-publish-project-alist
       (list
        (list "bitsofparag"
-             :base-directory (concat bp "page-src")
+             :base-directory (concat bip-root "page-src")
              :base-extension "org"
              :recursive t
-             :publishing-function '(org-html-publish-to-html)
-             :publishing-directory (concat bp "dist")
+             :publishing-function 'org-html-publish-to-html
+             :publishing-directory (concat bip-root "dist")
              :exclude (regexp-opt '(".*/node_modules/.*" "README" "blog" "drafts" "yml" "page-src" ".setup"))
              :auto-sitemap nil
              :html-doctype "html5"
              :language "en"
-             :title "Parag's Personal Weblog"
-             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
-             :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :title bip-title
+             :description bip-desc
+             :keywords bip-keywords
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
@@ -83,16 +92,17 @@
              :tex t
              :sitemap-sort-files 'anti-chronologically)
        (list "bitsofparag-blog"
-             :base-directory (concat bp "page-src/blog")
+             :base-directory (concat bip-root "page-src/blog")
              :base-extension "org"
              :recursive t
-             :publishing-function '(org-html-publish-to-html)  ;; Output directory
-             :publishing-directory (concat bp "dist/blog")
+             :publishing-function 'org-html-publish-to-html  ;; Output directory
+             :publishing-directory (concat bip-root "dist/blog")
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
-             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
-             :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :title bip-title
+             :description bip-desc
+             :keywords bip-keywords
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
@@ -115,16 +125,16 @@
              :sitemap-sort-files 'anti-chronologically
              )
        (list "bitsofparag-notes"
-             :base-directory (concat bp "page-src/notes")
+             :base-directory (concat bip-root "page-src/notes")
              :base-extension "org"
              :recursive t
-             :publishing-function '(org-html-publish-to-html)  ;; Output directory
-             :publishing-directory (concat bp "dist/notes")
+             :publishing-function 'org-html-publish-to-html  ;; Output directory
+             :publishing-directory (concat bip-root "dist/notes")
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
-             :description "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
-             :keywords "parag, blog, opinion, thoughts, technology, experiments"
+             :description bip-desc
+             :keywords bip-keywords
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
@@ -147,15 +157,15 @@
              :sitemap-sort-files 'anti-chronologically
              )
        (list "bitsofparag-static"
-             :base-directory (concat bp "site-assets")
+             :base-directory (concat bip-root "site-assets")
              :base-extension site-attachments
-             :publishing-directory (concat bp "dist/static")
+             :publishing-directory (concat bip-root "dist/static")
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "bitsofparag-misc"
-             :base-directory (concat bp "page-src")
+             :base-directory (concat bip-root "page-src")
              :base-extension site-misc
-             :publishing-directory (concat bp "dist")
+             :publishing-directory (concat bip-root "dist")
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "personal-website" :components '("bitsofparag"
@@ -164,3 +174,6 @@
                                               "bitsofparag-static"
                                               "bitsofparag-misc"
                                               ))))
+
+(provide 'publish)
+;;; publish.el ends here
