@@ -1,4 +1,2 @@
 #+TITLE: Notes
 
-- [[file:breaking-bread.org][Breaking Bread]]
-- [[file:mac-setup.org][Macbook Setup]]
