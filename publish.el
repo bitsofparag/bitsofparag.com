@@ -240,9 +240,9 @@ PUB-DIR is when the output will be placed."
        (list "personal-website" :components '("bitsofparag"
                                               "bitsofparag-blog"
                                               "bitsofparag-notes"
-                                              "bitsofparag-rss"
                                               "bitsofparag-static"
                                               "bitsofparag-misc"
+                                              "bitsofparag-rss"
                                               ))))
 
 (provide 'publish)
