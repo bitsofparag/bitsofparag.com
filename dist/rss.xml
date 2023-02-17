@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Parag's Personal Weblog</title>
+  <atom:link href="https://bitsofparag.com/rss.xml" rel="self" type="application/rss+xml" />
+  <link>https://bitsofparag.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Fri, 17 Feb 2023 03:05:42 +0100</pubDate>
+  <lastBuildDate>Fri, 17 Feb 2023 03:05:42 +0100</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster> (Parag M.)</webMaster>
+  <image>
+    <url>https://bitsofparag.com/static/images/og-logo.png</url>
+    <title>Parag's Personal Weblog</title>
+    <link>https://bitsofparag.com/</link>
+  </image>
+
+  <p>
+    Hello Blog
+  </p>
+  <p>
+    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/blog/2023/02/hello-blog.html">https://bitsofparag.com/blog/2023/02/hello-blog.html</a>
+    :PUBDATE: 
+  </p>
+  <p>
+    Breaking Bread
+  </p>
+  <p>
+    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/notes/breaking-bread.html">https://bitsofparag.com/notes/breaking-bread.html</a>
+    :PUBDATE: 
+  </p>
+  <p>
+    Macbook Setup
+  </p>
+  <p>
+    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/notes/mac-setup.html">https://bitsofparag.com/notes/mac-setup.html</a>
+    :PUBDATE: 
+  </p>
+  <p>
+    Hello World, Again
+  </p>
+  <p>
+    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/blog/2022/05/hello-world-again.html">https://bitsofparag.com/blog/2022/05/hello-world-again.html</a>
+    :PUBDATE: 
+  </p>
+</channel>
+</rss>

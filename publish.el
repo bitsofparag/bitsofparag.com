@@ -237,13 +237,13 @@ PUB-DIR is when the output will be placed."
              :publishing-directory (concat bip-root "dist")
              :publishing-function 'org-publish-attachment
              :recursive t)
-       (list "personal-website" :components '("bitsofparag"
-                                              "bitsofparag-blog"
-                                              "bitsofparag-notes"
-                                              "bitsofparag-static"
-                                              "bitsofparag-misc"
-                                              "bitsofparag-rss"
-                                              ))))
+       (list "website" :components '("bitsofparag"
+                                     "bitsofparag-blog"
+                                     "bitsofparag-notes"
+                                     "bitsofparag-static"
+                                     "bitsofparag-misc"
+                                     ))
+       (list "rss" :components '("bitsofparag-rss"))))
 
 (provide 'publish)
 ;;; publish.el ends here

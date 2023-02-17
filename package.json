@@ -51,11 +51,12 @@
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
-    "build:org": "emacs --batch --load publish.el --eval '(org-publish \"personal-website\")' $EXTRA_EMACS_ARGS",
+    "build:org": "emacs --batch --load publish.el --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
+    "build:rss": "emacs --batch --load publish.el --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
     "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
     "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
     "build": "npm run build:org && npm run build:css && npm run build:js",
     "optimize": "node sharp-optimizer.js",
-    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:prod && npm run optimize"
+    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:prod && npm run build:rss && npm run optimize"
   }
 }
