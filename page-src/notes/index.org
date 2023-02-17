@@ -1,5 +1,4 @@
 #+TITLE: Notes
 
-#+begin_sitemap
-
-#+end_sitemap
+- [[file:breaking-bread.org][Breaking Bread]] =2022-10-14=
+- [[file:mac-setup.org][Macbook Setup]] =2022-10-14=

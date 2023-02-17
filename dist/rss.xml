@@ -14,8 +14,8 @@
   <link>https://bitsofparag.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 17 Feb 2023 03:05:42 +0100</pubDate>
-  <lastBuildDate>Fri, 17 Feb 2023 03:05:42 +0100</lastBuildDate>
+  <pubDate>Fri, 17 Feb 2023 05:21:27 +0100</pubDate>
+  <lastBuildDate>Fri, 17 Feb 2023 05:21:27 +0100</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
   <webMaster> (Parag M.)</webMaster>
   <image>
@@ -28,29 +28,29 @@
     Hello Blog
   </p>
   <p>
-    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/blog/2023/02/hello-blog.html">https://bitsofparag.com/blog/2023/02/hello-blog.html</a>
-    :PUBDATE: 
+    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/blog/2023/02/hello-blog.html">https://bitsofparag.com/blog/2023/02/hello-blog.html</a>
+    :pubdate: 
   </p>
   <p>
     Breaking Bread
   </p>
   <p>
-    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/notes/breaking-bread.html">https://bitsofparag.com/notes/breaking-bread.html</a>
-    :PUBDATE: 
+    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/notes/breaking-bread.html">https://bitsofparag.com/notes/breaking-bread.html</a>
+    :pubdate: 
   </p>
   <p>
     Macbook Setup
   </p>
   <p>
-    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/notes/mac-setup.html">https://bitsofparag.com/notes/mac-setup.html</a>
-    :PUBDATE: 
+    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/notes/mac-setup.html">https://bitsofparag.com/notes/mac-setup.html</a>
+    :pubdate: 
   </p>
   <p>
     Hello World, Again
   </p>
   <p>
-    :RSS<sub>PERMALINK</sub>: <a href="https://bitsofparag.com/blog/2022/05/hello-world-again.html">https://bitsofparag.com/blog/2022/05/hello-world-again.html</a>
-    :PUBDATE: 
+    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/blog/2022/05/hello-world-again.html">https://bitsofparag.com/blog/2022/05/hello-world-again.html</a>
+    :pubdate: 
   </p>
 </channel>
 </rss>
