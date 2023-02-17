@@ -62,13 +62,41 @@
 (setq org-html-divs '((preamble "header" "header")
                       (content "article" "content")
                       (postamble "footer" "footer"))
-      org-html-metadata-timestamp-format "%d-%m-%Y"
+      org-html-metadata-timestamp-format "%Y-%m-%d"
       org-html-checkbox-type 'html)
 
 ;; --------------------------------
+;; Custom sitemap generator code
+;; Derived from https://nicolasknoebber.com/posts/blogging-with-emacs-and-org.html
+(defun bip-generate-sitemap(title list)
+  "Default site map, as a string.
+TITLE is the title of the site map.
+LIST is an internal representation for the files to include."
+  (concat
+   "#+TITLE: " title
+   "\n\n"
+   "#+begin_sitemap\n"
+   (org-list-to-org list)
+   "\n#+end_sitemap"))
+
+(defun bip-format-sitemap-entry (entry _style project)
+  "Format ENTRY in PROJECT.
+Excludes rss.org file in page-src."
+  (if (equal "rss.org" entry) ""
+    (format "[[file:%s][%s]] =%s="
+	    entry
+	    (org-publish-find-title entry project)
+	    (format-time-string "%Y-%m-%d" (org-publish-find-date entry project)))))
+
+;; (defun bip-format-exported-timestamps(timestamp _backend _channel)
+;;   "Remove <> from exported org TIMESTAMP."
+;;   (print (replace-regexp-in-string "&[lg]t;" "" timestamp))
+;;   (replace-regexp-in-string "&[lg]t;" "" timestamp)
+;; )
+
+;; --------------------------------
 ;; Custom rss feed generator code.
-;; Derived from https://nicolasknoebber.com/posts/blogging-with-emacs-and-org.html#org9edef43
-(defun bip-format-rss-feed-entry (entry _style project)
+(defun bip-format-rss-feed-entry (entry style project)
   "Format ENTRY for the RSS feed.
 ENTRY is a file name.
 STYLE is either 'list' or 'tree'.
@@ -81,8 +109,8 @@ PROJECT is the current project."
     (message "%s %s" pubdate entry)
     (format "%s
 :properties:
-:RSS_PERMALINK: %s
-:PUBDATE: %s
+:rss_permalink: %s
+:pubdate: %s
 :end:\n"
             title
             (concat bip-url-home link)
@@ -92,8 +120,7 @@ PROJECT is the current project."
   "Generate RSS feed, as a string.
 TITLE is the title of the RSS feed.
 LIST is an internal representation for the files to include,
-as returned by `org-list-to-subtree'.
-PROJECT is the current project."
+as returned by `org-list-to-subtree'."
   (concat "#+TITLE: " title "\n\n"
           (org-list-to-subtree list 1 '(:icount "" :istart ""))))
 
@@ -102,6 +129,7 @@ PROJECT is the current project."
 PUB-DIR is when the output will be placed."
   (if (equal "rss.org" (file-name-nondirectory filename))
       (org-rss-publish-to-rss plist filename pub-dir)))
+
 
 ;; ---------------------------------------
 ;; Publish list
@@ -164,16 +192,17 @@ PUB-DIR is when the output will be placed."
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title "Latest posts"
-             ;; :sitemap-file-entry-format "%d *%t*"
+             :sitemap-function 'bip-generate-sitemap
+             :sitemap-format-entry 'bip-format-sitemap-entry
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              )
        (list "bitsofparag-notes"
              :base-directory (concat bip-root "page-src/notes")
              :base-extension "org"
+             :publishing-directory (concat bip-root "dist/notes")
              :recursive t
              :publishing-function 'org-html-publish-to-html  ;; Output directory
-             :publishing-directory (concat bip-root "dist/notes")
              :exclude "index.org~"
              :html-doctype "html5"
              :language "en"
@@ -196,21 +225,22 @@ PUB-DIR is when the output will be placed."
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title "Notes"
-             ;; :sitemap-file-entry-format "%d *%t*"
+             :sitemap-function 'bip-generate-sitemap
+             :sitemap-format-entry 'bip-format-sitemap-entry
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              )
        (list "bitsofparag-rss"
              :base-directory (concat bip-root "page-src")
              :base-extension "org"
-             :rss-image-url (concat bip-url-home "static/images/og-logo.png")
-             :rss-extension "xml"
-             :rss-feed-url (concat bip-url-home "rss.xml")
+             :publishing-directory (concat bip-root "dist")
+             :publishing-function 'bip-org-rss-publish-to-rss
              :recursive t
              :exclude (regexp-opt '("colophon.org" "rss.org" "index.org" "drafts" "404.org"))
              :table-of-contents nil
-             :publishing-function 'org-rss-publish-to-rss
-             :publishing-directory (concat bip-root "dist")
+             :rss-image-url (concat bip-url-home "static/images/og-logo.png")
+             :rss-extension "xml"
+             :rss-feed-url (concat bip-url-home "rss.xml")
              :auto-sitemap t
              :html-link-home bip-url-home
              :html-link-use-abs-url t
