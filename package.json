@@ -47,7 +47,9 @@
     "url": "git@gitlab.com:parag_m/bitsofparag.com.git"
   },
   "scripts": {
-    "clean": "find dist/ -maxdepth 0 ! -name manifest.json ! -name favicon.ico | xargs rimraf",
+    "clean:misc": "find . -name \"*.*~\" | xargs rimraf ;",
+    "clean:dist": "find dist/* -maxdepth 2 ! -name manifest.json ! -name favicon.ico ! -name rss.xml | xargs rimraf ;",
+    "clean": "npm run clean:misc && npm run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",

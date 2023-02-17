@@ -80,6 +80,7 @@ node_modules/
 
 ### Project specific ###
 dist/*
+# TODO rss.xml was added ∵ CF screws up rss generation
 !dist/rss.xml
 **/drafts/*
 !**/drafts/.gitkeep
