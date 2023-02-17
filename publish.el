@@ -68,17 +68,6 @@
 ;; --------------------------------
 ;; Custom sitemap generator code
 ;; Derived from https://nicolasknoebber.com/posts/blogging-with-emacs-and-org.html
-(defun bip-generate-sitemap(title list)
-  "Default site map, as a string.
-TITLE is the title of the site map.
-LIST is an internal representation for the files to include."
-  (concat
-   "#+TITLE: " title
-   "\n\n"
-   "#+begin_sitemap\n"
-   (org-list-to-org list)
-   "\n#+end_sitemap"))
-
 (defun bip-format-sitemap-entry (entry _style project)
   "Format ENTRY in PROJECT.
 Excludes rss.org file in page-src."
