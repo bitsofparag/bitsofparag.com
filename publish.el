@@ -181,7 +181,6 @@ PUB-DIR is when the output will be placed."
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title "Latest posts"
-             :sitemap-function 'bip-generate-sitemap
              :sitemap-format-entry 'bip-format-sitemap-entry
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
@@ -214,7 +213,6 @@ PUB-DIR is when the output will be placed."
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title "Notes"
-             ;; :sitemap-function 'bip-generate-sitemap
              :sitemap-format-entry 'bip-format-sitemap-entry
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
