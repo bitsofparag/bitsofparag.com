@@ -1,4 +1,3 @@
 #+TITLE: Latest posts
 
-- [[file:2023/02/hello-blog.org][Hello Blog]] =2023-02-16=
 - [[file:2022/05/hello-world-again.org][Hello World, Again]] =2022-05-28=

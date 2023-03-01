@@ -85,6 +85,8 @@ dist/*
 **/drafts/*
 !**/drafts/.gitkeep
 **/*.toml
-site-assets/images/*
+site-assets/images/main/*
+site-assets/images/blog/*
+site-assets/images/notes/*
 **secret*
 page-src/rss.org

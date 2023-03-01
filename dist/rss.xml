@@ -14,8 +14,8 @@
   <link>https://bitsofparag.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 17 Feb 2023 05:21:27 +0100</pubDate>
-  <lastBuildDate>Fri, 17 Feb 2023 05:21:27 +0100</lastBuildDate>
+  <pubDate>Wed, 01 Mar 2023 14:47:58 +0100</pubDate>
+  <lastBuildDate>Wed, 01 Mar 2023 14:47:58 +0100</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
   <webMaster> (Parag M.)</webMaster>
   <image>
@@ -24,33 +24,33 @@
     <link>https://bitsofparag.com/</link>
   </image>
 
-  <p>
-    Hello Blog
-  </p>
-  <p>
-    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/blog/2023/02/hello-blog.html">https://bitsofparag.com/blog/2023/02/hello-blog.html</a>
-    :pubdate: 
-  </p>
-  <p>
-    Breaking Bread
-  </p>
-  <p>
-    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/notes/breaking-bread.html">https://bitsofparag.com/notes/breaking-bread.html</a>
-    :pubdate: 
-  </p>
-  <p>
-    Macbook Setup
-  </p>
-  <p>
-    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/notes/mac-setup.html">https://bitsofparag.com/notes/mac-setup.html</a>
-    :pubdate: 
-  </p>
-  <p>
-    Hello World, Again
-  </p>
-  <p>
-    :rss<sub>permalink</sub>: <a href="https://bitsofparag.com/blog/2022/05/hello-world-again.html">https://bitsofparag.com/blog/2022/05/hello-world-again.html</a>
-    :pubdate: 
-  </p>
+
+  <item>
+    <title>Hello World, Again</title>
+    <link>https://bitsofparag.com/blog/2022/05/hello-world-again.html</link>
+    <author> (Parag M.)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/blog/2022/05/hello-world-again.html</guid>
+    <pubDate>Sat, 28 May 2022 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Macbook Setup</title>
+    <link>https://bitsofparag.com/notes/mac-setup.html</link>
+    <author> (Parag M.)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/notes/mac-setup.html</guid>
+    <pubDate>Wed, 18 May 2022 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Breaking Bread</title>
+    <link>https://bitsofparag.com/notes/breaking-bread.html</link>
+    <author> (Parag M.)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/notes/breaking-bread.html</guid>
+    <pubDate>Sun, 24 May 2020 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
 </channel>
 </rss>
