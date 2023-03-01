@@ -95,18 +95,19 @@ PROJECT is the current project."
          (link (concat (file-name-sans-extension entry) ".html"))
          (pubdate (format-time-string (car org-time-stamp-formats)
           (org-publish-find-date entry project))))
-    (message "%s %s" pubdate entry)
-    (format "%s
-:properties:
-:rss_permalink: %s
-:pubdate: %s
-:end:\n"
+    ;;(message "%s %s" pubdate entry)
+    (format "* %s
+:PROPERTIES:
+:RSS_PERMALINK: %s
+:PUBDATE: %s
+:END:\n"
             title
-            (concat bip-url-home link)
+            link
+            ;;(concat bip-url-home link)
             pubdate)))
 
 (defun bip-generate-rss-feed (title list)
-  "Generate RSS feed, as a string.
+  "Generate RSS feed in orgmode format, as a string.
 TITLE is the title of the RSS feed.
 LIST is an internal representation for the files to include,
 as returned by `org-list-to-subtree'."
