@@ -86,7 +86,7 @@ Excludes rss.org file in page-src."
 ;; --------------------------------
 ;; Custom rss feed generator code.
 (defun bip-format-rss-feed-entry (entry style project)
-  "Format ENTRY for the RSS feed.
+  "Format ENTRY for the RSS feed in orgmode.
 ENTRY is a file name.
 STYLE is either 'list' or 'tree'.
 PROJECT is the current project."
@@ -223,7 +223,7 @@ PUB-DIR is when the output will be placed."
              :publishing-directory (concat bip-root "dist")
              :publishing-function 'bip-org-rss-publish-to-rss
              :recursive t
-             :exclude (regexp-opt '("colophon.org" "rss.org" "index.org" "drafts" "404.org"))
+             :exclude (regexp-opt '("404.org" "colophon.org" "rss.org" "index.org" "drafts" "blog/index.org" "notes/index.org"))
              :table-of-contents nil
              :rss-image-url (concat bip-url-home "static/images/og-logo.png")
              :rss-extension "xml"
@@ -261,6 +261,7 @@ PUB-DIR is when the output will be placed."
                                      "bitsofparag-misc"
                                      ))
        (list "rss" :components '("bitsofparag-rss"))))
+       ;; TODO rss list was added separately because CF fails to build rss file.
 
 (provide 'publish)
 ;;; publish.el ends here
