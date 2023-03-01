@@ -25,7 +25,8 @@
 }
 
 #content .photo-box {
-  @apply relative;
+  @apply relative max-w-full;
+  min-height: 450px;
 }
 
 #content .highlight-photo {
