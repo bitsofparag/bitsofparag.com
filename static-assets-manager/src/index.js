@@ -51,6 +51,7 @@ export default {
 
         const res = new Response(object.body);
         res.headers.set('Content-Type', object.httpMetadata.contentType);
+        res.headers.set('Cache-Control', 'max-age=604800');
         return res;
 
       default:

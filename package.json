@@ -5,7 +5,7 @@
   "dependencies": {
     "tailwindcss": "^3.0.0"
   },
-  "description": "Personal blog of Parag Majumdar",
+  "description": "Personal website of Parag Majumdar",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
