@@ -1,6 +1,6 @@
 #+title: Breaking Bread
 #+author: Parag M.
-#+date: 24-05-2020
+#+DATE: <2020-05-24 Sun>
 #+Time-stamp: <2022-05-26 12:03:53 parag>
 #+SETUPFILE: ../.setup/macros
 #+SETUPFILE: ../.setup/options
@@ -66,6 +66,8 @@
 * Contents
   :PROPERTIES:
   :CUSTOM_ID: ToC
+  :ID:       b356c255-88cf-4216-a948-1ae16460ebb7
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
   - [[#References][References]]
   - [[#Actions][Actions]]
@@ -81,18 +83,29 @@
 * References
   :PROPERTIES:
   :CUSTOM_ID: References
+  :ID:       4e1b8c99-3f16-420c-90ae-fb5c9177b4a8
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 ** Starter
+:PROPERTIES:
+:ID:       30acc260-a20b-4078-a69a-2f4af7076df0
+:END:
    - ST-S : starter small, <20%
    - ST-M : starter medium, [20%, 35%)
    - ST-L : starter large, [35%, 50%]
 
 ** Water
+:PROPERTIES:
+:ID:       48592fe0-5393-4729-a550-9fda920b2a2d
+:END:
    - W-S : water small, [55%, 65%)
    - W-M : water medium, [65%, 80%)
    - W-L : water large, [80%, 110%]
 
 ** Flour
+:PROPERTIES:
+:ID:       9cc0b054-22d6-4dc7-947f-9b94c144a717
+:END:
    - White : all white bread flour with a little bit of whole wheat from the starter.
    - W-Mixed : mostly white flour mixed with smaller amounts of other types
      of flour.
@@ -103,6 +116,7 @@
 ** Actions (in order of appearance in baking)
    :PROPERTIES:
    :CUSTOM_ID: Actions
+   :ID:       84fc78ce-611c-4fa9-814a-fc1ef4aa9803
    :END:
    - *Activate cold starter*
      By this I mean to wake up the yeast after having been kept in the
@@ -146,6 +160,8 @@
 * Mixed W-L ST-S
   :PROPERTIES:
   :CUSTOM_ID: Mixed W-L ST-S
+  :ID:       a4133151-c075-4b64-be77-ad51e654b242
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
 Fed Starter.
@@ -192,6 +208,9 @@ Table salt
 | 23:30 |                                            | Cool.                         |
 
 ** Verdict
+:PROPERTIES:
+:ID:       13801cee-0c22-48cd-840c-e3fdd25e0baa
+:END:
 
 {{{img(/static/images/breaking-bread/25052020-bread-top.png, height:300px;)}}}
 
@@ -206,12 +225,17 @@ Table salt
 * Overnight Proof Mixed W-S ST-M
   :PROPERTIES:
   :CUSTOM_ID: Overnight Proof Mixed W-S ST-M
+  :ID:       751022a1-7eb7-4f79-8d1b-1d1d0d1c77f7
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
 
 Temp 24.8 °C and humidity 45-50% in the kitchen.
 
 ** Recipe
+:PROPERTIES:
+:ID:       34bff125-d910-4e51-8042-9012500a853f
+:END:
 
 White flour - [[https://www.wurzener.de/produktwelt/kuchenmehl-type-550/][Wuzener 550]].
 
@@ -252,6 +276,9 @@ Mix of table salt and black kosher salt.
 | 12:30 |                                                 | Cut.                       |
 
 ** Verdict
+:PROPERTIES:
+:ID:       0d3e788d-8b7f-47c2-9a2d-7db15dbeed48
+:END:
 
 {{{img(/static/images/breaking-bread/30052020-final-shape.jpg, width:300px;)}}}
 {{{img(/static/images/breaking-bread/30052020-bread-top.jpg, width:400px;)}}}
@@ -290,11 +317,16 @@ Mix of table salt and black kosher salt.
 * Overnight Proof White W-S ST-M
   :PROPERTIES:
   :CUSTOM_ID: Overnight Proof White W-S ST-M
+  :ID:       430287f1-b98e-4562-aa98-674b15b363a8
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
 Temp 23 °C and humidity 55%.
 
 ** Recipe
+:PROPERTIES:
+:ID:       b91b1ea3-1679-4d6d-b2cf-404f9474cb16
+:END:
 
  White flour - [[https://www.wurzener.de/produktwelt/kuchenmehl-type-550/][Wuzener 550]].
 
@@ -328,6 +360,9 @@ Temp 23 °C and humidity 55%.
  | 11:00 |                                        | Cut.                          |
 
 ** Verdict
+:PROPERTIES:
+:ID:       8c5ae537-0338-47ca-804e-d5529cf3ff57
+:END:
 
 {{{img(/static/images/breaking-bread/25052020-bread-top.png, height:300px;)}}}
 {{{img(/static/images/breaking-bread/25052020-slices.jpg, height:400px;)}}}
@@ -370,11 +405,16 @@ Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
 * Overnight Proof W-Mixed W-M ST-M
   :PROPERTIES:
   :CUSTOM_ID: Overnight Proof W-Mixed W-M ST-M
+  :ID:       2471edea-eeb9-43fe-b743-f9b28da281b9
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
   Temp 23 °C and humidity 55%.
 
 ** Recipe
+:PROPERTIES:
+:ID:       14b1b441-52f7-42f0-9d63-ada37a571082
+:END:
 
   White flour - [[https://www.wurzener.de/produktwelt/kuchenmehl-type-550/][Wuzener 550]].
 
@@ -418,6 +458,9 @@ Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
   | 09:00 |                                        | Cut.                       |
 
 ** Verdict
+:PROPERTIES:
+:ID:       f5ed6090-abb3-4a31-a802-ef203e4514d5
+:END:
 
   {{{img(/static/images/breaking-bread/24052020-cross-section.jpg, height:500px;)}}}
   {{{img(/static/images/breaking-bread/24052020-slices.jpg, height:400px;)}}}
@@ -448,11 +491,16 @@ Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
 * Overnight Mixed W-M ST-S
   :PROPERTIES:
   :CUSTOM_ID: Overnight Mixed W-M ST-S
+  :ID:       cb4a271c-f958-49d6-81e5-8afc092ad257
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
   Temp 22.1 °C and humidity 53%.
 
 ** Recipe
+:PROPERTIES:
+:ID:       ceaf3ca0-4c42-49ad-a924-2c4b706f6cc3
+:END:
 
   White flour - [[https://www.kathi.de/weizenmehl-type-405/][Kathi 405]].
 
@@ -487,6 +535,9 @@ Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
   | 20:00 |                                 | Cut.                          |
 
 ** Verdict
+:PROPERTIES:
+:ID:       364ed222-6407-4c72-bc95-8aa21830d818
+:END:
 
    {{{img(/static/images/breaking-bread/15052020-slices.jpg, width:350px;)}}}
    {{{img(/static/images/breaking-bread/15052020-slices-2.jpg, width:350px;)}}}
@@ -527,11 +578,16 @@ Compared to the bread from [[#Overnight Proof W-Mixed W-M ST-M][the last bake]]:
 * Day Bake White W-S ST-L
   :PROPERTIES:
   :CUSTOM_ID: Day Bake White W-S ST-L
+  :ID:       abd2ba32-ff48-4625-bde1-ff91ad399fb3
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
 Temp 21.7 °C and humidity 44%.
 
 ** Recipe
+:PROPERTIES:
+:ID:       f55b56c0-fa78-4bae-b1bc-3d2fdba138d6
+:END:
 
 White flour - [[https://www.kathi.de/weizenmehl-type-405/][Kathi 405]].
 
@@ -562,6 +618,9 @@ Table salt.
 | 17:30 |                                    | Cut.                        |
 
 ** Verdict
+:PROPERTIES:
+:ID:       0d3ebea0-71d0-45aa-b249-3ac6cc5c4f02
+:END:
 
    {{{img(/static/images/breaking-bread/11052020-bread-top.jpg, width:300px;)}}}
    {{{img(/static/images/breaking-bread/11052020-slices.jpg, width:450px;)}}}
@@ -606,11 +665,16 @@ Table salt.
 * Levain W-Mixed W-M ST-M
   :PROPERTIES:
   :CUSTOM_ID: Levain W-Mixed W-M ST-M
+  :ID:       c5c424ec-48f6-4331-938f-2be5404e4055
+  :PUBDATE:  <2023-02-16 Thu 21:02>
   :END:
 
 Temp 22 °C and humidity 50%.
 
 ** Recipe
+:PROPERTIES:
+:ID:       b4d680c5-cec7-469a-bf85-9a47b1045344
+:END:
 
    White flour - [[https://www.wurzener.de/produktwelt/kuchenmehl-type-550/][Wuzener 550]].
 
@@ -652,6 +716,9 @@ Temp 22 °C and humidity 50%.
    | 10:00 |                                                      | Cut.                       |
 
 ** Verdict
+:PROPERTIES:
+:ID:       dae8a302-ccca-4dd9-b5b0-f70e9269da17
+:END:
 
    So, this was my first, earnest attempt at baking a sourdough bread /(after
    days of reading and watching Youtube-bakers)/. Here are
@@ -685,6 +752,9 @@ Temp 22 °C and humidity 50%.
      touch.
 
 ** Learnings
+:PROPERTIES:
+:ID:       b0139db4-3c1e-485e-bf3d-9f286e9784b8
+:END:
    - Maybe keep the levain in a warmer place - oven with the light on.
    - Be careful during transfer to baking tray.
 

@@ -1,6 +1,6 @@
 #+TITLE: Macbook Setup
 #+author: Parag M.
-#+date: 18-05-2022
+#+date: <2022-05-18 Wed>
 #+Time-stamp: <2022-05-29 00:32:13 parag>
 #+SETUPFILE: ../.setup/macros
 #+SETUPFILE: ../.setup/options
@@ -16,18 +16,34 @@ Published on {{{date(%e %b %Y)}}} • Updated {{{modification-time(%e %b %Y)}}}
 #+end_share
 
 * Objective :noexport:
+:PROPERTIES:
+:ID:       458d020d-fd2d-4aa4-b65c-31e1407b4e36
+:PUBDATE:  <2023-02-16 Thu 21:01>
+:END:
 
   To share setup instructions for a new Mac laptop
 
 * Message :noexport:
+:PROPERTIES:
+:ID:       d88e67b3-0ba3-49df-a172-6297b256c24f
+:PUBDATE:  <2023-02-16 Thu 21:01>
+:END:
 
   The message the reader gets from this is a (near) painless way to setup a new Mac
 
 * Tone :noexport:
+:PROPERTIES:
+:ID:       85bcd1c4-5372-4fe5-9f3f-8dbfe7fd08d1
+:PUBDATE:  <2023-02-16 Thu 21:01>
+:END:
 
   Technical / Instructive
 
 * {{{blog_intro(Follow the guide below to set up your new Macbook with necessary)}}}
+:PROPERTIES:
+:ID:       6fed1629-7945-4c74-9ac9-832078e12822
+:PUBDATE:  <2023-02-16 Thu 21:01>
+:END:
 tooling and other interesting packages. The content below is a dump from my personal notes
 wherein I attempted to keep my new Macbook deterministic (without using NixOS) by logging everything
 that I was installing, configuring and removing from the system. This is NOT a prescriptive guide,
@@ -37,6 +53,9 @@ If any instruction is outdated or incorrect or if you have suggestions for a new
 PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/notes")/.
 
 ** Get started
+:PROPERTIES:
+:ID:       f084bee9-9ef2-4766-8425-357ab41f75db
+:END:
  1. Set the keyboard from "System Preferences" - use Tab as "Ctrl" key.
  2. Set the keyboard from "System Preferences" - use English ABC Extended (or your preferred language).
  3. Clean up the desktop menu - remove stuff you don't need.
@@ -56,11 +75,17 @@ PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/no
       #+END_SRC
 
 ** Install browsers
+:PROPERTIES:
+:ID:       d6719248-f809-444b-9aec-0e8ef6d19846
+:END:
    1. Open Safari and install [[https://www.mozilla.org/en-GB/firefox/new/][Firefox]] and/or [[https://brave.com/][Brave]] browsers.
    2. /(Optional but not recommended)/ Install [[https://www.google.com/intl/de/chrome/dev/][Chrome Dev]] with =brew install --cask google-chrome-dev=.
    3. Install [[https://www.torproject.org/][Tor Browser]] with =brew install tor=.
 
 ** SSH Keys
+:PROPERTIES:
+:ID:       6d6cdf97-2488-4289-9b67-709b6a1c47af
+:END:
 
    Set up SSH keys as follows:
    #+begin_src sh
@@ -76,6 +101,9 @@ PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/no
    Also, add ssh pub keys to Gitlab and/or Github. Don't forget to backup the private key safely.
 
 ** Set up Git & other useful tooling
+:PROPERTIES:
+:ID:       afd6a5fa-ad77-4154-a88c-2b06392894db
+:END:
    1. First, install [[https://www.gnu.org/software/stow/][GNU Stow]] with =brew install stow=.
    2. =mkdir -p ~/Workspace ~/Workspace/work ~/Workspace/play ~/Workspace/vendor=
    3. =cd ~/Workspace/play=
@@ -101,6 +129,9 @@ PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/no
 
 
 ** Shell setup
+:PROPERTIES:
+:ID:       ae03a769-0a5e-41f0-a42d-5c45c3d397eb
+:END:
 
 There are many good terminal emulators out there, such as ZSH, Fish, xTerm etc.
 Choose what you're most comfortable with. This guide will set up ZSH on top of [[https://iterm2.com/][iTerm2]].
@@ -151,6 +182,7 @@ Choose what you're most comfortable with. This guide will set up ZSH on top of [
 ** Node and NPM setup
    :PROPERTIES:
    :CUSTOM_ID: Node and NPM setup
+   :ID:       0d493b28-430d-4d99-ac0f-df0068896aba
    :END:
 
 I am not a big fan of NPM. But sometimes I have to use NPM in order to collaborate with other devs
@@ -196,6 +228,9 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
       #+end_src
 
 ** Pyenv setup
+:PROPERTIES:
+:ID:       8e32d4f1-ed1d-4363-9e50-1e285af88f54
+:END:
    1. Install with =brew install pyenv pyenv-virtualenv=
    2. Install updated python3 version with =pyenv install 3.10.2=.
       It should show the following output:
@@ -214,6 +249,9 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
       #+end_src
 
 ** Rust setup
+:PROPERTIES:
+:ID:       0bfd7bf7-c842-4de6-adfb-53b5258b960b
+:END:
    Taken from [[https://www.rust-lang.org/tools/install][here]].
    #+BEGIN_SRC sh
      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -236,6 +274,9 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    /Or you can also learn on [[https://repl.it/github/rust-lang/rustlings][Repl.it]]/
 
 ** Golang setup
+:PROPERTIES:
+:ID:       95395012-4c21-40ab-9fc2-f52690b43bed
+:END:
    1. Install golang with =brew install go=.
    2. Set the go workspace with =$GOPATH=. This should already be set from the shell setup above. If not, then:
       #+begin_src sh
@@ -243,24 +284,42 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
       #+end_src
 
 ** Other languages
+:PROPERTIES:
+:ID:       545d2855-7c26-4327-9be9-7da6ea3ac045
+:END:
 *** Nim setup
+:PROPERTIES:
+:ID:       7d0fb185-9dce-46b6-8e81-89c47c573054
+:END:
     1. Install =choosenim= with =curl https://nim-lang.org/choosenim/init.sh -sSf | sh=
     2. Nim should be available in the "$HOME/.local/bin" path (see personal dotfiles for path settings).
     3. =choosenim show=
     4. =nimble install nimlsp=
 
 *** C-C++ setup
+:PROPERTIES:
+:ID:       8d862953-ff2c-428f-a109-7262e26f9f2d
+:END:
     1. Ensure your emacs config is ready with correct C-C++ requirements.
     2. Install src code indexer [[https://github.com/Andersbakken/rtags][RTags]] with =brew install rtags=.
 
 ** Java setup
+:PROPERTIES:
+:ID:       b627f241-3672-474e-a862-e0c92c00365d
+:END:
    1. Install java on Catalina with =brew tap AdoptOpenJDK/openjdk && brew install --cask adoptopenjdk8=.
    2. Verify with =java -version=.
 
 ** Install Android Studio
+:PROPERTIES:
+:ID:       d2a016fc-74ef-4d69-8024-c3dd54140418
+:END:
    1. TODO: link to file
 
 ** Emacs setup
+:PROPERTIES:
+:ID:       4954ae43-18bf-4284-aaa8-8184813d9d2b
+:END:
    1. Install emacs:
       #+begin_src sh
       brew tap d12frosted/emacs-plus
@@ -310,11 +369,17 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    12. Enable markdown in =org-export-backends= (with Customize).
 
 ** Postgres setup
+:PROPERTIES:
+:ID:       296b8248-91d0-464b-8b0b-2ab5b5c68b74
+:END:
    1. Install postgresql with =brew install postgresql=.
    2. Start postgres (not as a background service) with =pg_ctl -D /usr/local/var/postgres start=.
    3. Install [[https://tableplus.com/][TablePlus]] app (paid) as the GUI utility for all DBs with =brew install --cask tableplus=.
 
 ** Devops setup
+:PROPERTIES:
+:ID:       60e930b3-4191-423e-a91f-e201bc1804e5
+:END:
    1. Install aws-cli with =brew tap aws/tap && brew install awscli=.
    2. Install AWS SAM: =brew tap aws/tap && brew install aws-sam-cli=.
    3. Install aws session-manager-plugin with =brew install --cask
@@ -342,11 +407,17 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    23. Install [[https://github.com/wagoodman/dive][dive]] with =brew install dive=.
 
 ** X11 support setup
+:PROPERTIES:
+:ID:       e7625f92-38ec-4f31-91a4-e065d0ea6d32
+:END:
    - Install [[https://www.redhat.com/sysadmin/getting-started-socat][socat]] with =brew install socat=. It might be already installed.
    - Install [[https://www.xquartz.org/][xquartz]] with =brew install xquartz=.
    - Log out and log back in
    - Run =socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"=
 ** Hardware and firmware setup
+:PROPERTIES:
+:ID:       51b6197f-ec6a-443e-99fb-34015fb9c3f0
+:END:
    1. Install [[https://docs.platformio.org/en/latest/core/installation.html#macos-homebrew][Platformio]] with =brew install platformio=.
       More details on Platformio mode for emacs can be found [[https://github.com/ZachMassia/platformio-mode][here]].
    2. Install cask drivers
@@ -357,9 +428,15 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
       =brew install protobuf=
 
 ** Dropbox setup
+:PROPERTIES:
+:ID:       3183d24d-3da9-4533-83bb-1dbaf42bb9d8
+:END:
    1. Install Dropbox: =brew install --cask dropbox=.
 
 ** Password manager setup
+:PROPERTIES:
+:ID:       cb9914f2-3f18-40ec-8b01-3d9568c35107
+:END:
    1. Install password managers: =brew install --cask keepassxc lastpass=.
    2. If you installed keepassxc:
       1. open the app
@@ -373,15 +450,24 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
       8. this opens an authentication dialog where you enter the same details as in the app to enable autofill in browsers
 
 ** Install Sketch app
+:PROPERTIES:
+:ID:       fb82728b-2a7b-40eb-9356-77f084a98aa5
+:END:
    Follow [[https://www.sketch.com/get/][this link]] to download the app.
 
 ** Mail setup
+:PROPERTIES:
+:ID:       0cc14a9f-bd5a-40d8-92e8-dfbce6badee7
+:END:
    1. Open Mail app and set up your accounts.
    2. Install [[https://www.thunderbird.net/][Thunderbird]] with =brew install --cask thunderbird=.
    3. If you use [[https://mail.protonmail.com/][Protonmail]], you'll need to add their Bridge app which sets up
       localhost as the IMAP and SMTP servers.
 
 ** Music player setup
+:PROPERTIES:
+:ID:       c0549ecd-d734-44a7-95e8-57be4a0c532e
+:END:
    1. Install Spotify app - =brew install --cask spotify=
    2. Install Spotify CLI - =brew install shpotify=.
    3. Log in to [[https://developer.spotify.com/my-applications/#!/applications/create][Spotify developer console]] and create an application.
@@ -397,8 +483,14 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    9. Install [[https://audius.co/][Audius]] with =brew install --cask audius=.
 
 ** Graphics software setup
+:PROPERTIES:
+:ID:       350fea2b-6b79-4f0e-9bd0-be300f8d6bb9
+:END:
    - Install [[https://www.blender.org/][blender]] with =brew install --cask blender=.
 ** Security setup
+:PROPERTIES:
+:ID:       da0ea591-1be8-4cbc-90e5-f6f93cebfe28
+:END:
    1. Install [[https://github.com/cryptomator/cryptomator][Cryptomator]] for file encryption with =brew install --cask cryptomator=.
    2. Install [[https://objective-see.com/products/lulu.html][Lulu]] as the firewall to block unknown outgoing connections, with
       =brew install --cask lulu=.
@@ -407,14 +499,23 @@ with [[https://pnpm.io/][pnpm]] and [[https://volta.sh/][Volta]] - keeps things 
    5. Install [[https://www.malwarebytes.com/mac/][Malwarebytes]] for malware detection with =brew install --cask malwarebytes=.
 
 ** Wordpress and CMS setup
+:PROPERTIES:
+:ID:       c6fd7668-c7cd-49c9-b54e-830399602ee4
+:END:
    1. Install [[https://www.mamp.info/de/mac/][Mamp]] with =brew install --cask mamp=.
 ** Game development setup
+:PROPERTIES:
+:ID:       bb95be9c-16d2-48a9-b073-4a793aa85702
+:END:
    1. Install [[https://openupm.com/][Unity package manager]] with =npm install -g openupm-cli=.
    2. Install [[https://github.com/inkle/inky/releases][Inkle Studio]] editor with =brew install --cask inky=.
 
       You can find the repo for developing Inkle games [[https://github.com/bitsofparag/inkle-games][here]].
 
 ** Other useful utility packages:
+:PROPERTIES:
+:ID:       3b335e4e-20fd-46ea-a662-ba17dfe56992
+:END:
    1. Install [[https://github.com/nicolargo/glances][Glances]] with =brew install glances=. Run as =glances=.
    2. Install [[https://github.com/bootandy/dust][Dust - better du]] with =brew install dust=. Run as =dust --reverse <folder>=.
    3. Install [[https://github.com/ClementTsang/bottom][Bottom]] with =brew install bottom=. Run with =btm --help=.

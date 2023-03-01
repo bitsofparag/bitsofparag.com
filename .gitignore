@@ -79,9 +79,14 @@ node_modules/
 
 
 ### Project specific ###
-dist
+dist/*
+# TODO rss.xml was added ∵ CF screws up rss generation
+!dist/rss.xml
 **/drafts/*
 !**/drafts/.gitkeep
 **/*.toml
-site-assets/images/*
+site-assets/images/main/*
+site-assets/images/blog/*
+site-assets/images/notes/*
 **secret*
+page-src/rss.org
