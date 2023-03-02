@@ -3,13 +3,14 @@
 #+SETUPFILE: ./.setup/options
 #+Time-stamp: <2022-05-28 19:47:58 parag>
 #+OPTIONS: broken-links:mark H:2
+#+LANGUAGE: en
 
 #+begin_export html
 <p class="phonetic">\ pə •rāg</p>
 <div class="photo-box">
   <picture>
     <source srcset="/static/images/main/highlight-photo.webp" />
-    <img src="/static/images/main/highlight-photo.jpg" class="highlight-photo" />
+    <img src="/static/images/main/highlight-photo.jpg" alt="Banner photo" class="highlight-photo" />
   </picture>
   <span class="highlight-photo-tooltip">The drawing represents my existence rooted on Earth, which can be broken down into fundamental particles of nature bound together with limitless energy, which emerges from the underlying mathematical reality of the unbounded universe. <i>(I drew this with a removable tattoo-pen.)</i></span>
 </div>
