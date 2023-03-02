@@ -10,7 +10,7 @@
 <div class="photo-box">
   <picture>
     <source srcset="/static/images/main/highlight-photo.webp" />
-    <img src="/static/images/main/highlight-photo.jpg" alt="Banner photo" class="highlight-photo" />
+    <img width="688" height="458" src="/static/images/main/highlight-photo.jpg" alt="Banner photo" class="highlight-photo" />
   </picture>
   <span class="highlight-photo-tooltip">The drawing represents my existence rooted on Earth, which can be broken down into fundamental particles of nature bound together with limitless energy, which emerges from the underlying mathematical reality of the unbounded universe. <i>(I drew this with a removable tattoo-pen.)</i></span>
 </div>
