@@ -1,5 +1,5 @@
 #logo {
-  @apply block relative font-serif italic font-bold w-20 h-20 text-palette-nutty-light;
+  @apply block relative font-serif italic font-bold w-20 h-20 text-palette-pflaume-dark;
 }
 
 #logo .letters-container {
@@ -11,7 +11,7 @@
 }
 
 #logo .circle {
-  @apply absolute inset-0 m-auto bg-primary-color-900;
+  @apply absolute inset-0 m-auto bg-slate-50;
 }
 
 #logo .circle-outer {
@@ -19,7 +19,7 @@
 }
 
 #logo #path-circle {
-  @apply stroke-primary-color-900 fill-transparent;
+  @apply stroke-slate-50 fill-transparent;
 }
 
 #header.scrolling #logo {
@@ -28,20 +28,6 @@
 
 #header.scrolling #logo .letters {
   @apply text-logo-small;
-}
-
-@media (prefers-color-scheme: dark) {
-  #logo {
-    @apply text-palette-pflaume-dark;
-  }
-
-  #logo .circle {
-    @apply bg-primary-color-darkmode-900;
-  }
-
-  #logo #path-circle {
-    @apply stroke-primary-color-darkmode-900;
-  }
 }
 
 #logo .circle-inner {
