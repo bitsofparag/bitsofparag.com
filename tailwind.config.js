@@ -62,17 +62,39 @@ module.exports = {
           700: '#5d93a0',
           900: '#0081a7',
         },
+        'primary-color-darkmode': {
+          500: '#b5fcc5',
+          700: '#bef7ca',
+          900: '#b8efc4',
+        },
         palette: {
           grayish: '#dfd5ca',
           nutty: {
             light: '#fed9b7',
             dark: '#d1b79b',
           },
+          pflaume: {
+            light: '#7c5480',
+            dark: '#4e3455',
+            darker: '#47284f',
+          },
+          sunny: {
+            light: '#F5FFC9',
+            dark: '#DAE4B2',
+          },
+          minty: {
+            light: '#B3E5BE'
+          }
         },
         'content-color': {
           900: '#202e4c',
           700: '#2a3d67',
           500: '#344c82',
+        },
+        'content-color-darkmode': {
+          900: '#f5ffc9',
+          700: '#f5ffc9',
+          500: '#f5ffc9',
         },
       },
       animation: {

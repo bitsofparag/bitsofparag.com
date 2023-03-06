@@ -22,7 +22,14 @@ pre.example {
 
 code {
   display: inline;
-  background: rgba(217, 92, 0, 0.3);
+  background: #A86464;
   color: inherit;
   @apply px-2 py-1;
+}
+
+@media (prefers-color-scheme: dark) {
+  code, .org-src-container {
+    background: #A86464;
+    @apply text-primary-color-darkmode-900;
+  }
 }

@@ -14,10 +14,6 @@
   @apply absolute inset-0 m-auto bg-primary-color-900;
 }
 
-#logo .circle-inner {
-  @apply w-[90%] h-[90%] rounded-full;
-}
-
 #logo .circle-outer {
   @apply bg-transparent;
 }
@@ -32,4 +28,22 @@
 
 #header.scrolling #logo .letters {
   @apply text-logo-small;
+}
+
+@media (prefers-color-scheme: dark) {
+  #logo {
+    @apply text-palette-pflaume-dark;
+  }
+
+  #logo .circle {
+    @apply bg-primary-color-darkmode-900;
+  }
+
+  #logo #path-circle {
+    @apply stroke-primary-color-darkmode-900;
+  }
+}
+
+#logo .circle-inner {
+  @apply w-[90%] h-[90%] rounded-full;
 }
