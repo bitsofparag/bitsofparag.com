@@ -19,9 +19,9 @@ with javascript disabled.
 
 The size of the website is small, just around 100kB. And scores high on web performance
 metrics.{{{fni(2,<a class="ext"
-href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.bitsofparag.com"
+href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbitsofparag.com"
 target="_blank">Pagespeed stats</a> and <a class="ext"
-href="https://gtmetrix.com/reports/www.bitsofparag.com/vKO3v4o4/" target="_blank">GTMetrix</a>)}}}
+href="https://gtmetrix.com/reports/bitsofparag.com/Tva0h2fA/" target="_blank">GTMetrix</a>)}}}
 
 I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https://jamstack.org/what-is-jamstack/][JAMstack]] to publish the website on [[https://pages.cloudflare.com/][Cloudflare Pages]] (because why not).
 
