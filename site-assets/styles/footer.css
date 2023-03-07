@@ -4,6 +4,12 @@
   @apply border-0 border-t border-solid border-t-palette-nutty-dark;
 }
 
+@media (prefers-color-scheme: dark) {
+  #footer {
+    @apply border-t-palette-pflaume-darker;
+  }
+}
+
 #footer .container {
   max-width: var(--max-container-width);
 }

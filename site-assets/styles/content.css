@@ -24,6 +24,12 @@
   @apply text-primary-color-700 font-light italic text-h4;
 }
 
+@media (prefers-color-scheme: dark) {
+  #content .phonetic {
+    @apply text-primary-color-darkmode-700;
+  }
+}
+
 #content .photo-box {
   @apply relative max-w-full;
   min-height: 450px;
@@ -35,6 +41,12 @@
 
 #content .highlight-photo-tooltip {
   @apply block lg:invisible w-full bg-white text-left z-10 lg:absolute lg:bottom-0 p-2.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  #content .highlight-photo-tooltip {
+    @apply text-primary-color-900;
+  }
 }
 
 #content .photo-box:hover .highlight-photo-tooltip {
@@ -147,6 +159,15 @@
 
 #content label:hover {
   @apply text-primary-color-500;
+}
+
+@media (prefers-color-scheme: dark) {
+  #content label {
+    @apply text-primary-color-darkmode-700;
+  }
+  #content label:hover {
+    @apply text-primary-color-darkmode-500;
+  }
 }
 
 #content label:before {

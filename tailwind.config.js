@@ -57,22 +57,37 @@ module.exports = {
         half: '50%',
       },
       colors: {
-        'primary-color': {
-          500: '#66a7b7',
-          700: '#5d93a0',
-          900: '#0081a7',
+        'primary-color': { /* Same as palette.pflaume */
+          500: '#7c5480',
+          700: '#4e3455',
+          900: '#47284f',
+        },
+        'primary-color-darkmode': { /* minty green color */
+          500: '#b5fcc5',
+          700: '#bef7ca',
+          900: '#b8efc4',
         },
         palette: {
           grayish: '#dfd5ca',
           nutty: {
-            light: '#fed9b7',
-            dark: '#d1b79b',
+            light: '#dbd7d7',
+            dark: '#bbb7b7',
+          },
+          pflaume: {
+            light: '#7c5480',
+            dark: '#4e3455',
+            darker: '#47284f',
           },
         },
         'content-color': {
           900: '#202e4c',
           700: '#2a3d67',
           500: '#344c82',
+        },
+        'content-color-darkmode': {
+          900: '#f5ffc9',
+          700: '#f5ffc9',
+          500: '#f5ffc9',
         },
       },
       animation: {

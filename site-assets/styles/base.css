@@ -13,6 +13,12 @@ html {
   @apply bg-palette-nutty-light text-content-color-900;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    @apply bg-palette-pflaume-dark text-content-color-darkmode-900;
+  }
+}
+
 /* ------ Grids ---------- */
 .bp-grid-2 {
   @apply grid grid-cols-1 gap-4 place-items-stretch;
@@ -60,4 +66,14 @@ a, .org-ul a {
 
 a:hover, .org-ul a:hover {
   @apply text-primary-color-500;
+}
+
+@media (prefers-color-scheme: dark) {
+  a, .org-ul a {
+    @apply text-primary-color-darkmode-900;
+  }
+
+  a:hover, .org-ul a:hover {
+    @apply text-primary-color-darkmode-500;
+  }
 }
