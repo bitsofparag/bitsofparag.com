@@ -1,0 +1,51 @@
+#+title: Operating Principles of My Life
+#+author: Parag M.
+#+DATE: <2023-04-11 Tue>
+#+Time-stamp: <2023-04-11 Tue>
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:2 title:t
+#+STARTUP: fninline
+
+#+begin_metadata
+Published on {{{date(%e %b %Y)}}}
+#+end_metadata
+
+#+begin_share
+{{{tweet(https://bitsofparag.com/blog/2023/04/operating-principles-of-my-life.html, Operating Principles of My Life)}}}
+#+end_share
+
+* Objective :noexport:
+
+To share what I believe are the core principles of my life.
+
+* Message :noexport:
+
+TO inspire and stimulate. To provoke thoughts and encourage analysis. Readers should be able to understand what defines, describes and characterizes me as an individual. And hopefully, it also inspires them; enlightens them. Or encourages them to analyze the principles, questioning their validity or applicability. The goal is NOT religious preaching.
+
+* Tone :noexport:
+
+  Thought-provoking / Inspiring / Pensive
+
+* {{{blog_intro(Standing in front of the black\, glossy stele now famously known as the Law of Hammurabi\,)}}}
+I read its description online and one of its famous principles called "Lex Talionis" caught my attention. It is essentially the Law of Retaliation, taking "an eye for an eye, a tooth for a tooth", or in other words, the punishment for a crime should be proportional to the harm caused by the offender. I guess the concepts of "turning the other cheek" or "love and forgive" was alien to the people back then. ` fs`
+
+I live in a world where <content TBA>
+
+- Life is about searching, yearning, longing and wanting. But take some moments to be grateful for what you have
+- Practice empathy and understanding. They are two sides of the same coin.
+- If it hurts, don't do or experience it again. If it doesn't, it is worth a try
+- Nature's diverse tapestry fosters balance and beauty. Appreciate and take care of its every creation, including us.
+- Human first. This leads to fairness and equality. Then apply ethnicity, religion, gender or other categories to distinguish them, if needed.
+- Honesty leads to truthfulness, then trustfulness which makes one authentic and attractive. Be honest always.
+- Altruism is good but hard. So, try to to give more than you wish to receive.
+- Life's goals should basically be a healthy proportion of happiness to suffering.
+- Sometimes we experience loss to realize how to value and respect others before putting ourselves first.
+  So, take every loss as a lesson to become a better version of yourself.
+- Eat healthy, exercise regularly and keep a healthy social life
+- Don't work in any establishment where the management doesn't understand that value people bring to its success
+- Take care of your team and lead by example. Be a leader, not a boss.
+- Mistakes are gifts. Celebrate failures like you do on success.
+- We are but bundles of energy gathering memories and stories as we journey through life in this ever-expanding universe.
+  So, collect good memories and tell good stories.
+- Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't make you grow in mind.
