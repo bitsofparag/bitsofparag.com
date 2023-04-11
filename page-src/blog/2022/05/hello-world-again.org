@@ -12,7 +12,7 @@ Published on {{{date(%e %b %Y)}}}
 #+end_metadata
 
 #+begin_share
-{{{tweet(https://bitsofparag.com/blog/2022/02/hello-world-again.html, Hello world, again)}}}
+{{{tweet(https://bitsofparag.com/blog/2022/05/hello-world-again.html, Hello world, again)}}}
 #+end_share
 
 * Objective :noexport:
@@ -21,8 +21,7 @@ Published on {{{date(%e %b %Y)}}}
 
 * Message :noexport:
 
-  Take readers a bit down memory lane through the early 2000s when blogs were cool. And give them an
-  executive summary of what this website will be about, so that they come back to read.
+  Take readers a bit down memory lane through the early 2000s when blogs were cool. And give them an executive summary of what this website will be about, so that they come back to read.
 
 * Tone :noexport:
 
