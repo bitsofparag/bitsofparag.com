@@ -10,6 +10,7 @@
 (defconst bip-root (file-name-directory (or load-file-name buffer-file-name)))
 
 (add-to-list 'load-path (concat bip-root "lib"))
+(require 'htmlize)
 (require 'ox-rss)
 
 ;;; If using f.el, uncomment the following lines
