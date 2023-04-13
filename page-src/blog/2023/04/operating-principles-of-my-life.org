@@ -49,3 +49,6 @@ I live in a world where <content TBA>
 - We are but bundles of energy gathering memories and stories as we journey through life in this ever-expanding universe.
   So, collect good memories and tell good stories.
 - Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't make you grow in mind.
+
+* Comments
+{{{comments(http://bitsofparag.local:8080)}}}

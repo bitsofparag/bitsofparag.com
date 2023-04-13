@@ -295,3 +295,31 @@
   @apply w-3 h-3 inline mr-1;
   vertical-align: text-top;
 }
+
+/* Comment classes */
+#isso-thread input,
+#isso-thread label + input, /* #content label + input is set to display none for some reason */
+#isso-thread textarea {
+  display: block;
+  @apply text-content-color-900;
+}
+
+#isso-thread label:before, /* to override the #content label styles above */
+#isso-thread label:after {
+  content: "";
+}
+
+#isso-thread .isso-auth-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#isso-thread .isso-comment.isso-is-page-author > .isso-text-wrapper {
+  background-color: #bae0ea;
+}
+
+#isso-thread .isso-comment.isso-is-page-author > .isso-text-wrapper > .isso-comment-header > .isso-author {
+  color: #19798d;
+}
