@@ -310,10 +310,22 @@
 }
 
 #isso-thread .isso-auth-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @apply flex flex-col justify-between items-start flex-nowrap;
+  @apply md:flex-row md:items-center md:flex-wrap;
+}
+
+#isso-thread .isso-input-wrapper {
+  @apply w-full max-w-full;
+  @apply md:max-w-[32%];
+}
+
+#isso-thread .isso-input-wrapper input {
+  @apply w-full max-w-full;
+}
+
+#isso-thread .isso-post-action {
+  @apply mb-4;
+  @apply md:mb-0;
 }
 
 #isso-thread .isso-comment.isso-is-page-author > .isso-text-wrapper {
