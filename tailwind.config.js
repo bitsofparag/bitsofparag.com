@@ -68,7 +68,10 @@ module.exports = {
           900: '#b8efc4',
         },
         palette: {
-          amber: '#e48000',
+          amber: {
+            900: '#e48000',
+            500: '#f9a825',
+          },
           grayish: '#dfd5ca',
           nutty: {
             light: '#dbd7d7',

@@ -24,12 +24,11 @@
 }
 
 #isso-thread .isso-comment .author {
-  @apply text-palette-amber;
+  @apply text-palette-amber-900;
 }
 
 #isso-thread button {
-  background-color: #b7a4c0;
-  color: #5c3a6f;
+  @apply bg-palette-amber-900 text-palette-nutty-dark;
 }
 
 #isso-thread input[type="text"],

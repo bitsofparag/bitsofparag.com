@@ -3,20 +3,16 @@
 #content input[type="button"],
 #content input[type="reset"],
 #content input[type="submit"] {
+  @apply bg-palette-amber-500 text-white border-palette-amber-900;
   align-items: center;
-  background-color: #06f;
-  border: 2px solid #06f;
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
   display: inline-flex;
-  fill: #000;
   font-family: Inter,sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 48px;
   justify-content: center;
-  letter-spacing: -.8px;
   line-height: 24px;
   min-width: 140px;
   outline: 0;
