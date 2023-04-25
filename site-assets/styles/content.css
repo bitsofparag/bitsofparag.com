@@ -1,6 +1,6 @@
-/* ====================================================
+/* ===================================================
    Styles for content in all pages
-   ====================================================*/
+   =================================================== */
 #content {
   @apply container;
   @apply font-sans pt-16 m-auto;
@@ -12,6 +12,29 @@
 #content #colophon :not(h1, h2, h3, h4, h5, small, code, pre),
 #content #intro :not(h1, h2, h3, h4, h5, small, code, pre) {
   @apply font-sans text-body leading-body tracking-normal;
+}
+
+#text-actions ul {
+  @apply list-square;
+}
+
+#content p,
+#content ul,
+#content li,
+#content label.collapse-label {
+  @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
+}
+
+#content ul {
+  @apply list-inside list-square mb-4;
+}
+
+#content p + ul {
+  @apply -mt-4;
+}
+
+#content > .title ~ ul {
+  @apply font-sans mt-8;
 }
 
 #content #bio ul {
@@ -65,6 +88,10 @@
 }
 
 /* ----- Blog intro ----- */
+#content h2 {
+  @apply font-semibold text-h2 mb-3 leading-h2;
+}
+
 #content section:first-of-type h2:first-child {
   @apply leading-body-blog inline-block;
 }
@@ -81,10 +108,6 @@
   @apply lg:text-display lg:leading-display;
 }
 
-#content h2 {
-  @apply font-semibold text-h2 mb-3 leading-h2;
-}
-
 #content h3 {
   @apply text-h3 mb-2 mt-8 leading-h3;
 }
@@ -94,16 +117,8 @@
   @apply w-full mt-10 lg:mt-8;
 }
 
-/* Paragraph text */
-#content p,
-#content ul,
-#content li,
-#content label.collapse-label {
-  @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
-}
-
-#content p + ul {
-  @apply -mt-4;
+#text-table-of-contents a {
+  text-decoration: underline;
 }
 
 #content p a:hover,
@@ -111,20 +126,10 @@
   @apply underline;
 }
 
-
 /* Content list */
-#content ul {
-  @apply list-inside list-square mb-4;
-}
-
 #content ul li {
   @apply mb-2;
 }
-
-#content > .title ~ ul {
-  @apply font-sans mt-8;
-}
-
 
 /* Content tables */
 #content table {
@@ -149,12 +154,12 @@
 
 /* Inline footnotes */
 #content label {
+  @apply text-primary-color-700;
   cursor: pointer;
   vertical-align: super;
   line-height: 1;
-  font-size: .9em;
-  padding-left: .1em;
-  @apply text-primary-color-700;
+  font-size: 0.9em;
+  padding-left: 0.1em;
 }
 
 #content label:hover {
@@ -165,16 +170,18 @@
   #content label {
     @apply text-primary-color-darkmode-700;
   }
+
   #content label:hover {
     @apply text-primary-color-darkmode-500;
   }
 }
 
-#content label:before {
-  content:"[";
+#content label::before {
+  content: "[";
 }
-#content label:after {
-  content:"]";
+
+#content label::after {
+  content: "]";
 }
 
 #content label + input,
@@ -184,7 +191,7 @@
 
 #content input:checked + small {
   display: block;
-  padding: .8em 0 1em 2.5vw;;
+  padding: 0.8em 0 1em 2.5vw;
 }
 
 #content .footdef sup {
@@ -206,13 +213,14 @@
 }
 
 /* Collapsible components */
-#content label.collapse-label:before {
-  content:"‣";
-  display: inline-block;
+#content label.collapse-label::before {
   @apply transition-transform transform-gpu rotate-0 scale-110;
+  content: "‣";
+  display: inline-block;
 }
-#content label.collapse-label:after {
-  content:"";
+
+#content label.collapse-label::after {
+  content: "";
 }
 
 #content .collapse-panel {
@@ -220,7 +228,7 @@
   visibility: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height .2s, visibility .3s, opacity .3s;
+  transition: max-height 0.2s, visibility 0.3s, opacity 0.3s;
 }
 
 #content input.collapse-checkbox:checked ~ .collapse-panel {
@@ -229,15 +237,11 @@
   visibility: visible;
 }
 
-#content input.collapse-checkbox:checked ~ label.collapse-label:before {
+#content input.collapse-checkbox:checked ~ label.collapse-label::before {
   @apply transform-gpu rotate-90;
 }
 
 /* --------- custom classes ----------- */
-#text-Actions ul {
-  @apply list-square;
-}
-
 #content .timedate {
   @apply text-small flex justify-between -mt-2;
   max-width: 270px;
@@ -249,10 +253,6 @@
 
 #table-of-contents {
   margin-bottom: 1em;
-}
-
-#text-table-of-contents a {
-  text-decoration: underline;
 }
 
 #content .share > p {
@@ -284,7 +284,7 @@
   display: inline-block;
   padding: 2px 6px;
   border-radius: 3px;
-  background: #2867B2;
+  background: #2867b2;
   color: white !important;
   font-weight: bold;
   line-height: 1rem;
@@ -294,44 +294,4 @@
 #linkedin-share-button svg {
   @apply w-3 h-3 inline mr-1;
   vertical-align: text-top;
-}
-
-/* Comment classes */
-#isso-thread input,
-#isso-thread label + input, /* #content label + input is set to display none for some reason */
-#isso-thread textarea {
-  display: block;
-  @apply text-content-color-900;
-}
-
-#isso-thread label:before, /* to override the #content label styles above */
-#isso-thread label:after {
-  content: "";
-}
-
-#isso-thread .isso-auth-section {
-  @apply flex flex-col justify-between items-start flex-nowrap;
-  @apply md:flex-row md:items-center md:flex-wrap;
-}
-
-#isso-thread .isso-input-wrapper {
-  @apply w-full max-w-full;
-  @apply md:max-w-[32%];
-}
-
-#isso-thread .isso-input-wrapper input {
-  @apply w-full max-w-full;
-}
-
-#isso-thread .isso-post-action {
-  @apply mb-4;
-  @apply md:mb-0;
-}
-
-#isso-thread .isso-comment.isso-is-page-author > .isso-text-wrapper {
-  background-color: #bae0ea;
-}
-
-#isso-thread .isso-comment.isso-is-page-author > .isso-text-wrapper > .isso-comment-header > .isso-author {
-  color: #19798d;
 }
