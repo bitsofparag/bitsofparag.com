@@ -53,4 +53,4 @@ to be authentic, stop lying and pretending as that only reinforces our human ten
 - Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't make you grow in mind.
 
 * Comments
-{{{isso(http://dev-pub.bitsofparag.com/comments)}}}
+{{{isso(https://dev-pub.bitsofparag.com/comments)}}}
