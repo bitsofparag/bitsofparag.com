@@ -68,6 +68,10 @@ module.exports = {
           900: '#b8efc4',
         },
         palette: {
+          amber: {
+            900: '#e48000',
+            500: '#f9a825',
+          },
           grayish: '#dfd5ca',
           nutty: {
             light: '#dbd7d7',
@@ -85,12 +89,12 @@ module.exports = {
           }
         },
         'content-color': {
-          900: '#202e4c',
-          700: '#2a3d67',
-          500: '#344c82',
+          900: '#202e4c', /* navy blue */
+          700: '#2a3d67', /* dark blue */
+          500: '#344c82', /* medium-dark blue */
         },
         'content-color-darkmode': {
-          900: '#f5ffc9',
+          900: '#f5ffc9', /* pastel yellow-green */
           700: '#f5ffc9',
           500: '#f5ffc9',
         },

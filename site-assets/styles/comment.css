@@ -1,0 +1,86 @@
+/* Comment classes */
+#isso-thread .text {
+}
+
+#isso-thread a,
+#isso-thread a:visited {
+  text-decoration: none;
+}
+
+#isso-thread a:hover,
+#isso-thread a:active,
+#isso-thread a:focus {
+  text-decoration: underline;
+}
+
+#isso-thread .isso-comment .isso-meta {
+  font-size: 14px;
+  color: #a387b4;
+}
+
+#isso-thread .isso-follow-up .isso-comment,
+#isso-thread #isso-root .isso-comment:not(:first-of-type) {
+  @apply border-palette-nutty-dark border-t;
+}
+
+#isso-thread .isso-comment .author {
+  @apply text-palette-amber-900;
+}
+
+#isso-thread button {
+  @apply bg-palette-amber-900 text-palette-nutty-dark;
+}
+
+#isso-thread input[type="text"],
+#isso-thread textarea {
+  @apply text-black;
+}
+
+#isso-thread input,
+#isso-thread label + input, /* #content label + input is set to display none for some reason */
+#isso-thread .textarea {
+  @apply text-content-color-900;
+  display: block;
+  background-color: #fff;
+  border-color: #b7a4c0;
+}
+
+#isso-thread label::before, /* to override the #content label styles above */
+#isso-thread label::after {
+  content: "";
+}
+
+#isso-thread .auth-section {
+  @apply flex flex-col justify-between items-start flex-nowrap;
+  @apply md:flex-row md:items-center md:flex-wrap;
+}
+
+#isso-thread .input-wrapper {
+  @apply w-full max-w-full;
+  @apply md:max-w-[32%];
+}
+
+#isso-thread .input-wrapper input {
+  @apply w-full max-w-full;
+}
+
+#isso-thread .post-action {
+  @apply mb-4;
+  @apply md:mb-0;
+}
+
+#isso-thread .isso-preview {
+  @apply text-content-color-900;
+}
+
+#content #isso-thread {
+  @apply p-8 leading-body rounded text-content-color-darkmode-900;
+  background-color: rgba(44, 44, 44, 65%);
+}
+
+#content #isso-thread p,
+#content #isso-thread a,
+#content #isso-thread span,
+#content #isso-thread li {
+  @apply font-sans;
+}
