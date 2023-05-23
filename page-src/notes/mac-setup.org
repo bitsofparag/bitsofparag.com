@@ -88,13 +88,13 @@ PR [[https://github.com/bitsofparag/bitsofparag.com][here]] /(under "page-src/no
 :END:
 
    Set up SSH keys as follows:
-   #+begin_src sh
+   #+begin_src bash
      ssh-keygen -t ecdsa -b 521 -N '' -f ~/.ssh/id_ecdsa
      ssh-add ~/.ssh/id_ecdsa
    #+end_src
 
    Optionally, if you need to add the public key to a host, run:
-   #+begin_src sh
+   #+begin_src bash
      ssh-copy-id -f -i path/to/pubkey username@remote_host
    #+end_src
 

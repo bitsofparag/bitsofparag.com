@@ -78,6 +78,11 @@ module.exports = {
             dark: '#4e3455',
             darker: '#47284f',
           },
+          mint: {
+            light: '#b5fcc5',
+            dark: '#bef7ca',
+            darker: '#b8efc4',
+          }
         },
         'content-color': {
           900: '#202e4c',
