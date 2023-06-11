@@ -3,7 +3,7 @@
 #content input[type="button"],
 #content input[type="reset"],
 #content input[type="submit"] {
-  @apply bg-palette-amber-500 text-white border-palette-amber-900;
+  @apply bg-amber-400 text-white border-amber-900;
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;

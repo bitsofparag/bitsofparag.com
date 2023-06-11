@@ -1,6 +1,47 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+const palette = {
+  amber: {
+    900: '#e48000',
+    400: '#f9a825',
+  },
+  grayish: '#dfd5ca',
+  mustard: {
+    dark: '#DAA520',
+    light: '#CFB53B',
+  },
+  teal: {
+    dark: '#008B8B',
+    light: '#00CED1',
+  },
+  nutty: {
+    light: '#dbd7d7',
+    dark: '#bbb7b7',
+  },
+  pflaume: {
+    light: '#7c5480',
+    dark: '#4e3455',
+    darker: '#47284f',
+  },
+  mint: {
+    light: '#b5fcc5',
+    dark: '#bef7ca',
+    darker: '#b8efc4',
+  },
+  blue: {
+    light: '#202e4c',
+    dark: '#2a3d67',
+    darker: '#344c82',
+  },
+  yellowGreen: {
+    light: '#f5ffc9',
+    dark: '#e4f5c9',
+    darker: '#d3efc9',
+  },
+  white: '#fff',
+};
+
 module.exports = {
   content: ['./page-src/**/*.{html,js,org}', './site-assets/**/*.js'],
   theme: {
@@ -37,14 +78,14 @@ module.exports = {
     lineHeight: {
       hero: '4.8rem',
       display: '4.2rem',
-      h1: '3.2rem',
-      h2: '2.6rem',
-      h3: '2.6rem',
-      h4: '2.1rem',
+      h1: '4.8rem',
+      h2: '3.6rem',
+      h3: '3.6rem',
+      h4: '3.0rem',
       'button-text': '26px',
-      body: '1.6875rem',
-      'body-blog': '1.875rem',
-      info: '1.125rem',
+      body: '2rem',
+      'body-blog': '2.1rem',
+      info: '1.5rem',
       none: 1,
     },
     // extend
@@ -57,46 +98,34 @@ module.exports = {
         half: '50%',
       },
       colors: {
-        'primary-color': { /* Same as palette.pflaume */
-          500: '#7c5480',
-          700: '#4e3455',
-          900: '#47284f',
+        ...palette,
+        'primary-color': {
+          400: palette.pflaume.light,
+          700: palette.pflaume.dark,
+          900: palette.pflaume.darker,
         },
-        'primary-color-darkmode': { /* minty green color */
-          500: '#b5fcc5',
-          700: '#bef7ca',
-          900: '#b8efc4',
-        },
-        palette: {
-          amber: {
-            900: '#e48000',
-            500: '#f9a825',
-          },
-          grayish: '#dfd5ca',
-          nutty: {
-            light: '#dbd7d7',
-            dark: '#bbb7b7',
-          },
-          pflaume: {
-            light: '#7c5480',
-            dark: '#4e3455',
-            darker: '#47284f',
-          },
-          mint: {
-            light: '#b5fcc5',
-            dark: '#bef7ca',
-            darker: '#b8efc4',
-          }
+        'primary-color-darkmode': {
+          400: palette.mint.light,
+          700: palette.mint.dark,
+          900: palette.mint.darker,
         },
         'content-color': {
-          900: '#202e4c', /* navy blue */
-          700: '#2a3d67', /* dark blue */
-          500: '#344c82', /* medium-dark blue */
+          400: palette.pflaume.light,
+          700: palette.pflaume.dark,
+          900: palette.pflaume.darker,
         },
         'content-color-darkmode': {
-          900: '#f5ffc9', /* pastel yellow-green */
-          700: '#f5ffc9',
-          500: '#f5ffc9',
+          400: palette.white,
+          700: palette.white,
+          900: palette.white,
+        },
+        'link-color': {
+          700: palette.teal.light,
+          900: palette.teal.dark,
+        },
+        'link-color-darkmode': {
+          700: palette.mustard.light,
+          900: palette.mustard.dark,
         },
       },
       animation: {

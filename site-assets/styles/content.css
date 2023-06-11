@@ -89,7 +89,7 @@
 
 /* ----- Blog intro ----- */
 #content h2 {
-  @apply font-semibold text-h2 mb-3 leading-h2;
+  @apply font-semibold text-h2 leading-h2;
 }
 
 #content section:first-of-type h2:first-child {
@@ -109,7 +109,7 @@
 }
 
 #content h3 {
-  @apply text-h3 mb-2 mt-8 leading-h3;
+  @apply text-h3 leading-h3;
 }
 
 /* Sections */
@@ -119,11 +119,6 @@
 
 #text-table-of-contents a {
   text-decoration: underline;
-}
-
-#content p a:hover,
-#content ul a:hover {
-  @apply underline;
 }
 
 /* Content list */
@@ -154,7 +149,7 @@
 
 /* Inline footnotes */
 #content label {
-  @apply text-primary-color-700;
+  @apply text-link-color-900;
   cursor: pointer;
   vertical-align: super;
   line-height: 1;
@@ -163,16 +158,16 @@
 }
 
 #content label:hover {
-  @apply text-primary-color-500;
+  @apply text-link-color-700;
 }
 
 @media (prefers-color-scheme: dark) {
   #content label {
-    @apply text-primary-color-darkmode-700;
+    @apply text-link-color-darkmode-900;
   }
 
   #content label:hover {
-    @apply text-primary-color-darkmode-500;
+    @apply text-link-color-darkmode-700;
   }
 }
 
@@ -261,7 +256,7 @@
 }
 
 #content .metadata > p {
-  @apply border-b border-palette-nutty-dark mb-0 text-body;
+  @apply border-b border-nutty-dark mb-0 text-body;
 }
 
 #twitter-share-button {

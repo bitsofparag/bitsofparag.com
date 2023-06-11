@@ -1,16 +1,6 @@
 /* Comment classes */
 #isso-thread .text {
-}
-
-#isso-thread a,
-#isso-thread a:visited {
-  text-decoration: none;
-}
-
-#isso-thread a:hover,
-#isso-thread a:active,
-#isso-thread a:focus {
-  text-decoration: underline;
+  @apply mt-8;
 }
 
 #isso-thread .isso-comment .isso-meta {
@@ -20,15 +10,19 @@
 
 #isso-thread .isso-follow-up .isso-comment,
 #isso-thread #isso-root .isso-comment:not(:first-of-type) {
-  @apply border-palette-nutty-dark border-t;
+  @apply border-nutty-dark border-t;
 }
 
 #isso-thread .isso-comment .author {
-  @apply text-palette-amber-900;
+  @apply text-amber-900;
+}
+
+#isso-thread .isso-comment a.author {
+  text-decoration: underline;
 }
 
 #isso-thread button {
-  @apply bg-palette-amber-900 text-palette-nutty-dark;
+  @apply bg-amber-900 text-nutty-dark;
 }
 
 #isso-thread input[type="text"],
@@ -75,7 +69,13 @@
 
 #content #isso-thread {
   @apply p-8 leading-body rounded text-content-color-darkmode-900;
-  background-color: rgba(44, 44, 44, 65%);
+  background-color: rgba(0, 0, 0, 65%);
+}
+
+@media (prefers-color-scheme: dark) {
+  #content #isso-thread {
+    background-color: rgba(44, 44, 44, 65%);
+  }
 }
 
 #content #isso-thread p,
@@ -83,4 +83,8 @@
 #content #isso-thread span,
 #content #isso-thread li {
   @apply font-sans;
+}
+
+#content #isso-thread .isso-comment > div.text-wrapper > div.text h1 {
+  @apply text-h1 leading-h1 font-semibold;
 }

@@ -10,12 +10,12 @@
 }
 
 html {
-  @apply bg-palette-nutty-light text-content-color-900;
+  @apply bg-nutty-light text-content-color-900;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    @apply bg-palette-pflaume-dark text-content-color-darkmode-900;
+    @apply bg-pflaume-dark text-content-color-darkmode-900;
   }
 }
 
@@ -61,19 +61,19 @@ a.int::after {
 
 /* Custom classes for base elements */
 a, .org-ul a {
-  @apply inline-block text-primary-color-700;
+  @apply inline-block text-link-color-900;
 }
 
 a:hover, .org-ul a:hover {
-  @apply text-primary-color-500;
+  @apply text-link-color-700;
 }
 
 @media (prefers-color-scheme: dark) {
   a, .org-ul a {
-    @apply text-primary-color-darkmode-900;
+    @apply text-link-color-darkmode-900;
   }
 
   a:hover, .org-ul a:hover {
-    @apply text-primary-color-darkmode-500;
+    @apply text-link-color-darkmode-700;
   }
 }
