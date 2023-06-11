@@ -3,6 +3,10 @@
   @apply mt-8;
 }
 
+#isso-thread > h4 {
+  @apply text-h4 leading-h4;
+}
+
 #isso-thread .isso-comment .isso-meta {
   font-size: 14px;
   color: #a387b4;
@@ -68,7 +72,7 @@
 }
 
 #content #isso-thread {
-  @apply p-8 leading-body rounded text-content-color-darkmode-900;
+  @apply p-8 -mt-4 leading-body rounded text-content-color-darkmode-900;
   background-color: rgba(0, 0, 0, 65%);
 }
 
@@ -79,12 +83,14 @@
 }
 
 #content #isso-thread p,
-#content #isso-thread a,
-#content #isso-thread span,
 #content #isso-thread li {
-  @apply font-sans;
+  @apply font-sans text-body leading-body;
 }
 
 #content #isso-thread .isso-comment > div.text-wrapper > div.text h1 {
   @apply text-h1 leading-h1 font-semibold;
+}
+
+.isso-postbox.preview-mode > .form-wrapper .preview {
+  color: black;
 }
