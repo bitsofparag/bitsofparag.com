@@ -1,7 +1,7 @@
 #+title: Operating Principles of My Life
 #+author: Parag M.
-#+DATE: <2023-04-11 Tue>
-#+Time-stamp: <2023-04-11 Tue>
+#+DATE: <2023-06-13 Tue>
+#+Time-stamp: <2023-06-13 Tue>
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
 #+OPTIONS: broken-links:mark H:2 title:t
@@ -21,7 +21,7 @@ To share what I believe are the core principles of my life.
 
 * Message :noexport:
 
-TO inspire and stimulate. To provoke thoughts and encourage analysis. Readers should be able to understand what defines, describes and characterizes me as an individual. And hopefully, it also inspires them; enlightens them. Or encourages them to analyze the principles, questioning their validity or applicability. The goal is NOT religious preaching.
+TO inspire and stimulate. To provoke thoughts and encourage analysis. Readers should be able to understand what defines, describes and characterizes me as an individual. And hopefully, it also inspires them; enlightens them. Or encourages them to analyze the principles, questioning their validity or applicability. The goal is NOT to preach or advise.
 
 * Tone :noexport:
 
@@ -45,6 +45,7 @@ Following are the operating principles of my life. I am not elaborating on them 
 - If it hurts, don't experience it again. If it doesn't, it is worth a try.
 - Nature's diverse tapestry fosters balance and beauty. Appreciate and take care of its every creation, including us.
 - Human first. A human-centric approach fosters fairness and equality. Only when necessary, consider factors such as ethnicity, religion, gender, or other categories to differentiate individuals.
+- Travel more. See more of the world. It enriches you culturally and broadens your perspective.
 - Honesty leads to truthfulness; which leads to trustfulness; which makes one authentic and attractive. Be honest always.
 - Altruism is good but hard. So, try to to give more than you wish to receive.
 - Life should be a healthy proportion of happiness to suffering. Mathematically speaking, keep that proportion greater than 1.
@@ -54,7 +55,7 @@ Following are the operating principles of my life. I am not elaborating on them 
 - Take care of your team and lead by example. Be a leader, not a boss.
 - Mistakes are gifts. Celebrate failures like you do on success.
 - We are but bundles of energy gathering memories and stories as we journey through life in this ever-expanding universe. So, collect good memories and tell good stories.
-- Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't make you grow in mind.
+- Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't mean you grow in mind.
 
 So, what's my personal "Lex Talionis"? Well, the wrongdoer is not part of my healthy social life, so I would sever ties with them and put them out of my mind. And I would defer to the law for their rightful handling, if it comes to that.
 
