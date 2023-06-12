@@ -1,12 +1,12 @@
 #footer {
   @apply py-10 mt-6 w-full;
   @apply text-info;
-  @apply border-0 border-t border-solid border-t-palette-nutty-dark;
+  @apply border-0 border-t border-solid border-t-nutty-dark;
 }
 
 @media (prefers-color-scheme: dark) {
   #footer {
-    @apply border-t-palette-pflaume-darker;
+    @apply border-t-pflaume-darker;
   }
 }
 

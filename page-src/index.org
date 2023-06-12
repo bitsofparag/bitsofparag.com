@@ -12,7 +12,7 @@
     <source srcset="/static/images/main/highlight-photo.webp" />
     <img width="688" height="458" src="/static/images/main/highlight-photo.jpg" alt="Banner photo" class="highlight-photo" />
   </picture>
-  <span class="highlight-photo-tooltip">The drawing represents my existence rooted on Earth, which can be broken down into fundamental particles of nature bound together with limitless energy, which emerges from the underlying mathematical reality of the unbounded universe. <i>(I drew this with a removable tattoo-pen.)</i></span>
+  <span class="highlight-photo-tooltip">The tattoo-pen drawing represents my existence rooted on Earth, which can be broken down into fundamental particles of nature bound together with limitless energy, which emerges from the underlying mathematical reality of the unbounded universe.</span>
 </div>
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
@@ -39,28 +39,26 @@
 * Connect
 
 -
-    #+begin_export html
-    <span>
-    <!-- --
-    -->
-    admin
-    <!--
-    -->
-    (at)
-    <!--
-    -->
-    <!-- -->
-    bitsofparag
-    <!--
-    -->
-    <!-- -->
-    .com
-    </span>
-    #+end_export
+     #+begin_export html
+     <span>
+     <!-- --
+     -->
+     admin
+     <!--
+     -->
+     (at)
+     <!--
+     -->
+     <!-- -->
+     bitsofparag
+     <!--
+     -->
+     .com
+     </span>
+     #+end_export
 
 - {{{extlink(https://github.com/bitsofparag, Github, rel="me")}}}
-- {{{extlink(https://fosstodon.org/@parag, Fosstodon, rel="me")}}}
-- {{{extlink(https://www.are.na/parag-m, Are.na)}}}
+- {{{extlink(https://instagram.com/bitsofparag, Instagram, rel="me")}}}
 - {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
 
 
@@ -68,7 +66,7 @@
 
 - {{{extlink(https://dribbble.com/paragm, Dribbble)}}}
 - {{{extlink(https://www.scratchtheater.com, Improvised Theater)}}}
-
+- Woodworking (details TBA)
 
 * COMMENT Recent posts
 

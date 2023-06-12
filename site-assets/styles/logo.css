@@ -1,5 +1,5 @@
 #logo {
-  @apply block relative font-serif italic font-bold w-20 h-20 text-palette-pflaume-dark;
+  @apply block relative font-serif italic font-bold w-20 h-20 text-pflaume-dark;
 }
 
 #logo .letters-container {
