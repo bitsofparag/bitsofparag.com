@@ -1,4 +1,4 @@
 #+TITLE: Latest posts
 
-- [[file:2023/04/operating-principles-of-my-life.org][Operating Principles of My Life]] =2023-04-11=
+- [[file:2023/06/operating-principles-of-my-life.org][Operating Principles of My Life]] =2023-04-11=
 - [[file:2022/05/hello-world-again.org][Hello World, Again]] =2022-05-28=
