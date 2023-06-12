@@ -27,6 +27,12 @@ TO inspire and stimulate. To provoke thoughts and encourage analysis. Readers sh
 
   Thought-provoking / Inspiring / Pensive
 
+* Intended audience :noexport:
+
+#+begin_info
+
+#+end_info
+
 * {{{blog_intro(Standing in front of the black\, glossy stele now famously known as the Law of Hammurabi\,)}}}
 I read its description online and one of its famous principles called "Lex Talionis" caught my attention. It is essentially the Law of Retaliation, taking "an eye for an eye, a tooth for a tooth", or in other words, the punishment for a crime should be proportional to the harm caused by the offender. I guess the concepts of "turning the other cheek" or "love and forgive" was alien to the people back then.
 
@@ -51,6 +57,7 @@ to be authentic, stop lying and pretending as that only reinforces our human ten
 - We are but bundles of energy gathering memories and stories as we journey through life in this ever-expanding universe.
   So, collect good memories and tell good stories.
 - Always keep learning. But also un-learning. In other words, keep improving. Time spent on Earth doesn't make you grow in mind.
+
 
 * Comments
 {{{isso(https://dev-pub.bitsofparag.com/comments)}}}

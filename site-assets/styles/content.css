@@ -259,6 +259,20 @@
   @apply border-b border-nutty-dark mb-0 text-body;
 }
 
+#content .info {
+  @apply text-small px-2 py-2 mt-4 bg-mustard-dark;
+}
+
+#content .info p {
+  @apply mb-0;
+}
+
+@media (prefers-color-scheme: dark) {
+  #content .info p {
+    @apply text-white;
+  }
+}
+
 #twitter-share-button {
   /* most styles applied via Twitter */
   @apply font-sans text-small align-middle;
