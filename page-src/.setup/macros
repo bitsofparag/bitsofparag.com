@@ -77,7 +77,7 @@ git log --pretty=format:"%h%x09%ad%x09%an%x09%s" --date=short | head -n 5
 
 #+MACRO: thinking @@html:<span style="font-size:2rem;">🤔</span><sup style="font-size:1.5rem">💭</sup>@@
 
-#+MACRO: isso @@html:<section id="isso-thread"></section><script async data-isso="$1/" data-isso-id="thread-id" data-isso-css="true" data-isso-css-url="null" data-isso-lang="en" data-isso-max-comments-top="10" data-isso-max-comments-nested="5" data-isso-reveal-on-click="5" data-isso-avatar="true" data-isso-avatar-bg="#f0f0f0" data-isso-avatar-fg="#9abf88" data-isso-vote="true" data-isso-vote-levels="" data-isso-page-author-hashes="bip1010g" data-isso-reply-notifications-default-enabled="false" src="$1/js/embed.min.js"></script>@@
+#+MACRO: isso @@html:<section id="isso-thread"></section><script async data-isso="$1/" data-isso-id="thread-id" data-isso-css="true" data-isso-css-url="null" data-isso-lang="en" data-isso-max-comments-top="10" data-isso-max-comments-nested="5" data-isso-reveal-on-click="5" data-isso-avatar="true" data-isso-avatar-bg="#f0f0f0" data-isso-avatar-fg="#9abf88" data-isso-vote="true" data-isso-vote-levels="" data-isso-require-author="true" data-isso-page-author-hashes="bip1010g" data-isso-reply-notifications-default-enabled="false" src="$1/js/embed.min.js"></script>@@
 
 #+MACRO: utter-default @@html:<script src="https://utteranc.es/client.js" repo="bitsofparag/bitsofparag.com" issue-term="$1" label="post-comment" theme="github-dark-orange" crossorigin="anonymous" async></script>@@
 
