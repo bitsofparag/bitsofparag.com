@@ -1,7 +1,7 @@
 #+title: Operating Principles of My Life
-#+author: Parag M.
-#+DATE: <2023-06-13 Tue>
-#+Time-stamp: <2023-06-13 Tue>
+#+author: Parag Majumdar
+#+DATE: <2023-06-15 Tue>
+#+Time-stamp: <2023-06-15 Tue>
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
 #+OPTIONS: broken-links:mark H:2 title:t
