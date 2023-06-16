@@ -8,7 +8,7 @@
 #+STARTUP: fninline
 
 #+begin_metadata
-Published on {{{date(%e %b %Y)}}}
+Published on {{{date(%e %b %Y)}}}  •  Updated {{{modification-time(%e %b %Y)}}}
 #+end_metadata
 
 #+begin_share
@@ -36,30 +36,16 @@ the itch to share bits of me on a new bitsofparag website. So, hello again 👋
 
 ** What was then
 In the early Web2.0 days, content - /viz./ blogs, wikis, memes, image-sharing, comments,
-or social posts on Reddit, Twitter & Facebook - was created by the technically-savvy. And having a
-one-of-a-kind personal portfolio website was the coolest thing you could do on the web. I was
-active on Twitter and Facebook but they were new & had little to no promotional aspects to them.
-Although one could blog on [[https://en.wikipedia.org/wiki/Blogger_(service)][Blogspot]] and share on [[https://en.wikipedia.org/wiki/Digg][Digg]] or [[https://en.wikipedia.org/wiki/Delicious_(website)][Delicious]] to build one's clout on the social
-web, it was more cool to, say, add commenting apps/plugins or write one's own! Fun times 😅
+or social posts on Reddit, Twitter & Facebook - was created by the technically-savvy. And having a one-of-a-kind personal portfolio website was the coolest thing you could do on the web. I was active on Twitter and Facebook but they were new & had little to no promotional aspects to them. Although one could blog on [[https://en.wikipedia.org/wiki/Blogger_(service)][Blogspot]] and share on [[https://en.wikipedia.org/wiki/Digg][Digg]] or [[https://en.wikipedia.org/wiki/Delicious_(website)][Delicious]] to build one's clout on the social web, it was more cool to, say, add commenting apps/plugins or write one's own!
 
-In 2009, I chose a web framework called [[https://symfony.com/][Symfony]], to learn about [[https://stackoverflow.com/questions/1444685/symfony-php-framework-and-mongodb-or-any-json-based-database][databases]], [[https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller][MVC]], [[https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping][ORM]]s and [[https://en.wikipedia.org/wiki/Fluent_interface][fluent
-apis]]. I published the website on a paid server from a hosting provider. That server could handle the
-stress of internet users accessing my website. By the time I finished building the website (early
-2010), I felt like a seasoned web-developer. I was pleasantly surprised to see that Wayback Machine
-had saved a copy of the old website. Check it out {{{extlink(https://web.archive.org/web/20100131125219/http://www.bitsofparag.com/, here)}}} 👀
+In 2009, I chose a web framework called [[https://symfony.com/][Symfony]], to learn about [[https://stackoverflow.com/questions/1444685/symfony-php-framework-and-mongodb-or-any-json-based-database][databases]], [[https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller][MVC]], [[https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping][ORM]]s and [[https://en.wikipedia.org/wiki/Fluent_interface][fluent apis]]. I published the website on a paid server from a hosting provider. That server could handle the stress of the relatively small number of internet users at the time. By the time I finished building the website (early 2010), I felt like a seasoned web-developer. I was pleasantly surprised to see that Wayback Machine had saved a copy of the old website. Check it out {{{extlink(https://web.archive.org/web/20100131125219/http://www.bitsofparag.com/, here)}}}
 
 ** What is new
-Well, social media may have changed the way people produce and share content online but having a
-personal website is still cool. I hope this time I am able to write more. And complement the
-writings with showcase apps, interesting projects and other contributions to the communities I
-am active in. More bandwidth and more computing power has naturally led to video-based content, both
-short and long forms, getting more engagement than long blog posts. Keeping people engaged with
-prose is challenging but not a lost cause, especially when good information is competing every
-minute with misinformation.
+Well, social media may have changed the way people produce and share content online but having a personal website is still satisfying. I hope this time I am able to write more. And complement the writings with showcase apps and interesting projects. More bandwidth and more computing power has naturally led to video-based content, both short and long forms, getting more engagement than long blog posts. Keeping people engaged with prose is challenging but not a lost cause, especially when good information is competing every minute with misinformation.
 
-What's new on this website is that there's no complex web framework behind the codebase; instead it
-is just my good ol' text editor and a styling framework.{{{fni(1,More info about it <a
-href="/colophon.html" class="ext" target="_blank">here</a>)}}} And instead of buying a server on a
-shared hosting and administering the said server, I just handed it over to the cloud providers to
-make this website securely & reliably accessible to billions of people on the internet. Happy to
-have you here 🙂
+What's new on this website is that there's no complex web framework behind the codebase; instead it is just my good ol' text editor and a styling framework.{{{fni(1,More info about it <a
+href="/colophon.html" class="ext" target="_blank">here</a>)}}} And instead of buying a server on a shared hosting and administering the said server, I just handed it over to the cloud providers to make this website securely & reliably accessible to billions of people on the internet. Thanks for reading all this way!
+
+
+* Discuss
+{{{isso(https://pub.bitsofparag.com/comments)}}}
