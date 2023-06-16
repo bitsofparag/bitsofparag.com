@@ -60,4 +60,4 @@ Following are the operating principles of my life. I am neither elaborating on t
 So, what's my personal "Lex Talionis"? Well, the wrongdoer will not be a part of my healthy social life, so I would sever ties with them and put them out of my mind. And I would defer to the law for their rightful handling, if it comes to that.
 
 * Discuss
-{{{isso(https://dev-pub.bitsofparag.com/comments)}}}
+{{{isso(https://pub.bitsofparag.com/comments)}}}
