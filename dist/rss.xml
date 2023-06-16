@@ -9,22 +9,31 @@
      xmlns:georss="http://www.georss.org/georss"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:media="http://search.yahoo.com/mrss/"><channel>
-  <title>Parag's Personal Weblog</title>
+  <title>Parag's Personal Website</title>
   <atom:link href="https://bitsofparag.com/rss.xml" rel="self" type="application/rss+xml" />
   <link>https://bitsofparag.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 06 Mar 2023 23:03:49 +0100</pubDate>
-  <lastBuildDate>Mon, 06 Mar 2023 23:03:49 +0100</lastBuildDate>
+  <pubDate>Fri, 16 Jun 2023 17:36:53 +0200</pubDate>
+  <lastBuildDate>Fri, 16 Jun 2023 17:36:53 +0200</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
   <webMaster> (Parag M.)</webMaster>
   <image>
     <url>https://bitsofparag.com/static/images/og-logo.png</url>
-    <title>Parag's Personal Weblog</title>
+    <title>Parag's Personal Website</title>
     <link>https://bitsofparag.com/</link>
   </image>
 
 
+  <item>
+    <title>Operating Principles of My Life</title>
+    <link>https://bitsofparag.com/blog/2023/06/operating-principles-of-my-life.html</link>
+    <author> (Parag M.)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/blog/2023/06/operating-principles-of-my-life.html</guid>
+    <pubDate>Tue, 11 Apr 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Hello World, Again</title>
     <link>https://bitsofparag.com/blog/2022/05/hello-world-again.html</link>

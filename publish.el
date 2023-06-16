@@ -27,9 +27,9 @@
 
 (defconst bip-url-home "https://bitsofparag.com/"
   "The home page url of the website.")
-(defconst bip-title "Parag's Personal Weblog"
+(defconst bip-title "Parag's Personal Website"
   "Title of the website.")
-(defconst bip-desc "I am Parag and this is my personal site where I document my work and highlights of my life as well as write about various topics"
+(defconst bip-desc "I am Parag and this is my personal website where I highlight my work and write about various topics"
   "Description of the website.")
 (defconst bip-keywords "parag, blog, opinion, thoughts, technology, experiments"
   "Website keywords for SEO.")
