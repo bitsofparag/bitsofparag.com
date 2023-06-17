@@ -1,0 +1,38 @@
+#+title: What I'm doing now
+#+author: Parag Majumdar
+#+DATE: <2023-06-17 Fri>
+#+Time-stamp: <2023-06-17 Fri>
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
+#+OPTIONS: broken-links:mark H:2 title:t
+#+STARTUP: fninline
+
+#+begin_metadata
+Last updated on {{{modification-time(%e %b %Y)}}}
+#+end_metadata
+
+
+#+begin_info
+This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers.org/now][Derek Sivers]]. A living document on what my life looks like now.
+#+end_info
+
+* Current Focus
+I am mostly working on re-skilling myself for the new job market that is with generative AI tools. Besides tech, I am climbing and belaying with my friend Pablo once a week, with the goal of climbing some small to medium rock-faces outdoors. I am making some small woodworking projects. I am trying to log 15-20km every week running on Strava - not easy but the summer sun is just too enticing to not be outside.
+
+* Projects
+- Drafting my next blog post about setting up generative AI models like Llama on your local machine.
+- I will be aiming to finish a couple of woodworking projects soon - a box-shaped coffee table and a small oakwood pencil-case.
+
+* Books
+- I have started reading [[https://www.goodreads.com/book/show/51077.The_Last_Song_of_Dusk]["The Last Song of Dusk"]].
+- I keep delving into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]] by Sean Carroll, one of my favorite physicists and a notable science communicator.
+
+* Current Mantra
+- /Share your current mantra, quote or guiding principle here./
+
+* Music
+- Having watched the final(?) chapter of John Wick, I have been playing its OST quite often, which include songs like [[https://www.youtube.com/watch?v=qYzwZY2JK04][Marie Douceur, Marie Colère]] and [[https://www.youtube.com/watch?v=2cm7MEONP48][Think by Kaleida]].
+
+
+* Fragments of Thought
+-
