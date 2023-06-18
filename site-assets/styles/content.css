@@ -254,11 +254,11 @@
 }
 
 #content .metadata > p {
-  @apply border-b border-nutty-dark mb-0 text-body;
+  @apply border-b border-nutty-dark border-dotted mb-0 text-body;
 }
 
 #content .info {
-  @apply text-small px-2 py-2 mt-4 bg-mustard-dark;
+  @apply text-small pl-4 pr-2 py-2 mt-4 border-l-2;
 }
 
 #content .info p {
