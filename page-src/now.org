@@ -17,7 +17,11 @@ This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers
 #+end_info
 
 * Current Focus
-With generative AI tools flooding the tech industry, I am upskilling myself in LLMs. Learning the fundamentals of any technology is important, so I feel [[https://karpathy.ai/zero-to-hero.html][this]] is a good place to start for someone already familiar with ML application programming. Besides, I am climbing and belaying with my friend Pablo once a week, with the goal of climbing some small to medium rock-faces outdoors. I am making some small wooden articles at a local woodworking center. I am trying to log 15-20km every week running on Strava - not easy but the summer sun is just too enticing to not be outside. Finally, I applied for a drivers' license course - I hope to drive a used VW van to take it outside on wild camping trips.
+- With generative AI tools flooding the tech industry, I am upskilling myself in LLMs. Learning the fundamentals of any technology is important, so I feel [[https://karpathy.ai/zero-to-hero.html][this]] is a good place to start for someone already familiar with ML application programming.
+- Besides, I am climbing and belaying with my friend Pablo once a week, with the goal of climbing some small to medium rock-faces outdoors.
+- I am making some small wooden articles at a local woodworking center.
+- I am trying to log 15-20km every week running on Strava - not easy but the summer sun is just too enticing to not be outside.
+- I applied for a drivers' license course - I hope to drive a used VW van to take it outside on wild camping trips.
 
 * Projects
 - Drafting my next blog post about setting up different generative AI models through [[https://github.com/ggerganov/llama.cpp][Llama.cpp]] on a local machine.
@@ -25,7 +29,7 @@ With generative AI tools flooding the tech industry, I am upskilling myself in L
 
 * Books
 - I have started reading [[https://www.goodreads.com/book/show/51077.The_Last_Song_of_Dusk]["The Last Song of Dusk"]].
-- I keep delving into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]] by Sean Carroll, one of my favorite physicists and a notable science communicator.
+- I regularly delve into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]]  by Sean Carroll, one of my favorite physicists and a notable science communicator.
 
 * Music
 - Having watched the final(?) chapter of John Wick, I have been playing its OST quite often, which include songs like [[https://www.youtube.com/watch?v=qYzwZY2JK04][Marie Douceur, Marie Colère]] and [[https://www.youtube.com/watch?v=2cm7MEONP48][Think by Kaleida]].
