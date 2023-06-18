@@ -13,7 +13,7 @@ Last updated on {{{modification-time(%e %b %Y)}}}
 
 
 #+begin_info
-This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers.org/now][Derek Sivers]]. A living document on what my life looks like now.
+This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers.org/now][Derek Sivers]]. A living document on what my life looks like now - things I would say when friends ask, "What have you been up to?"
 #+end_info
 
 * Current Focus
