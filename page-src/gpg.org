@@ -1,0 +1,37 @@
+#+title: Public PGP Key
+#+author: Parag Majumdar
+#+DATE: <2023-06-26 Mon>
+#+Time-stamp: <2023-06-26 Mon>
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
+#+OPTIONS: broken-links:mark H:2 title:t
+#+STARTUP: fninline
+
+Here is my public PGP key. This key is used for communication typically via email. You can download it or copy and paste the content.
+
+* Copy and paste
+
+#+begin_example
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: 7BAD A50C 751C 7885 581D  ACBC FDD8 5168 C9EB 8FCB
+
+xjMEXSIbvBYJKwYBBAHaRw8BAQdAzsrY0fW2c7dR9Hi1yClpgvUz3ffpnzN+Ios9
+qOzPrRfNLWFkbWluQGJpdHNvZnBhcmFnLmNvbSA8YWRtaW5AYml0c29mcGFyYWcu
+Y29tPsKOBBAWCgAfBQJdIhu8BgsJBwgDAgQVCAoCAxYCAQIZAQIbAwIeAQAhCRD9
+2FFoyeuPyxYhBHutpQx1HHiFWB2svP3YUWjJ64/LKcgBAPgv3aCufbN0aX9MojRx
+gX7418MIE7OVIUmt7npSMpUBAQClCzPtL7nzBA3sIzxtb6xXh3q7tv6lSIbyJm+X
+POocAc44BF0iG7wSCisGAQQBl1UBBQEBB0BZmtGQ1a/0zD3xFq4JkoahgWRXCUKx
+rMbZG1XURaMhKwMBCAfCeAQYFggACQUCXSIbvAIbDAAhCRD92FFoyeuPyxYhBHut
+pQx1HHiFWB2svP3YUWjJ64/LxCMA/3OGHC1kf2Y7A6dxfnaolu8A0Q7TKQCKgeit
++ETRCnNsAP47XnY00B/P4oxntO1xUxh2TCIeUVHlcsmmt2s0nfkYDw==
+=P2pw
+-----END PGP PUBLIC KEY BLOCK-----
+#+end_example
+
+* Fetch from public key server
+
+You can use =gpg= to fetch the public key directly from [[https://keys.openpgp.org][Openpgp keyserver]]. /(If the keyserver is down, use the copy-paste method.)/
+
+#+begin_src sh
+gpg --keyserver keys.openpgp.org --recv 7BADA50C751C7885
+#+end_src
