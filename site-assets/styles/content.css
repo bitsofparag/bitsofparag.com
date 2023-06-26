@@ -55,7 +55,7 @@
 
 #content .photo-box {
   @apply relative max-w-full;
-  min-height: 450px;
+  min-height: 400px;
 }
 
 #content .highlight-photo {
@@ -79,6 +79,10 @@
 #content .photo-me {
   @apply flex items-start flex-col;
   @apply md:-z-10;
+}
+
+#content .photo-me picture {
+  @apply bg-white p-2;
 }
 
 #content .sticky-tape {
