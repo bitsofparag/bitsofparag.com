@@ -1,35 +1,63 @@
 pre.example,
 code,
 .org-src-container {
-    @apply mt-4 mb-4;
-    font-size: small;
-    display: block;
-    background: #4a4a4a;
-    color: #e8e8e8;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-    max-width: 100%;
-    min-width: 100px;
+  @apply mt-4 mb-4;
+  @apply text-content-color-900 bg-cream text-info;
+  display: block;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  -webkit-overflow-scrolling: touch;
 }
 
 pre.example {
-    @apply p-4;
+  @apply p-4;
 }
 
 .org-src-container {
-    @apply p-4;
+  @apply p-4;
 }
 
 code {
-  display: inline;
-  background: #A86464;
-  color: inherit;
   @apply px-2 py-1;
+  display: inline;
 }
 
 @media (prefers-color-scheme: dark) {
-  code, .org-src-container {
-    background: #A86464;
-    @apply text-primary-color-darkmode-900;
+  pre.example,
+  code,
+  .org-src-container {
+    @apply text-content-color-darkmode-900;
+    @apply bg-charcoal-dark;
   }
+}
+
+#copied-message-tmpl,
+.copied-message {
+  @apply absolute top-0 right-0 px-2 text-info;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.copied-message-container {
+  position: relative;
+}
+
+.success-message,
+.error-message {
+  display: inline;
+  opacity: 1;
+}
+
+.success-message {
+  @apply bg-yellowGreen-dark text-charcoal-dark;
+}
+
+.error-message {
+  @apply bg-crimson-dark text-white;
+}
+
+.hide-message {
+  opacity: 0;
 }

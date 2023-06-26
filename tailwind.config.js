@@ -2,9 +2,17 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 const palette = {
+  crimson: {
+    dark: '#8c0000',
+    light: '#c62828',
+  },
   amber: {
     900: '#e48000',
     400: '#f9a825',
+  },
+  charcoal: {
+    dark: '#2e2e2e',
+    light: '#4a4a4a',
   },
   grayish: '#dfd5ca',
   mustard: {
@@ -40,6 +48,7 @@ const palette = {
     darker: '#d3efc9',
   },
   white: '#fff',
+  cream: '#f7f6e1',
 };
 
 module.exports = {
