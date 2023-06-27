@@ -33,7 +33,8 @@
     };
   } /* enableScrollableHeader */
 
-  function showMessage(element, msg, isSuccessful = true) {
+  let messageHelpCounter = 0;
+  function showMessage(element, eventType, msg, isSuccessful = true) {
     if (!msg) return;
     let message = document.createElement('span');
     message.className = 'copied-message ' + (isSuccessful ? 'success-message' : 'error-message');
@@ -41,6 +42,18 @@
     message.style.display = 'block';
     element.parentNode.classList.add('copied-message-container');
     element.parentNode.insertBefore(message, element);
+    if (eventType !== 'click') {
+      if (messageHelpCounter < 2) {
+        messageHelpCounter += 1;
+        setTimeout(function() {
+          message.classList.add('hide-message');
+        }, 350);
+        return;
+      }
+      message.parentNode.removeChild(message);
+      return;
+    }
+
     setTimeout(function() {
       message.classList.add('hide-message');
       setTimeout(function() {
@@ -54,14 +67,21 @@
   function copyToClipboard() {
     const codeContent = document.querySelectorAll('pre, code');
 
-    // Add event listener to each copy code button
     codeContent.forEach(code => {
+      code.addEventListener('mouseenter', (e) => {
+        showMessage(e.target, e.type, 'Click to copy');
+      });
+
+      code.addEventListener('touchstart', (e) => {
+        showMessage(e.target, e.type, 'Click to copy');
+      });
+
       code.addEventListener('click', (e) => {
         if (navigator.clipboard) {
           navigator.clipboard.writeText(e.target.textContent).then(function() {
-            showMessage(e.target, 'Copied');
+            showMessage(e.target, e.type, 'Copied');
           }, function(err) {
-            showMessage(e.target, 'Error copying', false);
+            showMessage(e.target, e.type, 'Error copying', false);
             console.error('Could not copy text: ', err);
           });
         } else {
@@ -73,9 +93,9 @@
           try {
             var successful = document.execCommand('copy');
             var msg = successful ? 'Copied!' : 'Error copying!';
-            showMessage(e.target, msg, successful);
+            showMessage(e.target, e.type, msg, successful);
           } catch (err) {
-            showMessage(e.target, 'Error copying!', false);
+            showMessage(e.target, e.type, 'Error copying!', false);
             console.error('Could not copy text: ', err);
           }
           document.body.removeChild(textArea);
