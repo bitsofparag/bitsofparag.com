@@ -48,4 +48,4 @@ href="/colophon.html" class="ext" target="_blank">here</a>)}}} And instead of bu
 
 
 * Discuss
-{{{isso(https://dev-pub.bitsofparag.com/comments)}}}
+{{{isso(https://pub.bitsofparag.com/comments)}}}

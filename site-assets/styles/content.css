@@ -96,10 +96,6 @@
   @apply font-semibold text-h2 leading-h2;
 }
 
-#content section:first-of-type h2:first-child {
-  @apply leading-body-blog inline-block;
-}
-
 #content span.blog-intro {
   @apply font-serif font-bold text-h4 leading-h4;
 }

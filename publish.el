@@ -53,7 +53,7 @@
 (setq org-html-htmlize-output-type 'css)
 (setq display-time-day-and-date t)
 (setq org-publish-use-timestamps-flag nil)
-(setq user-full-name "Parag M.")
+(setq user-full-name "Parag Majumdar")
 (setq user-mail-address "admin@bitsofparag.com")
 (setq org-html-home/up-format "")
 
