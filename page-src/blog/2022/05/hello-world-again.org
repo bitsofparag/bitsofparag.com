@@ -8,7 +8,7 @@
 #+STARTUP: fninline
 
 #+begin_metadata
-Published on {{{date(%e %b %Y)}}}  •  Updated {{{modification-time(%e %b %Y)}}}
+Published on {{{date(%e %b %Y)}}}  •  Updated 17 Jun 2023
 #+end_metadata
 
 #+begin_share

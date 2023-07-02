@@ -8,7 +8,7 @@
 #+STARTUP: fninline
 
 #+begin_metadata
-Last updated on {{{modification-time(%e %b %Y)}}}
+Last updated on 02 Jul 2023 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
 #+end_metadata
 
 
@@ -32,4 +32,4 @@ This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers
 - I regularly delve into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]]  by Sean Carroll, one of my favorite physicists and a notable science communicator.
 
 * Music
-- Having watched the final(?) chapter of John Wick, I have been playing its OST quite often, which include songs like [[https://www.youtube.com/watch?v=qYzwZY2JK04][Marie Douceur, Marie Colère]] and [[https://www.youtube.com/watch?v=2cm7MEONP48][Think by Kaleida]].
+- A couple of retro tracks have kept me upbeat lately, viz. "People in the Front Row" by [[https://en.wikipedia.org/wiki/Melanie_(singer)][Melanie]] and "Don't Stop" by [[https://en.wikipedia.org/wiki/Fleetwood_Mac][Fleetwood Mac]].
