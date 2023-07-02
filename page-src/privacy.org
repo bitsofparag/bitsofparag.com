@@ -1,0 +1,30 @@
+#+title: Privacy Policy
+#+author: Parag Majumdar
+#+DATE: <2023-07-02 Sun>
+#+Time-stamp: <2023-07-02 Sun>
+#+SETUPFILE: ./.setup/macros
+#+SETUPFILE: ./.setup/options
+#+OPTIONS: broken-links:mark H:2 title:t
+#+STARTUP: fninline
+
+Bitsofparag is my personal blog. I have no need for your private information or forwarding it to third parties.
+
+* Personal data
+
+In accordance with EU GDPR, [[https://gdpr.eu/eu-gdpr-personal-data/][personal data]] is not collected. However, in the commenting system (provided by [[https://isso-comments.de/][Isso]]), for a good user-experience in discussions, I request a commenter's name and/or website URL during submission of their comment. But the requests are optional and the commenter can submit their comments anonymously.
+
+* Web analytics
+
+I run a basic Cloudflare-provided analytics to check number of requests and unique visitors. See more details of this service [[https://developers.cloudflare.com/analytics/account-and-zone-analytics/zone-analytics/][here]]. This form of analytics does not use cookies and data such as IP-address and User-Agent are not logged anywhere.
+
+* Hosting
+
+This website is hosted on Cloudflare Pages, please see their privacy policy for what information they collect.
+
+* Links to Other Sites
+
+The site may contain a couple of links to other sites (the badges, for example). If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. I have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. So, please review the Privacy Policy of these websites if you are concerned.
+
+* Contact me
+
+If you have any questions or suggestions about the Privacy Policy, do not hesitate to contact me. My contact email can be found on the home page.
