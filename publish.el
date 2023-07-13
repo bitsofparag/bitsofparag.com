@@ -121,36 +121,6 @@ PUB-DIR is when the output will be placed."
   (if (equal "rss.org" (file-name-nondirectory filename))
       (org-rss-publish-to-rss plist filename pub-dir)))
 
-(defun bip-org-html-publish-to-html (plist filename pub-dir)
-  "Publish an org file to HTML.
-
-This function is a wrapper around `org-html-publish-to-html'.
-Before calling `org-html-publish-to-html', it replaces the {{{date(%e %b %Y)}}}
-macro in the file content with the actual date from the #+DATE: line."
-
-  ;; Read the content of the file
-  (with-temp-buffer
-    (insert-file-contents filename)
-
-    ;; Replace {{{date(%e %b %Y)}}} with the actual date
-    (goto-char (point-min))
-    (when (re-search-forward "^#\\+DATE: \\[\\(.*\\)\\]$" nil t)
-      (let ((date (match-string 1)))
-        (goto-char (point-min))
-        (while (re-search-forward "{{{date(%e %b %Y)}}}" nil t)
-          (replace-match date))))
-
-    ;; Save the buffer's current state so we can restore it later
-    (let ((original-content (buffer-string)))
-
-      ;; Call `org-html-publish-to-html' with the modified buffer content
-      (unwind-protect
-          (org-html-publish-to-html plist filename pub-dir)
-
-        ;; Restore the buffer's original content
-        (erase-buffer)
-        (insert original-content)))))
-
 
 ;; ---------------------------------------
 ;; Publish list
@@ -221,7 +191,7 @@ macro in the file content with the actual date from the #+DATE: line."
              :base-directory (concat bip-root "page-src/microblog")
              :base-extension "org"
              :recursive t
-             :publishing-function 'bip-org-html-publish-to-html  ;; Output directory
+             :publishing-function 'org-html-publish-to-html  ;; Output directory
              :publishing-directory (concat bip-root "dist/microblog")
              :exclude "index.org~"
              :html-doctype "html5"
