@@ -14,10 +14,10 @@
   <link>https://bitsofparag.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 16 Jun 2023 17:36:53 +0200</pubDate>
-  <lastBuildDate>Fri, 16 Jun 2023 17:36:53 +0200</lastBuildDate>
+  <pubDate>Fri, 14 Jul 2023 00:19:29 +0200</pubDate>
+  <lastBuildDate>Fri, 14 Jul 2023 00:19:29 +0200</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
-  <webMaster> (Parag M.)</webMaster>
+  <webMaster> (Parag Majumdar)</webMaster>
   <image>
     <url>https://bitsofparag.com/static/images/og-logo.png</url>
     <title>Parag's Personal Website</title>
@@ -26,9 +26,54 @@
 
 
   <item>
+    <title>lunchtime-doggie-friend</title>
+    <link>https://bitsofparag.com/microblog/2023/07/lunchtime-doggie-friend.html</link>
+    <author> (Parag Majumdar)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/microblog/2023/07/lunchtime-doggie-friend.html</guid>
+    <pubDate>Thu, 13 Jul 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>pencil-box-sketch</title>
+    <link>https://bitsofparag.com/microblog/2023/07/pencil-box-sketch.html</link>
+    <author> (Parag Majumdar)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/microblog/2023/07/pencil-box-sketch.html</guid>
+    <pubDate>Thu, 13 Jul 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Privacy Policy</title>
+    <link>https://bitsofparag.com/privacy.html</link>
+    <author> (Parag Majumdar)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/privacy.html</guid>
+    <pubDate>Sun, 02 Jul 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Public PGP Key</title>
+    <link>https://bitsofparag.com/gpg.html</link>
+    <author> (Parag Majumdar)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/gpg.html</guid>
+    <pubDate>Mon, 26 Jun 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>What I'm doing now</title>
+    <link>https://bitsofparag.com/now.html</link>
+    <author> (Parag Majumdar)</author>
+    <guid isPermaLink="false">https://bitsofparag.com/now.html</guid>
+    <pubDate>Sun, 18 Jun 2023 00:00:00 +0200</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>Operating Principles of My Life</title>
     <link>https://bitsofparag.com/blog/2023/06/operating-principles-of-my-life.html</link>
-    <author> (Parag M.)</author>
+    <author> (Parag Majumdar)</author>
     <guid isPermaLink="false">https://bitsofparag.com/blog/2023/06/operating-principles-of-my-life.html</guid>
     <pubDate>Tue, 11 Apr 2023 00:00:00 +0200</pubDate>
 
@@ -37,7 +82,7 @@
   <item>
     <title>Hello World, Again</title>
     <link>https://bitsofparag.com/blog/2022/05/hello-world-again.html</link>
-    <author> (Parag M.)</author>
+    <author> (Parag Majumdar)</author>
     <guid isPermaLink="false">https://bitsofparag.com/blog/2022/05/hello-world-again.html</guid>
     <pubDate>Sat, 28 May 2022 00:00:00 +0200</pubDate>
 
@@ -46,7 +91,7 @@
   <item>
     <title>Macbook Setup</title>
     <link>https://bitsofparag.com/notes/mac-setup.html</link>
-    <author> (Parag M.)</author>
+    <author> (Parag Majumdar)</author>
     <guid isPermaLink="false">https://bitsofparag.com/notes/mac-setup.html</guid>
     <pubDate>Wed, 18 May 2022 00:00:00 +0200</pubDate>
 
@@ -55,7 +100,7 @@
   <item>
     <title>Breaking Bread</title>
     <link>https://bitsofparag.com/notes/breaking-bread.html</link>
-    <author> (Parag M.)</author>
+    <author> (Parag Majumdar)</author>
     <guid isPermaLink="false">https://bitsofparag.com/notes/breaking-bread.html</guid>
     <pubDate>Sun, 24 May 2020 00:00:00 +0200</pubDate>
 
