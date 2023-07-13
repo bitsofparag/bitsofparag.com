@@ -93,21 +93,21 @@
 
 /* ----- Blog intro ----- */
 #content h2 {
-  @apply font-semibold text-h2 leading-h2;
+  @apply font-semibold text-h2 leading-h2 mb-2;
 }
 
 #content span.blog-intro {
-  @apply font-serif font-bold text-h4 leading-h4;
+  @apply font-serif font-bold text-h4;
 }
 
 /* Headings */
 #content h1.title {
-  @apply text-h1 leading-h1 font-semibold;
+  @apply text-h1 leading-h1 font-semibold mb-4;
   @apply md:text-display md:leading-display;
 }
 
 #content h3 {
-  @apply text-h3 leading-h3;
+  @apply text-h3 leading-h3 mb-2;
 }
 
 /* Sections */

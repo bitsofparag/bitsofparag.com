@@ -79,67 +79,58 @@
 
 * Work
 
-- {{{collapse_title(1, Startups enabled (2020 - present))}}}
+- {{{collapse_title(1, Standard IoT platform)}}}
   @@html:<div class="collapse-panel">@@
-  Bootstrapped 3 ventures - [[https://concr.de/][Concr]], [[https://vitreo.me/][Vitreo]] & [[https://storate.io/][Storate]] - with software architecture, technical
-  direction, ops support and hiring for their CTO and lead-developer positions.
+  I was the chief architect of a standardized software platform for IoT projects, with focus on data-collection, backend and frontend. This platform was deployed for some of the IoT startups I worked with. For a high-level overview, check out [[https://youtu.be/rUfUZ4bfhWk][this video]] made by my colleague.
   @@html:</div>@@
 
-- {{{collapse_title(2, Startups enabled (2018 - 2019))}}}
+- {{{collapse_title(2, Startups enabled (2020 - present))}}}
   @@html:<div class="collapse-panel">@@
-  Supported 2 ventures [[https://auxolar.de][Auxolar]] & [[https://kelvyn.de][Kelvyn]], with software architecture, technical
-  direction, ops support and hiring for their CTO and lead-developer positions.
+  Bootstrapped 3 ventures - [[https://concr.de/][Concr]], [[https://vitreo.me/][Vitreo]] & [[https://storate.io/][Storate]] - with software architecture, technical direction, ops support and hiring for their CTO and lead-developer positions.
   @@html:</div>@@
 
-- {{{collapse_title(3, Metr Smart Housing Gateway)}}}
+- {{{collapse_title(3, Startups enabled (2018 - 2019))}}}
   @@html:<div class="collapse-panel">@@
-  Worked on the [[https://en.wikipedia.org/wiki/Meter-Bus][M-Bus]] protocol as well as developed the backend and frontend systems for [[https://metr.systems/de/][Metr]] as
-  part of the founding team. Hired lead engineers as Metr's future employees.
+  Supported 2 ventures [[https://auxolar.de][Auxolar]] & [[https://kelvyn.de][Kelvyn]], with software architecture, technical direction, ops support and hiring for their CTO and lead-developer positions.
   @@html:</div>@@
 
-- {{{collapse_title(4, Mentoring young software engineers)}}}
+- {{{collapse_title(4, Metr Smart Housing Gateway)}}}
   @@html:<div class="collapse-panel">@@
-  I have often guided and mentored interns as well as [[https://medium.com/@nextbigthingag/nbt-codeunversity-project-partnership-a298a46cf695][student engineers]] in software development,
-  especially with Reactjs and Python. I use a custom mind-map with "dev paths" to help them choose
-  the right technical skill-goals.
+  Worked on the [[https://en.wikipedia.org/wiki/Meter-Bus][M-Bus]] protocol as well as developed the backend and frontend systems for [[https://metr.systems/de/][Metr]] as part of the founding team. Hired lead engineers as Metr's future employees.
   @@html:</div>@@
 
-- {{{collapse_title(5, Startup co-founded)}}}
+- {{{collapse_title(5, Mentoring young software engineers)}}}
   @@html:<div class="collapse-panel">@@
-  For about 2.5 years, I served as the technical co-founder at [[https://productivemobile.com/en][Productive Mobile]], where I developed
-  the first prototype of a desktop-to-mobile transformation platform, with a small team of engineers.
+  I have often guided and mentored interns as well as [[https://medium.com/@nextbigthingag/nbt-codeunversity-project-partnership-a298a46cf695][student engineers]] in software development, especially with Reactjs and Python. I use a custom mind-map with "dev paths" to help them choose the right technical skill-goals.
   @@html:</div>@@
 
-- {{{collapse_title(6, First Cleartrip iOS App)}}}
+- {{{collapse_title(6, Startup co-founded)}}}
   @@html:<div class="collapse-panel">@@
-  When employed at [[https://twitter.com/Cleartrip][Cleartrip]] in 2012, I worked with two [[https://twitter.com/surdattack][brilliant]] [[https://twitter.com/nirzardp][designers]] to develop its first iOS
-  app - all HTML5 /(in webviews)/ with heavily optimized CSS and JS, that felt fully native.
-  It is still considered their first [[https://twitter.com/rahulprabhakar/status/624457515200180224]["native app"]] offering.
+  For about 2.5 years, I served as the technical co-founder at [[https://productivemobile.com/en][Productive Mobile]] where I developed the first prototype of a desktop-to-mobile transformation platform, with a small team of engineers.
+  @@html:</div>@@
+
+- {{{collapse_title(7, First Cleartrip iOS App)}}}
+  @@html:<div class="collapse-panel">@@
+  When employed at [[https://twitter.com/Cleartrip][Cleartrip]] in 2012, I worked with two [[https://twitter.com/surdattack][brilliant]] [[https://twitter.com/nirzardp][designers]] to develop its first iOS app - all HTML5 /(in webviews)/ with heavily optimized CSS and JS, that felt fully native. It is still considered their first [[https://twitter.com/rahulprabhakar/status/624457515200180224]["native app"]] offering.
   @@html:</div>@@
 
 * Projects & Learning
 
-- {{{collapse_title(7, Rowers on Blockchain)}}}
+- {{{collapse_title(8, Rowers on Blockchain)}}}
   @@html:<div class="collapse-panel">@@
-  This was a fun project where we connected a gym rowing machine to a vending machine via
-  blockchain to enable a token-based game system. When users complete one of three time-trials on
-  the rowing machine, it rewards them with crypto tokens that they can then use to purchase items
-  from a vending machine. It was my first tryst with [[https://geth.ethereum.org/][Geth]] and [[https://www.modbustools.com/modbus.html][MODBUS protocol]]. Read more about it
+  This was a fun project where we connected a gym rowing machine to a vending machine via blockchain to enable a token-based game system. When users complete one of three time-trials on the rowing machine, it rewards them with crypto tokens that they can then use to purchase items from a vending machine. It was my first tryst with [[https://geth.ethereum.org/][Geth]] and [[https://www.modbustools.com/modbus.html][MODBUS protocol]]. Read more about it
   [[https://medium.com/nbt-thing-tank/how-to-fuel-hacker-creativity-with-burner-wallets-e10b68269129][here]].
   @@html:</div>@@
 
-- {{{collapse_title(8, Breaking Bread)}}}
+- {{{collapse_title(9, Breaking Bread)}}}
   @@html:<div class="collapse-panel">@@
   When the [[https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6][pandemic]] forced us indoors, I donned my dusty apron to embark on a very satisfying
-  journey to knead, stretch, fold, shape and bake sourdough breads. I logged everything I could and
-  exported the logs as a webpage. [[https://www.bitsofparag.com/notes/breaking-bread.html][Take a looksie]].
+  journey to knead, stretch, fold, shape and bake sourdough breads. I logged everything I could and exported the logs as a webpage. [[https://www.bitsofparag.com/notes/breaking-bread.html][Take a looksie]].
   @@html:</div>@@
 
-- {{{collapse_title(9, Computational and Quantum Chemistry)}}}
+- {{{collapse_title(10, Computational and Quantum Chemistry)}}}
   @@html:<div class="collapse-panel">@@
-  While studying at [[https://www.iitb.ac.in][IIT Bombay]], I worked on [[https://en.wikipedia.org/wiki/Molecular_dynamics][molecular dynamics]] for my Master's thesis under [[https://ether.chem.iitb.ac.in/~bltembe/index.html][Prof.
-  Tembe]], which was consequential not just in my professional success, but also to keep my passion for
-  programming and quantum mechanics alive!
+  While studying at [[https://www.iitb.ac.in][IIT Bombay]], I worked on [[https://en.wikipedia.org/wiki/Molecular_dynamics][molecular dynamics]] for my Master's thesis under [[https://ether.chem.iitb.ac.in/~bltembe/index.html][Prof. Tembe]], which was consequential not just in my professional success, but also to keep my passion for programming and quantum mechanics alive!
   @@html:</div>@@
 
 #+begin_export html
