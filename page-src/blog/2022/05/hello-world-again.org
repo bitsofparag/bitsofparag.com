@@ -11,10 +11,6 @@
 Published on {{{date(%e %b %Y)}}}  •  Updated 17 Jun 2023
 #+end_metadata
 
-#+begin_share
-{{{tweet(https://bitsofparag.com/blog/2022/05/hello-world-again.html, Hello world, again)}}}
-#+end_share
-
 * Objective :noexport:
 
   To write the first post for this blog. And share a bit about my previous blog from 2009.

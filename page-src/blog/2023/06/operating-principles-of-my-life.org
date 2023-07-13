@@ -11,10 +11,6 @@
 Published on {{{date(%e %b %Y)}}}
 #+end_metadata
 
-#+begin_share
-{{{tweet(https://bitsofparag.com/blog/2023/06/operating-principles-of-my-life.html, Operating Principles of My Life)}}}
-#+end_share
-
 * Objective :noexport:
 
 To share what I believe are the core principles of my life.
