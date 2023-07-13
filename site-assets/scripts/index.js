@@ -42,18 +42,6 @@
     message.style.display = 'block';
     element.parentNode.classList.add('copied-message-container');
     element.parentNode.insertBefore(message, element);
-    if (eventType !== 'click') {
-      if (messageHelpCounter < 2) {
-        messageHelpCounter += 1;
-        setTimeout(function() {
-          message.classList.add('hide-message');
-        }, 350);
-        return;
-      }
-      message.parentNode.removeChild(message);
-      return;
-    }
-
     setTimeout(function() {
       message.classList.add('hide-message');
       setTimeout(function() {
@@ -68,14 +56,6 @@
     const codeContent = document.querySelectorAll('pre, code');
 
     codeContent.forEach(code => {
-      code.addEventListener('mouseenter', (e) => {
-        showMessage(e.target, e.type, 'Click to copy');
-      });
-
-      code.addEventListener('touchstart', (e) => {
-        showMessage(e.target, e.type, 'Click to copy');
-      });
-
       code.addEventListener('click', (e) => {
         if (navigator.clipboard) {
           navigator.clipboard.writeText(e.target.textContent).then(function() {
