@@ -6,9 +6,12 @@
 #+STARTUP: fninline
 
 * Pencil Box Sketch
+:PROPERTIES:
+:CUSTOM_ID: pencil-box-sketch
+:END:
 
 #+begin_metadata
-Published on {{{date(%e %b %Y)}}} • [[file:pencil-box-sketch.html][Permalink]]
+Published on {{{date(%e %b %Y)}}} • [[file:pencil-box-sketch.org][Permalink]]
 #+end_metadata
 
 #+begin_export html
