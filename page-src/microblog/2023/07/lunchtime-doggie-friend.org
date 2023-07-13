@@ -1,5 +1,5 @@
 #+author: Parag Majumdar
-#+DATE: [2023-07-13 Thu]
+#+DATE: <2023-07-13 Thu>
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
 #+OPTIONS: broken-links:mark H:3 title:t

@@ -208,7 +208,7 @@ PUB-DIR is when the output will be placed."
              :html-container "section"
              :html-container-class "microblog"
              :html-postamble *weblog-html-postamble*
-             :html-link-use-abs-url t
+             :html-link-use-abs-url nil
              :htmlized-source t
              :html-scripts: nil
              :html-style: t
