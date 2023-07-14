@@ -11,7 +11,7 @@
 :END:
 
 #+begin_metadata
-Published on 13 Jul 2023 • [[file:2023/07/pencil-box-sketch.html][Permalink]]
+Published on 13 Jul 2023 • [[file:2023/07/pencil-box-sketch.org][Permalink]]
 #+end_metadata
 
 #+begin_export html
