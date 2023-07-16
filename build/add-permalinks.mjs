@@ -23,7 +23,7 @@ async function addPermalinks() {
     const $ = cheerio.load(data);
 
     fileNames.forEach(({ baseName, dirName }) => {
-      const container = $(`#outline-container-${baseName}`);
+      const container = $(`#${baseName}`).parent();
       const metadata = container.find('.metadata');
       const oldP = metadata.find('p');
       const newP = $('<p></p>');
