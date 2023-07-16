@@ -11,13 +11,15 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@fullhuman/postcss-purgecss": "^4.1.0",
+    "@types/glob": "^8.1.0",
     "autoprefixer": "^10.0.2",
+    "cheerio": "^1.0.0-rc.12",
     "cssnano": "^6.0.0",
     "eslint": "^8.33.0",
     "postcss": ">=8.3.3 <9.0.0",
     "postcss-cli": ">= 8.0",
-    "postcss-load-config": ">= 3.0",
     "postcss-import": "^12.0.1",
+    "postcss-load-config": ">= 3.0",
     "postcss-modules": "^5.0.0",
     "postcss-syntax": "^0.36.2",
     "postcss-url": "^8.0.0",
@@ -27,7 +29,7 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=17.9.1 <19"
+    "node": ">= 20.0.0"
   },
   "keywords": [
     "parag",
@@ -53,13 +55,14 @@
     "clean": "npm run clean:misc && npm run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
     "build:org": "emacs --batch --load publish.el --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
-    "build:rss": "emacs --batch --load publish.el --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
+    "build:html": "node build/add-permalinks.mjs",
+    "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
     "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
     "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
-    "build": "npm run build:org && npm run build:css && npm run build:js",
+    "build:rss": "emacs --batch --load publish.el --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
+    "build": "npm run build:org && npm run build:html && npm run build:css && npm run build:js",
     "optimize": "node sharp-optimizer.js",
-    "dist": "npm run clean && npm run build:org && npm run build:css && npm run build:js:prod && npm run build:rss && npm run optimize"
+    "dist": "npm run clean && npm run build:org && npm run build:html && npm run build:css && npm run build:js:prod && npm run build:rss && npm run optimize"
   }
 }
