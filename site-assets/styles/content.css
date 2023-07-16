@@ -276,6 +276,10 @@
   }
 }
 
+#content .bullet-separator {
+  @apply mx-2;
+}
+
 #twitter-share-button {
   /* most styles applied via Twitter */
   @apply font-sans text-small align-middle;
