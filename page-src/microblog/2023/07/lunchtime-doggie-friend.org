@@ -11,7 +11,7 @@
 :END:
 
 #+begin_metadata
-Published on 13 Jul 2023 • [[file:2023/07/lunchtime-doggie-friend.org][Permalink]]
+Published on 13 Jul 2023
 #+end_metadata
 
 #+begin_export html
