@@ -36,13 +36,10 @@ async function addPermalinks() {
       newP.append(span);
       newP.append(a);
 
-      // Append the new paragraph to the metadata element
       oldP.replaceWith(newP);
     });
-    console.log($.html());
-    // Write the modified HTML back to the file
-    await fs.writeFile(indexPath, $.html());
 
+    await fs.writeFile(indexPath, $.html());
     console.log('HTML file successfully updated');
   } catch (err) {
     throw err;
