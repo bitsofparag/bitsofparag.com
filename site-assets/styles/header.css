@@ -49,11 +49,12 @@
 }
 
 #nav .menu {
-  @apply w-2/5 flex flex-col justify-start items-start hidden overflow-hidden h-screen;
+  @apply w-2/5 flex flex-col justify-start items-start overflow-hidden h-screen;
   @apply absolute top-0 right-0 pt-16 bg-nutty-light border-l border-solid border-l-nutty-dark;
-  @apply lg:w-3/4 lg:flex lg:flex-row lg:items-center lg:justify-end lg:order-2 lg:visible lg:overflow-visible lg:h-fit;
+  @apply transform translate-x-full transition-transform duration-300 ease-in-out;
+  @apply lg:w-3/4 lg:flex lg:flex-row lg:items-center lg:justify-end lg:order-2 lg:overflow-visible lg:h-fit;
   @apply lg:relative lg:pt-0 lg:bg-inherit lg:bg-transparent lg:border-none;
-  @apply transition-all duration-500 ease-in-out;
+  @apply lg:transform-none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,8 +73,8 @@
 }
 
 /* Show menu when checkbox is checked */
-#nav #menu-checkbox:checked + label + .menu {
-  @apply block max-h-screen;
+#nav #menu-checkbox:checked + label ~ .menu {
+  @apply transform translate-x-0;
 }
 
 #nav #menu-checkbox:checked + label .menu-open {
