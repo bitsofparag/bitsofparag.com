@@ -28,21 +28,60 @@
 }
 
 #nav {
-  @apply flex flex-wrap h-full items-center justify-between;
+  @apply flex flex-nowrap h-full items-center justify-between;
   max-width: var(--max-container-width);
 }
 
+#nav .menu-toggle {
+  @apply hidden;
+}
+
+#nav label {
+  @apply block lg:hidden cursor-pointer z-40;
+}
+
+#nav svg.menu-icon {
+  @apply fill-current w-6 h-6;
+}
+
+#nav svg.menu-icon.menu-close {
+  @apply hidden;
+}
+
 #nav .menu {
-  @apply w-3/4 lg:order-2 flex justify-end items-center;
+  @apply w-2/5 flex flex-col justify-start items-start hidden overflow-hidden h-screen;
+  @apply absolute top-0 right-0 pt-16 bg-nutty-light border-l border-solid border-l-nutty-dark;
+  @apply lg:w-3/4 lg:flex lg:flex-row lg:items-center lg:justify-end lg:order-2 lg:visible lg:overflow-visible lg:h-fit;
+  @apply lg:relative lg:pt-0 lg:bg-inherit lg:bg-transparent lg:border-none;
+  @apply transition-all duration-500 ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  #nav .menu {
+    @apply bg-pflaume-dark lg:bg-transparent border-l-pflaume-darker lg:border-none;
+  }
 }
 
 #nav a.nav-link {
-  @apply block relative text-link-color-900 ml-6;
+  @apply block relative text-link-color-900 ml-6 mt-4 lg:mt-0;
 }
 
 #nav a.nav-link:hover,
 #nav a.nav-link:focus {
   @apply text-link-color-700;
+}
+
+/* Show menu when checkbox is checked */
+#nav #menu-checkbox:checked + label + .menu {
+  @apply block max-h-screen;
+}
+
+#nav #menu-checkbox:checked + label .menu-open {
+  @apply hidden;
+}
+
+#nav #menu-checkbox:checked + label .menu-close {
+  @apply block;
 }
 
 @media (prefers-color-scheme: dark) {
