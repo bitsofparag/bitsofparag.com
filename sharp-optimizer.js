@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const imagesDir = path.join(__dirname, 'dist', 'static', 'images');
 const mainImagesDir = path.join(imagesDir, 'main');
+const microblogImagesDir = path.join(imagesDir, 'microblog');
 const notesImagesDir = path.join(imagesDir, 'notes');
 const sharp = require('sharp');
 
@@ -38,7 +39,7 @@ function getAllFilePaths(dirPath, arrayOfFiles = []) {
 }
 
 
-[mainImagesDir, notesImagesDir].forEach(folder => {
+[mainImagesDir, microblogImagesDir, notesImagesDir].forEach(folder => {
   const imagePaths = getAllFilePaths(folder);
 
   imagePaths.forEach(imagePath => {

@@ -1,0 +1,30 @@
+#+author: Parag Majumdar
+#+DATE: [2023-07-13 Thu]
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:3 title:t
+#+STARTUP: fninline
+
+* Lunchtime doggie friend
+:PROPERTIES:
+:CUSTOM_ID: lunchtime-doggie-friend
+:END:
+
+#+begin_metadata
+Published on 13 Jul 2023
+#+end_metadata
+
+#+begin_export html
+<div class="photo-box-border">
+  <picture>
+    <source class="lazy" data-srcset="/static/images/microblog/doggie-friend.webp" />
+    <img class="lazy" data-src="/static/images/microblog/doggie-friend.jpg" alt="Photo of an Australian Shepherd" />
+  </picture>
+</div>
+#+end_export
+
+While refreshing myself over a cup of coffee and the dazzling drops of the fountain, I met this adorable Australian Shepherd dog who was being walked by a gentleman. I am keen to have a dog in the future. So, out of curiosity, I enquired about the breed. Turns out the gentleman merely walks his colleague's dog every afternoon. "And you can certainly meet him again, I'm here everyday on a work week", said the kind gentleman as he bid farewell with this gorgeous animal in tow.
+
+#+BEGIN_EXPORT html
+<hr style="border-top: 1px dashed #8c8b8b;"/>
+#+END_EXPORT

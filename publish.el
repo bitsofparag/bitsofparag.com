@@ -187,6 +187,34 @@ PUB-DIR is when the output will be placed."
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              )
+       (list "bitsofparag-microblog"
+             :base-directory (concat bip-root "page-src/microblog")
+             :base-extension "org"
+             :recursive t
+             :publishing-function 'org-html-publish-to-html  ;; Output directory
+             :publishing-directory (concat bip-root "dist/microblog")
+             :exclude "index.org~"
+             :html-doctype "html5"
+             :language "en"
+             :title "From the microblog"
+             :description "Parag's microblog, a Tumblr-like feed where he shares small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information."
+             :keywords bip-keywords
+             :with-date t
+             :html-head-include-default-style nil      ;; Do not include predefined header scripts.
+             :html-head-include-scripts nil
+             :html-head *weblog-html-common-head*
+             :html-head-extra *weblog-html-extra-head*
+             :html-preamble *weblog-html-preamble*
+             :html-container "section"
+             :html-container-class "microblog"
+             :html-postamble *weblog-html-postamble*
+             :html-link-use-abs-url nil
+             :htmlized-source t
+             :html-scripts: nil
+             :html-style: t
+             :html5-fancy: t
+             :auto-sitemap nil
+             )
        (list "bitsofparag-notes"
              :base-directory (concat bip-root "page-src/notes")
              :base-extension "org"
@@ -225,7 +253,7 @@ PUB-DIR is when the output will be placed."
              :publishing-directory (concat bip-root "dist")
              :publishing-function 'bip-org-rss-publish-to-rss
              :recursive t
-             :exclude (regexp-opt '("404.org" "colophon.org" "rss.org" "index.org" "drafts" "blog/index.org" "notes/index.org"))
+             :exclude (regexp-opt '("404.org" "colophon.org" "rss.org" "index.org" "drafts" "blog/index.org" "notes/index.org" "microblog/index.org"))
              :table-of-contents nil
              :rss-image-url (concat bip-url-home "static/images/og-logo.png")
              :rss-extension "xml"
@@ -258,6 +286,7 @@ PUB-DIR is when the output will be placed."
              :recursive t)
        (list "website" :components '("bitsofparag"
                                      "bitsofparag-blog"
+                                     "bitsofparag-microblog"
                                      "bitsofparag-notes"
                                      "bitsofparag-static"
                                      "bitsofparag-misc"

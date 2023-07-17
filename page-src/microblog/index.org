@@ -1,0 +1,8 @@
+#+TITLE: My Feed
+#+AUTHOR: Parag Majumdar
+#+OPTIONS: toc:nil
+
+Welcome to my microblog, a Tumblr-like feed where I share small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information.
+
+#+include: "./2023/07/lunchtime-doggie-friend.org"
+#+include: "./2023/07/pencil-box-sketch.org"

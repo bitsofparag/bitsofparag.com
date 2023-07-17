@@ -1,0 +1,26 @@
+#+author: Parag Majumdar
+#+DATE: [2023-07-13 Thu]
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:3 title:t
+#+STARTUP: fninline
+
+* Pencil Box Sketch
+:PROPERTIES:
+:CUSTOM_ID: pencil-box-sketch
+:END:
+
+#+begin_metadata
+Published on 13 Jul 2023
+#+end_metadata
+
+#+begin_export html
+<div class="photo-box">
+  <picture>
+    <source class="lazy" data-srcset="/static/images/main/highlight-photo.webp" />
+    <img class="lazy" data-src="/static/images/main/highlight-photo.jpg" alt="Pencil box blowup diagram" />
+  </picture>
+</div>
+#+end_export
+
+This hand-drawn sketch is a blow-up diagram of a pencil-box that I am currently making with oakwood at my woodworking space. The box consists of an outer case and an inner tray.
