@@ -17,8 +17,8 @@ Published on 13 Jul 2023
 #+begin_export html
 <div class="photo-box">
   <picture>
-    <source class="lazy" data-srcset="/static/images/main/highlight-photo.webp" />
-    <img class="lazy" data-src="/static/images/main/highlight-photo.jpg" alt="Pencil box blowup diagram" />
+    <source class="lazy" data-srcset="/static/images/microblog/pencil-box-sketch.webp" />
+    <img class="lazy" data-src="/static/images/microblog/pencil-box-sketch.jpg" alt="Pencil box blowup diagram" />
   </picture>
 </div>
 #+end_export
