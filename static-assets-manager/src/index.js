@@ -51,6 +51,10 @@ export default {
 
         const res = new Response(object.body);
         res.headers.set('Content-Type', object.httpMetadata.contentType);
+        if (pathname.includes('microblog')) {
+          res.headers.set('Cache-Control', 'max-age=1814400');
+          return res;
+        }
         res.headers.set('Cache-Control', 'max-age=604800');
         return res;
 
