@@ -1,7 +1,5 @@
 #+TITLE: My Feed
 #+AUTHOR: Parag Majumdar
-#+SETUPFILE: ../.setup/macros
-#+SETUPFILE: ../.setup/options
 #+OPTIONS: toc:nil
 
 Welcome to my microblog, a Tumblr-like feed where I share small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information.
