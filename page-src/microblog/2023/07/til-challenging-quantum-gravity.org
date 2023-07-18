@@ -1,0 +1,23 @@
+#+author: Parag Majumdar
+#+DATE: [2023-07-18 Tue]
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:3 title:t
+#+STARTUP: fninline
+
+* TIL: Challenging Quantum Gravity
+:PROPERTIES:
+:CUSTOM_ID: til-challenging-quantum-gravity
+:END:
+
+#+begin_metadata
+Published on 18 Jul 2023
+#+end_metadata
+
+The need to quantize space-time in order to reconcile the theory of general relativity (i.e. gravity) with quantum physics has been a challenging problem till today. A new theory being developed by [[https://www.ucl.ac.uk/oppenheim/][Jonathan Oppenheim]] and his team will attempt to address this problem by reconciling the current understanding that *probablistic* quantum fields (which creates particles) can exist on top of a *deterministic* substrate of space-time (which emerges from classical gravity).
+
+It is very exciting to see a hybrid theory being proposed by someone. Read more about it [[https://www.quantamagazine.org/the-physicist-who-bets-that-gravity-cant-be-quantized-20230710/][here]].
+
+#+begin_info
+"...if that interaction between the particle and space-time is random — or unpredictable — then the particle itself doesn't completely dictate the gravitational field. Which means that measuring the gravitational field will not always determine which [[https://brilliant.org/wiki/double-slit-experiment/][slit]] the particle went through because the gravitational field could be in one of many states. Randomness creeps in, and you no longer have a [black-hole information] [[https://www.youtube.com/watch?v=yWO-cvGETRQ][paradox]]."
+#+end_info
