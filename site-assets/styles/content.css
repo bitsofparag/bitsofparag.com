@@ -210,6 +210,11 @@
   background-color: #d3f7fd;
 }
 
+/* microblog */
+#content .outline-2 {
+  @apply mb-12;
+}
+
 /* Collapsible components */
 #content label.collapse-label::before {
   @apply transition-transform transform-gpu rotate-0 scale-110;
