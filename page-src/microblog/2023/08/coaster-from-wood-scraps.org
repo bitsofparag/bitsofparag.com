@@ -1,5 +1,5 @@
 #+author: Parag Majumdar
-#+DATE: [2023-08-01 Tue]
+#+DATE: [2023-08-02 Wed]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
 #+OPTIONS: broken-links:mark H:3 title:t
@@ -11,7 +11,7 @@
 :END:
 
 #+begin_metadata
-Published on 01 Aug 2023
+Published on 02 Aug 2023
 #+end_metadata
 
 #+begin_export html
@@ -23,4 +23,4 @@ Published on 01 Aug 2023
 </div>
 #+end_export
 
-So, I had a bunch of scrap wood from my previous projects (see bottom left in photo) and I didn't want it end up in the waste bin. After a bit of searching, I found [[https://www.youtube.com/shorts/YKmY0XIIdUw][this Youtube short]] about making a pear-shaped wooden coaster. Then after a couple of hours of templating, band-sawing and sanding, the result is what you see above. I finished it with mahogany-colored wood-stain and coated it with beeswax. Quite pleasing to look at and smells heavenly. The coaster was snatched away by my sister - it has found a happy home.
+So, I had a bunch of scrap wood from my previous projects (see bottom left in photo) and I didn't want it to end up in the waste bin. I found [[https://www.youtube.com/shorts/YKmY0XIIdUw][this Youtube short]] about making a pear-shaped wooden coaster. After a couple of hours of templating, band-sawing, routing and sanding, the result is what you see above. I finished it with mahogany-colored wood-stain and coated it with beeswax. Quite pleasing to look at and smells heavenly. The coaster was snatched away by my sister - it has found a happy home.
