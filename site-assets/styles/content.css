@@ -212,7 +212,7 @@
 
 /* microblog */
 #content .outline-2 {
-  @apply mb-12;
+  @apply md:mb-6 lg:mb-8;
 }
 
 /* Collapsible components */

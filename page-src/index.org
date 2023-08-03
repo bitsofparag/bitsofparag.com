@@ -7,13 +7,7 @@
 
 #+begin_export html
 <p class="phonetic">\ pə •rāg</p>
-<div class="photo-box">
-  <picture>
-    <source srcset="/static/images/main/highlight-photo.webp" />
-    <img width="688" height="458" src="/static/images/main/highlight-photo.jpg" alt="Banner photo" class="highlight-photo" />
-  </picture>
-  <span class="highlight-photo-tooltip">This hand-drawn sketch is a blow-up diagram of a pencil-box that I am currently making with oakwood. The box consists of an outer case and an inner tray.</span>
-</div>
+
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
     <p class="intro">Software developer. Ex co-founder. Ex Director of Software Engineering.</p>
@@ -21,8 +15,8 @@
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
     <p class="intro">Please see below for more of my projects and interests. Or catch up on
-    <a href="/now">what I am doing now</a>. I am hardly on social-media.
-    But you can best reach me via email.</p>
+    <a href="/now">what I am doing now</a>. I am hardly on social-media but you can read through <a href="/microblog">my personal feed</a>.</p>
+    <p class="intro">Please reach out via email or the other connect options below.</p>
   </div>
   <div class="photo-me">
     <picture>
@@ -31,6 +25,17 @@
     </picture>
   </div>
 </section>
+
+<!--<h2 class="mt-12">Latest from feed</h2>
+<div class="photo-box">
+<a href="/microblog/2023/08/coaster-from-wood-scraps.html">
+  <picture>
+    <source srcset="/static/images/microblog/coaster-wood-scraps.webp" />
+    <img width="688" height="458" src="/static/images/microblog/coaster-wood-scraps.jpg" alt="Banner photo" class="highlight-photo" />
+  </picture>
+  <span class="highlight-photo-tooltip">Lorem ipsum dolor sit</span>
+  </a>
+</div>-->
 #+end_export
 
 #+begin_export html
@@ -69,7 +74,7 @@
 
 - {{{extlink(https://dribbble.com/paragm, Dribbble)}}}
 - {{{extlink(https://www.scratchtheater.com, Improvised Theater)}}}
-- Woodworking (details TBA)
+- Woodworking (see {{{intlink(/microblog/2023/08/coaster-from-wood-scraps.html, a pear-shaped coaster)}}})
 
 * COMMENT Recent posts
 
