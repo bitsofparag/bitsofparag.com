@@ -29,9 +29,9 @@
   "The home page url of the website.")
 (defconst bip-title "Parag's Personal Website"
   "Title of the website.")
-(defconst bip-desc "I am Parag and this is my personal website where I highlight my work and write about various topics"
+(defconst bip-desc "Insights from Parag Majumdar, a software developer and engineering manager with 16+ years of experience in startups and SMEs. Explore his projects, writings and connect via email and social media."
   "Description of the website.")
-(defconst bip-keywords "parag, blog, opinion, thoughts, technology, experiments"
+(defconst bip-keywords "parag, parag m, blog, opinion, thoughts, technology, experiments"
   "Website keywords for SEO.")
 
 (defvar *weblog-html-postamble* (with-temp-buffer
