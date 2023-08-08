@@ -88,6 +88,7 @@ dist/*
 site-assets/images/blog/*
 site-assets/images/main/*
 site-assets/images/microblog/*
+!site-assets/images/microblog/placeholder.*
 site-assets/images/notes/*
 **secret*
 page-src/rss.org
