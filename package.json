@@ -55,6 +55,7 @@
     "clean": "npm run clean:misc && npm run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "new-microblog-post": "sh build/new-microblog-post.sh",
     "build:org": "emacs --batch --load publish.el --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
     "build:html": "node build/add-permalinks.mjs",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
