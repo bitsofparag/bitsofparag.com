@@ -5,7 +5,7 @@
 #+OPTIONS: broken-links:mark H:3 title:t
 #+STARTUP: fninline
 
-* TIL Laban Technique
+* TIL: Laban Technique
 :PROPERTIES:
 :CUSTOM_ID: til-laban-technique
 :END:
