@@ -1,0 +1,26 @@
+#+author: Parag Majumdar
+#+DATE: [2023-08-12 Sat]
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:3 title:t
+#+STARTUP: fninline
+
+* TIL Laban Technique
+:PROPERTIES:
+:CUSTOM_ID: til-laban-technique
+:END:
+
+#+begin_metadata
+Published on 12 Aug 2023
+#+end_metadata
+
+#+begin_export html
+<div class="photo-box">
+  <picture>
+    <source class="lazy" data-srcset="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" />
+    <img class="lazy" data-src="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" alt="Placeholder image" />
+  </picture>
+</div>
+#+end_export
+
+I finished a very intense but satisfying workshop in "Characters". I have been an improviser in theater for many years (not counting the pandemic times) and one of my favorite activities while performing on stage is to play different characters, particularly physical, quirky and emotional characters. This workshop introduced me to a new technique to enhance the "abilities" of a character - [[https://www.theatrefolk.com/blog/the-eight-efforts-laban-movement/][the Laban movement]]. Simply put, choose amongst =fast/slow=, =direct/indirect=, =light/heavy=, =staccato/fluid= to endow your character with physical attributes. For e.g, play a firefighter who is =light= with their hands and =indirect= in their movement towards the goal; imagine seeing them trying to quell a fire 😂
