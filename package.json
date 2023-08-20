@@ -1,5 +1,5 @@
 {
-  "version": "2.36.1",
+  "version": "2.37.0",
   "author": "Parag M. <admin@bitsofparag.com>",
   "main": "index.js",
   "dependencies": {
