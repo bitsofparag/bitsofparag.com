@@ -51,7 +51,7 @@
   },
   "scripts": {
     "clean:misc": "find . -name \"*.*~\" | xargs rimraf ;",
-    "clean:dist": "find dist/* -maxdepth 2 ! -name manifest.json ! -name favicon.ico ! -name rss.xml | xargs rimraf ;",
+    "clean:dist": "find dist/* -maxdepth 2 ! -name manifest.json ! -name favicon.ico ! -name rss.xml ! -name robots.txt | xargs rimraf ;",
     "clean": "npm run clean:misc && npm run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",

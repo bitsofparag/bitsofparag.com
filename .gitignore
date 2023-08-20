@@ -82,6 +82,7 @@ node_modules/
 dist/*
 # TODO rss.xml was added ∵ CF screws up rss generation
 !dist/rss.xml
+!dist/robots.txt
 **/drafts/*
 !**/drafts/.gitkeep
 **/*.toml

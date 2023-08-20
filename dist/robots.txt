@@ -1,0 +1,29 @@
+User-agent: Semalt
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
