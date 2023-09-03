@@ -44,31 +44,31 @@
 * Connect
 
 -
-    #+begin_export html
-    <span>
-    <!-- --
-    -->
-    admin
-    <!--
-    -->
-    (at)
-    <!--
-    -->
-    <!-- -->
-    bitsofparag
-    <!--
-    -->
-    .com
-    </span>
-    #+end_export
-    #+begin_export html
-    [<a href="/gpg">PGP Key</a>]
-    #+end_export
+     #+begin_export html
+     <span>
+     <!-- --
+     -->
+     admin
+     <!--
+     -->
+     (at)
+     <!--
+     -->
+     <!-- -->
+     bitsofparag
+     <!--
+     -->
+     .com
+     </span>
+     #+end_export
+     #+begin_export html
+     [<a href="/gpg">PGP Key</a>]
+     #+end_export
 
 - {{{extlink(https://github.com/bitsofparag, Github, rel="me")}}}
+- {{{extlink(https://bsky.app/profile/bitsofparag.com, Bluesky, rel="me")}}}
 - {{{extlink(https://instagram.com/bitsofparag, Instagram, rel="me")}}}
 - {{{extlink(https://twitter.com/paragmajum, Twitter, rel="me")}}}
-
 
 * Interests
 
