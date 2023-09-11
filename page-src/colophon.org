@@ -9,19 +9,15 @@
 This personal website is a way to [[http://info.cern.ch/hypertext/WWW/Summary.html][share information]] besides serving as my "business card on the
 internet".
 
-The website is hand-coded{{{fni(1,Given that there are so many "nocode" website builders out there\,
-I feel I need to stress how each and every line of this website's source code was hand-written)}}}
-with [[https://orgmode.org/][Orgmode]] (for the content) and [[https://tailwindcss.com/][Tailwindcss]] (for styling). The source code is on [[https://github.com/bitsofparag/bitsofparag.com/][GitHub]]; feel
-free to fork and use as you see fit (PRs are most welcome).
+The website is hand-coded{{{fni(1,Given that there are so many "nocode" website builders out there\, I feel I need to stress how each and every line of this website's source code was hand-written)}}} with [[https://orgmode.org/][Orgmode]] (for the content) and [[https://tailwindcss.com/][Tailwindcss]] (for styling). The source code is on [[https://github.com/bitsofparag/bitsofparag.com/][GitHub]]; feel free to fork and use as you see fit (PRs are most welcome).
 
-There's no analytics or cookies for tracking, so no annoying consent popups. The site can be used
-with javascript disabled.
+There's no analytics or cookies for tracking, so no annoying consent popups. The site can be used with javascript disabled.
 
 The size of the website is small, just around 100kB. And scores high on web performance
 metrics.{{{fni(2,<a class="ext"
 href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbitsofparag.com"
 target="_blank">Pagespeed stats</a> and <a class="ext"
-href="https://gtmetrix.com/reports/bitsofparag.com/Tva0h2fA/" target="_blank">GTMetrix</a>)}}}
+href="https://gtmetrix.com/reports/bitsofparag.com/gvr3ExtW/" target="_blank">GTMetrix</a>)}}}
 
 I use [[https://orgmode.org/manual/Publishing.html][Emacs]] in lieu of [[https://jamstack.org/what-is-jamstack/][JAMstack]] to publish the website on [[https://pages.cloudflare.com/][Cloudflare Pages]] (because why not).
 
