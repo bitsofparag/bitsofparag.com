@@ -4,6 +4,7 @@
 
 Welcome to my microblog, a Tumblr-like feed where I share small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information.
 
+#+include: "./2023/09/i-turned-40.org"
 #+include: "./2023/08/til-laban-technique.org"
 #+include: "./2023/08/coaster-from-wood-scraps.org"
 #+include: "./2023/07/til-challenging-quantum-gravity.org"

@@ -1,0 +1,26 @@
+#+author: Parag Majumdar
+#+DATE: [2023-09-16 Sat]
+#+SETUPFILE: ../../../.setup/macros
+#+SETUPFILE: ../../../.setup/options
+#+OPTIONS: broken-links:mark H:3 title:t
+#+STARTUP: fninline
+
+* I Turned 40
+:PROPERTIES:
+:CUSTOM_ID: i-turned-40
+:END:
+
+#+begin_metadata
+Published on 16 Sep 2023
+#+end_metadata
+
+#+begin_export html
+<div class="photo-box">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/64hXFXU1LTM?si=X-wcw-3vMNevvMkL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+#+end_export
+
+
+So, *I turned 40* recently. Feels like a big life milestone has been crossed. There's so much to reminisce over - like how I went from posting silly profile pictures of me on the internet to more stoic ones - that I would need to start writing an autobiography.
+
+For the sake of brevity, I would share that today I feel like a kite, tied on one end to the inevitability of life but free on the other, soaring high, letting go, reaching for the clouds and I choose when to come down. I extend my heartfelt gratitude to all who made me feel this way thus far 🙏
