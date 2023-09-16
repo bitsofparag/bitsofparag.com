@@ -3,6 +3,16 @@
 # This script creates a new .org file in the "microblog" directory under the current month and year as the subfolders.
 # The filename is provided by user as argument to the script. The content of the file is rendered from "microblog/post.tpl" template.
 
+# Usage: ./new-microblog-post.sh "my-new-post"
+usage() {
+  echo "Usage: $0 <filename>"
+  exit 1
+}
+
+if [ $# -ne 1 ]; then
+  usage
+fi
+
 filename=$1
 month=$(date +%m)
 year=$(date +%Y)
