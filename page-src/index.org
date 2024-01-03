@@ -11,7 +11,7 @@
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
     <p class="intro">Software developer. Ex co-founder. Ex Director of Software Engineering.</p>
-    <p class="intro">For the past 16+ years I have written software for startups and SMEs,
+    <p class="intro">For the past decade and a half, I have written software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
     <p class="intro">Please see below for more of my projects and interests. Or catch up on

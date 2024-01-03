@@ -1,14 +1,13 @@
 #+title: What I'm doing now
 #+author: Parag Majumdar
 #+DATE: <2023-06-18 Sun>
-#+Time-stamp: <2023-06-18 Sun>
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
 #+OPTIONS: broken-links:mark H:2 title:t
 #+STARTUP: fninline
 
 #+begin_metadata
-Last updated on 02 Jul 2023 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
+Last updated on 03 Jan 2024 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
 #+end_metadata
 
 
@@ -18,18 +17,9 @@ This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers
 
 * Current Focus
 - With generative AI tools flooding the tech industry, I am upskilling myself in LLMs. Learning the fundamentals of any technology is important, so I feel [[https://karpathy.ai/zero-to-hero.html][this]] is a good place to start for someone already familiar with ML application programming.
-- Besides, I am climbing and belaying with my friend Pablo once a week, with the goal of climbing some small to medium rock-faces outdoors.
-- I am making some small wooden articles at a local woodworking center.
-- I am trying to log 15-20km every week running on Strava - not easy but the summer sun is just too enticing to not be outside.
-- I applied for a drivers' license course - I hope to drive a used VW van to take it outside on wild camping trips.
-
-* Projects
-- Drafting my next blog post about setting up different generative AI models through [[https://github.com/ggerganov/llama.cpp][Llama.cpp]] on a local machine.
-- I will be aiming to finish a couple of woodworking projects by end of June - a box-shaped coffee table and a small oakwood pencil-case.
+- Learning about biodiversity conservation and the critical role it plays in climate action.
 
 * Books
-- I have started reading [[https://www.goodreads.com/book/show/51077.The_Last_Song_of_Dusk]["The Last Song of Dusk"]].
+- Started reading [[https://www.goodreads.com/en/book/show/197566578]["Broken Money"]] by Lyn Alden.
 - I regularly delve into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]]  by Sean Carroll, one of my favorite physicists and a notable science communicator.
 
-* Music
-- A couple of retro tracks have kept me upbeat lately, viz. "People in the Front Row" by [[https://en.wikipedia.org/wiki/Melanie_(singer)][Melanie]] and "Don't Stop" by [[https://en.wikipedia.org/wiki/Fleetwood_Mac][Fleetwood Mac]].
