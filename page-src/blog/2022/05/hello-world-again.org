@@ -41,7 +41,3 @@ Well, social media may have changed the way people produce and share content onl
 
 What's new on this website is that there's no complex web framework behind the codebase; instead it is just my good ol' text editor and a styling framework.{{{fni(1,More info about it <a
 href="/colophon.html" class="ext" target="_blank">here</a>)}}} And instead of buying a server on a shared hosting and administering the said server, I just handed it over to the cloud providers to make this website securely & reliably accessible to billions of people on the internet. Thanks for reading all this way!
-
-
-* Discuss
-{{{isso(https://pub.bitsofparag.com/comments)}}}
