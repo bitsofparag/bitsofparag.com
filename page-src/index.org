@@ -16,7 +16,7 @@
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
     <p class="intro">Please see below for more of my projects and interests. Or catch up on
     <a href="/now">what I am doing now</a>. I am hardly on social-media but you can read through <a href="/microblog">my personal feed</a>.</p>
-    <p class="intro">Please <a href="https://cal.com/paragm/15min-discovery-call">book a 15min discovery call</a> or connect via the options below.</p>
+    <p class="intro">Please <a href="https://cal.com/paragm/hello">book a call</a> or connect via the options below.</p>
   </div>
   <div class="photo-me">
     <picture>
