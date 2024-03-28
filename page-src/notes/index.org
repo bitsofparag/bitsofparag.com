@@ -1,4 +1,4 @@
 #+TITLE: Notes
 
-- [[file:breaking-bread.org][Breaking Bread]] =2022-10-14=
-- [[file:mac-setup.org][Macbook Setup]] =2022-10-14=
+- [[file:mac-setup.org][Macbook Setup]] =2022-05-18=
+- [[file:breaking-bread.org][Breaking Bread]] =2020-05-24=

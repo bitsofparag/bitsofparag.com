@@ -10,7 +10,7 @@
 
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
-    <p class="intro">Software developer. Ex co-founder. Ex Director of Software Engineering.</p>
+    <p class="intro">Software developer. Ex Director of Software Engineering.</p>
     <p class="intro">For the past decade and a half, I have written software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
@@ -109,9 +109,9 @@
   I have often guided and mentored interns as well as [[https://medium.com/@nextbigthingag/nbt-codeunversity-project-partnership-a298a46cf695][student engineers]] in software development, especially with Reactjs and Python. I use a custom mind-map with "dev paths" to help them choose the right technical skill-goals.
   @@html:</div>@@
 
-- {{{collapse_title(6, Startup co-founded)}}}
+- {{{collapse_title(6, First startup experience)}}}
   @@html:<div class="collapse-panel">@@
-  For about 2.5 years, I served as the technical co-founder at [[https://productivemobile.com/en][Productive Mobile]] (now Matterway) where I developed the first prototype of a desktop-to-mobile transformation platform, with a small team of engineers.
+  For about 2.5 years, I served as the technical lead at [[https://productivemobile.com/en][Productive Mobile]] (now Matterway) where I developed the first prototype of a desktop-to-mobile transformation platform, with a small team of engineers.
   @@html:</div>@@
 
 - {{{collapse_title(7, First Cleartrip iOS App)}}}
