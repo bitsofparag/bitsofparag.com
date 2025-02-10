@@ -10,8 +10,9 @@
 
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
-    <p class="intro">Software developer. Ex Director of Software Engineering.</p>
-    <p class="intro">For the past decade and a half, I have written software for startups and SMEs,
+    <p class="intro">Software developer. Entrepreneur. Ex Director of Software Engineering.</p>
+    <p class="intro">🌿 Currently building digital solutions to tackle challenges in EU's transition to green energy.</p>
+    <p class="intro">🧑🏽‍💻 For the past decade and a half, I have written software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
     <p class="intro">Please see below for more of my projects and interests. Or catch up on
@@ -53,18 +54,18 @@
      -->
      (at)
      <!--
-     -->
+     <!-- -->
      <!-- -->
      bitsofparag
      <!--
-     -->
+     --> <!-- -->
      .com
      </span>
      #+end_export
      #+begin_export html
      [<a href="/gpg">PGP Key</a>]
      #+end_export
-- {{{extlink(https://cal.com/paragm/15min-discovery-call, Book a call, rel="me")}}}
+- {{{extlink(https://cal.com/paragm/hello, Book a call, rel="me")}}}
 - {{{extlink(https://github.com/bitsofparag, Github, rel="me")}}}
 - {{{extlink(https://bsky.app/profile/bitsofparag.com, Bluesky, rel="me")}}}
 - {{{extlink(https://instagram.com/bitsofparag, Instagram, rel="me")}}}
