@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 import glob from 'glob';
 import util from 'util';
 
@@ -20,7 +20,7 @@ async function addPermalinks() {
     });
 
     const data = await fs.readFile(indexPath, 'utf8');
-    const $ = cheerio.load(data);
+    const $ = load(data);
 
     fileNames.forEach(({ baseName, dirName }) => {
       const container = $(`#${baseName}`).parent();
