@@ -50,20 +50,20 @@
     "url": "git@gitlab.com:parag_m/bitsofparag.com.git"
   },
   "scripts": {
-    "clean:misc": "find . -name \"*.*~\" | xargs rimraf ;",
-    "clean:dist": "find dist/* -maxdepth 2 ! -name manifest.json ! -name favicon.ico ! -name rss.xml ! -name robots.txt | xargs rimraf ;",
-    "clean": "npm run clean:misc && npm run clean:dist",
+    "clean:misc": "bun build/clean.mjs --misc",
+    "clean:dist": "node build/clean.mjs --dist",
+    "clean": "bun run clean:misc && bun run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
     "test": "echo \"Error: no test specified\" && exit 1",
     "new-microblog-post": "sh build/new-microblog-post.sh",
     "build:org": "emacs --batch --load publish.el --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
-    "build:html": "node build/add-permalinks.mjs",
+    "build:html": "bun build/add-permalinks.mjs",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
-    "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
-    "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
+    "build:js": "bunx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
+    "build:js:prod": "bunx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
     "build:rss": "emacs --batch --load publish.el --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
-    "build": "npm run build:org && npm run build:html && npm run build:css && npm run build:js",
+    "build": "bun run build:org && bun run build:html && bun run build:css && bun run build:js",
     "optimize": "node sharp-optimizer.js",
-    "dist": "npm run clean && npm run build:org && npm run build:html && npm run build:css && npm run build:js:prod && npm run build:rss && npm run optimize"
+    "dist": "bun run clean && bun run build:org && bun run build:html && bun run build:css && bun run build:js:prod && bun run build:rss && bun run optimize"
   }
 }
