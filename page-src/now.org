@@ -7,19 +7,24 @@
 #+STARTUP: fninline
 
 #+begin_metadata
-Last updated on 03 Jan 2024 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
+Last updated on 13 Feb 2025 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
 #+end_metadata
 
-
 #+begin_info
-This is a [[https://nownownow.com/about][Now page]], an idea by [[https://sivers.org/now][Derek Sivers]]. A living document on what my life looks like now - things I would say when friends ask, "What have you been up to?"
+This is a [[https://nownownow.com/about][Now page]], inspired by [[https://sivers.org/now][Derek Sivers]].
+A living document capturing what I’m focused on right now—the kind of updates I’d share when friends ask, *"What have you been up to?"*
 #+end_info
 
+* Achievements
+- Co-founded [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] with my dear colleague Cristian. We pitched our idea at [[https://kiez.ai/bridge-to-market/][Kiez]] and [[https://www.tu.berlin/entrepreneurship/startup-support/tu-startups/container-profile/startups-2024-heypermit][were selected]] for their six-month validation program.
+
 * Current Focus
-- With generative AI tools flooding the tech industry, I am upskilling myself in LLMs. Learning the fundamentals of any technology is important, so I feel [[https://karpathy.ai/zero-to-hero.html][this]] is a good place to start for someone already familiar with ML application programming.
-- Learning about biodiversity conservation and the critical role it plays in climate action.
+- From biodiversity conservation to green-energy transition, my year-long entrepreneurial journey with [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] has been deeply fulfilling (and still continuing).
+  Taking a short break now and documenting the experience through a series of posts.
+- I’ve weathered the *AI revolution* — a decade ago, I faced a similar wave with the explosion of JavaScript frameworks (for those who struggled, [[https://survivejs.com/][SurviveJS]] was a lifesaver). Keeping a close eye on the *generative AI* space.
+- Open to *part-time gigs*, especially in *AI and deeptech*.
+- Learning [[https://ziglang.org/][Zig]] to keep my programming skills sharp. Still using [[https://go.dev/][Golang]] as my go-to language for over a year now.
 
 * Books
-- Started reading [[https://www.goodreads.com/en/book/show/197566578]["Broken Money"]] by Lyn Alden.
-- I regularly delve into the pages of [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]]  by Sean Carroll, one of my favorite physicists and a notable science communicator.
-
+- Currently reading [[https://www.goodreads.com/book/show/30010.The_Complete_Stories_Vol_1]["The Complete Stories, Vol. 1"]] by *Isaac Asimov* — keeping the AI flame alive.
+- Regularly revisiting [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]] by *Sean Carroll*, one of my favorite physicists and science communicators.

@@ -11,13 +11,13 @@
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
     <p class="intro">Software developer. Entrepreneur. Ex Director of Software Engineering.</p>
-    <p class="intro">🌿 Currently building digital solutions to tackle challenges in EU's transition to green energy.</p>
-    <p class="intro">🧑🏽‍💻 For the past decade and a half, I have written software for startups and SMEs,
+    <p class="intro">🌿 <strong>Building digital solutions</strong> to tackle challenges in EU's green energy transition.</p>
+    <p class="intro">🧑🏽‍💻 <strong>20 years in tech</strong>, crafting software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
-    <p class="intro">I was closely involved with several startups, building their teams & guiding founders on technology.</p>
-    <p class="intro">Please see below for more of my projects and interests. Or catch up on
-    <a href="/now">what I am doing now</a>. I am hardly on social-media but you can read through <a href="/microblog">my personal feed</a>.</p>
-    <p class="intro">Please <a href="https://cal.com/paragm/hello">book a call</a> or connect via the options below.</p>
+    <p class="intro">🚀 <strong>Passionate about startups</strong>, I’ve helped founders scale teams and navigate tech challenges.</p>
+    <p class="intro">Explore my projects and interests, or catch up on
+    <a href="/now">what I am up to now</a>. I'm not active on social-media but I keep a <a href="/microblog">personal feed</a>.</p>
+    <p class="intro">Let's connect - <a href="https://cal.com/paragm/hello">book a call</a> or reach out below.</p>
   </div>
   <div class="photo-me">
     <picture>
@@ -90,12 +90,12 @@
   I was the chief architect of a standardized software platform for IoT projects, with focus on data-collection, backend and frontend. This platform was deployed for some of the IoT startups I worked with. For a high-level overview, check out [[https://youtu.be/rUfUZ4bfhWk][this video]] made by my colleague.
   @@html:</div>@@
 
-- {{{collapse_title(2, Startups enabled (2020 - present))}}}
+- {{{collapse_title(2, Startups Enabled (2020 - present))}}}
   @@html:<div class="collapse-panel">@@
   Bootstrapped 3 ventures - [[https://concr.de/][Concr]], [[https://www.linkedin.com/company/vitreo-me/][Vitreo]] & [[https://www.linkedin.com/company/storate/][Storate]] - with software architecture, technical direction, ops support and hiring for their CTO and lead-developer positions.
   @@html:</div>@@
 
-- {{{collapse_title(3, Startups enabled (2018 - 2019))}}}
+- {{{collapse_title(3, Startups Enabled (2018 - 2019))}}}
   @@html:<div class="collapse-panel">@@
   Supported 2 ventures [[https://auxolar.de][Auxolar]] & [[https://www.linkedin.com/company/kelvyn/][Kelvyn]], with software architecture, technical direction, ops support and hiring for their CTO and lead-developer positions.
   @@html:</div>@@
@@ -105,12 +105,12 @@
   Worked on the [[https://en.wikipedia.org/wiki/Meter-Bus][M-Bus]] protocol as well as developed the backend and frontend systems for [[https://metr.systems/de/][Metr]] as part of the founding team. Hired lead engineers as Metr's future employees.
   @@html:</div>@@
 
-- {{{collapse_title(5, Mentoring young software engineers)}}}
+- {{{collapse_title(5, Mentoring Software Engineering Students)}}}
   @@html:<div class="collapse-panel">@@
   I have often guided and mentored interns as well as [[https://medium.com/@nextbigthingag/nbt-codeunversity-project-partnership-a298a46cf695][student engineers]] in software development, especially with Reactjs and Python. I use a custom mind-map with "dev paths" to help them choose the right technical skill-goals.
   @@html:</div>@@
 
-- {{{collapse_title(6, First startup experience)}}}
+- {{{collapse_title(6, First Startup Experience)}}}
   @@html:<div class="collapse-panel">@@
   For about 2.5 years, I served as the technical lead at [[https://productivemobile.com/en][Productive Mobile]] (now Matterway) where I developed the first prototype of a desktop-to-mobile transformation platform, with a small team of engineers.
   @@html:</div>@@
@@ -122,19 +122,24 @@
 
 * Projects & Learning
 
-- {{{collapse_title(8, Rowers on Blockchain)}}}
+- {{{collapse_title(8, heyPermit)}}}
+  @@html:<div class="collapse-panel">@@
+  Co-founded with Cristian, [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] is an AI-powered platform for environmental and approval planning. We pitched our idea at [[https://kiez.ai/bridge-to-market/][Kiez]] and [[https://www.tu.berlin/entrepreneurship/startup-support/tu-startups/container-profile/startups-2024-heypermit][were selected]] for their six-month validation program. While we couldn't solidify a business case, we uncovered a critical need for better solutions in the green energy transition. The learnings were invaluable, and the entrepreneurial journey in this domain continues.
+  @@html:</div>@@
+
+- {{{collapse_title(9, Rowers on Blockchain)}}}
   @@html:<div class="collapse-panel">@@
   This was a fun project where we connected a gym rowing machine to a vending machine via blockchain to enable a token-based game system. When users complete one of three time-trials on the rowing machine, it rewards them with crypto tokens that they can then use to purchase items from a vending machine. It was my first tryst with [[https://geth.ethereum.org/][Geth]] and [[https://www.modbustools.com/modbus.html][MODBUS protocol]]. Read more about it
   [[https://medium.com/nbt-thing-tank/how-to-fuel-hacker-creativity-with-burner-wallets-e10b68269129][here]].
   @@html:</div>@@
 
-- {{{collapse_title(9, Breaking Bread)}}}
+- {{{collapse_title(10, Breaking Bread)}}}
   @@html:<div class="collapse-panel">@@
   When the [[https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6][pandemic]] forced us indoors, I donned my dusty apron to embark on a very satisfying
   journey to knead, stretch, fold, shape and bake sourdough breads. I logged everything I could and exported the logs as a webpage. [[https://www.bitsofparag.com/notes/breaking-bread.html][Take a looksie]].
   @@html:</div>@@
 
-- {{{collapse_title(10, Computational and Quantum Chemistry)}}}
+- {{{collapse_title(11, Computational and Quantum Chemistry)}}}
   @@html:<div class="collapse-panel">@@
   While studying at [[https://www.iitb.ac.in][IIT Bombay]], I worked on [[https://en.wikipedia.org/wiki/Molecular_dynamics][molecular dynamics]] for my Master's thesis under [[https://ether.chem.iitb.ac.in/~bltembe/index.html][Prof. Tembe]], which was consequential not just in my professional success, but also to keep my passion for programming and quantum mechanics alive!
   @@html:</div>@@
