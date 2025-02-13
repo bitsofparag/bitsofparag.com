@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 import glob from 'glob';
 import util from 'util';
 
@@ -10,17 +10,19 @@ async function addPermalinks() {
   console.log('Adding permalinks to microblog files');
 
   try {
-    const files = await globPromise("./dist/**/*.html", { ignore: './dist/index.html' });
+    const files = await globPromise('./dist/**/*.html', {
+      ignore: './dist/index.html',
+    });
     const indexPath = './dist/microblog/index.html';
 
-    const fileNames = files.map(file => {
+    const fileNames = files.map((file) => {
       let baseName = path.basename(file, path.extname(file));
       let dirName = path.dirname(file).replace('./dist', '');
       return { baseName, dirName };
     });
 
     const data = await fs.readFile(indexPath, 'utf8');
-    const $ = cheerio.load(data);
+    const $ = load(data);
 
     fileNames.forEach(({ baseName, dirName }) => {
       const container = $(`#${baseName}`).parent();
