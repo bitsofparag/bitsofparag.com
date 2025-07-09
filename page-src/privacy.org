@@ -11,7 +11,7 @@ Bitsofparag is my personal blog. I have no need for your private information or 
 
 * Personal data
 
-In accordance with EU GDPR, [[https://gdpr.eu/eu-gdpr-personal-data/][personal data]] is not collected. However, in the commenting system (provided by [[https://isso-comments.de/][Isso]]), for a good user-experience in discussions, I request a commenter's name and/or website URL during submission of their comment. But the requests are optional and the commenter can submit their comments anonymously.
+In accordance with EU GDPR, [[https://gdpr.eu/eu-gdpr-personal-data/][personal data]] is not collected.
 
 * Web analytics
 
