@@ -7,7 +7,7 @@
 #+STARTUP: fninline
 
 #+begin_metadata
-Last updated on 13 Feb 2025 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
+Last updated on 10 Jul 2025 • (Click [[https://github.com/bitsofparag/bitsofparag.com/commits/master/page-src/now.org][here]] for past versions)
 #+end_metadata
 
 #+begin_info
@@ -19,11 +19,12 @@ A living document capturing what I’m focused on right now—the kind of update
 - Co-founded [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] with my dear colleague Cristian. We pitched our idea at [[https://kiez.ai/bridge-to-market/][Kiez]] and [[https://www.tu.berlin/entrepreneurship/startup-support/tu-startups/container-profile/startups-2024-heypermit][were selected]] for their six-month validation program.
 
 * Current Focus
-- From biodiversity conservation to green-energy transition, my year-long entrepreneurial journey with [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] has been deeply fulfilling (and still continuing).
-  Taking a short break now and documenting the experience through a series of posts.
-- I’ve weathered the *AI revolution* — a decade ago, I faced a similar wave with the explosion of JavaScript frameworks (for those who struggled, [[https://survivejs.com/][SurviveJS]] was a lifesaver). Keeping a close eye on the *generative AI* space.
-- Open to *part-time gigs*, especially in *AI and deeptech*.
-- Learning [[https://ziglang.org/][Zig]] to keep my programming skills sharp. Still using [[https://go.dev/][Golang]] as my go-to language for over a year now.
+- Actively leading engineering efforts in two exciting domains:
+  - As Director of Software Engineering at a biomanufacturing startup, building a digital system to navigate through the complex landscape of bioinformatics research & datasets.
+  - As CTO at a career development startup, architecting and building a "career coach" to support GenZ and Millenials stuck in a quarter-life crisis.
+- Wrapping up a year-and-a-half long entrepreneurial journey in biodiversity and green energy with [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]]. Taking time to reflect and write about the experience.
+- +I’ve weathered the *AI revolution*+ I will admit, this AI wave keeps giving! I have weathered previous tech shifts, but the pace and potential here feels scary and exciting at the same time. Keeping a builder's mindset, and experimenting selectively.
+- Learning [[https://ziglang.org/][Zig]] for fun and perspective. [[https://go.dev/][Golang]] remains my tool of choice for getting things done.
 
 * Books
 - Currently reading [[https://www.goodreads.com/book/show/30010.The_Complete_Stories_Vol_1]["The Complete Stories, Vol. 1"]] by *Isaac Asimov* — keeping the AI flame alive.

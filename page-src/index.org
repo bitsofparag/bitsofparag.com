@@ -10,8 +10,8 @@
 
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
-    <p class="intro">Software developer. Entrepreneur. Ex Director of Software Engineering.</p>
-    <p class="intro">🌿 <strong>Building digital solutions</strong> to tackle challenges in EU's green energy transition.</p>
+    <p class="intro">Software developer. Entrepreneur. Fractional CTO</p>
+    <p class="intro">💼 Currently <strong>Director of Software Engineering</strong> at a biomanufacturing startup, and <strong>CTO</strong> at a career development startup.
     <p class="intro">🧑🏽‍💻 <strong>20 years in tech</strong>, crafting software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">🚀 <strong>Passionate about startups</strong>, I’ve helped founders scale teams and navigate tech challenges.</p>
@@ -55,10 +55,9 @@
      (at)
      <!--
      <!-- -->
-     <!-- -->
      bitsofparag
-     <!--
-     --> <!-- -->
+     <!-- -->
+     <!-- -->
      .com
      </span>
      #+end_export
