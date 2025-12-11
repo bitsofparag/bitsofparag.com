@@ -11,7 +11,7 @@
 <section id="intro" class="bp-grid-3">
   <div class="col-span-2">
     <p class="intro">Software developer. Entrepreneur. Fractional CTO</p>
-    <p class="intro">💼 Currently <strong>Director of Software Engineering</strong> at a biomanufacturing startup, and <strong>CTO</strong> at a career development startup.
+    <p class="intro">💼 Currently <strong>Fractional CTO</strong> at a <a href="https://www.changepath.ai/">career development startup</a>, while exploring and building in the cybersecurity & biosciences domains.
     <p class="intro">🧑🏽‍💻 <strong>20 years in tech</strong>, crafting software for startups and SMEs,
     on mobile devices, IoT devices & cloud platforms.</p>
     <p class="intro">🚀 <strong>Passionate about startups</strong>, I’ve helped founders scale teams and navigate tech challenges.</p>
@@ -52,11 +52,12 @@
      admin
      <!--
      -->
+     <!--
+     -->
      (at)
      <!--
      <!-- -->
      bitsofparag
-     <!-- -->
      <!-- -->
      .com
      </span>
