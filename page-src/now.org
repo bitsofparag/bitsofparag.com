@@ -16,16 +16,15 @@ A living document capturing what I’m focused on right now—the kind of update
 #+end_info
 
 * Achievements
-- Co-founded [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] with my dear colleague Cristian. We pitched our idea at [[https://kiez.ai/bridge-to-market/][Kiez]] and [[https://www.tu.berlin/entrepreneurship/startup-support/tu-startups/container-profile/startups-2024-heypermit][were selected]] for their six-month validation program.
+- +Co-founded+ Shutdown [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]] with my dear colleague Cristian. We pitched our idea at [[https://web.archive.org/web/20240225025316/https://kiez.ai/bridge-to-market/][Kiez]] (now [[https://www.ai-nation.de/][AI Nation]]) and [[https://www.tu.berlin/entrepreneurship/startup-support/tu-startups/container-profile/startups-2024-heypermit][were selected]] for their six-month validation program.
+- Conceptualized and developed  [[https://app.changepath.ai/de/register?utm_source=bitsofparag.com&utm_medium=referral][ChangePath's app]] from the ground up. I'm quite proud of the tech stack I selected for this project, not to mention that it also marked the fastest launch time of my professional career.
+- Participated in a few hackathons this year. Secured the third prize for an idea to detect inflammatory biomarkers in elderly people. [[https://www.linkedin.com/posts/longevityhacks_give-sharp-people-real-problems-and-a-hard-activity-7396535015326568448-mNUb?utm_source=bitsofparag.com][LinkedIn post here]].
 
 * Current Focus
-- Actively leading engineering efforts in two exciting domains:
-  - As Director of Software Engineering at a biomanufacturing startup, building a digital system to navigate through the complex landscape of bioinformatics research & datasets.
-  - As CTO at a career development startup, architecting and building a "career coach" to support GenZ and Millenials stuck in a quarter-life crisis.
-- Wrapping up a year-and-a-half long entrepreneurial journey in biodiversity and green energy with [[https://web.archive.org/web/20241225011406/https://heypermit.com/][heyPermit]]. Taking time to reflect and write about the experience.
-- +I’ve weathered the *AI revolution*+ I will admit, this AI wave keeps giving! I have weathered previous tech shifts, but the pace and potential here feels scary and exciting at the same time. Keeping a builder's mindset, and experimenting selectively.
+- Actively leading engineering efforts as CTO at ChangePath, an ai-native career-design app that gets people out of career crisis. [[https://app.changepath.ai/de/register?utm_source=bitsofparag.com&utm_medium=referral][Try it out]].
+- Exploring some ideas in cybersecurity and biosciences domains.
 - Learning [[https://ziglang.org/][Zig]] for fun and perspective. [[https://go.dev/][Golang]] remains my tool of choice for getting things done.
 
 * Books
-- Currently reading [[https://www.goodreads.com/book/show/30010.The_Complete_Stories_Vol_1]["The Complete Stories, Vol. 1"]] by *Isaac Asimov* — keeping the AI flame alive.
+- Currently reading [[https://www.goodreads.com/book/show/30010.The_Complete_Stories_Vol_1]["The Complete Stories, Vol. 1"]] by *Isaac Asimov*.
 - Regularly revisiting [[https://www.goodreads.com/book/show/26150770-the-big-picture?from_search=true&from_srp=true&qid=DXhVJs5f33&rank=1][The Big Picture: On the Origins of Life, Meaning, and the Universe Itself]] by *Sean Carroll*, one of my favorite physicists and science communicators.
