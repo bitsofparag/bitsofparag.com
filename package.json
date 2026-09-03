@@ -51,19 +51,17 @@
   },
   "scripts": {
     "clean:misc": "find . -name \"*.*~\" | xargs rm -rf",
-    "clean:dist": "find dist/* -maxdepth 2 ! -name manifest.json ! -name favicon.ico ! -name rss.xml ! -name robots.txt | xargs rm -rf",
+    "clean:dist": "rimraf dist",
     "clean": "npm run clean:misc && npm run clean:dist",
     "lint": "eslint ./site-assets/scripts/** --ignore ./site-assets/styles/**/*.* && stylelint ./site-assets/styles/**",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "new-microblog-post": "sh build/new-microblog-post.sh",
-    "build:org": "emacs --batch --load publish.el --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
-    "build:html": "node build/add-permalinks.mjs",
+    "test": "node --test",
+    "build:org": "emacs --batch --load publish.el --eval '(setq org-publish-timestamp-directory \"./.org-timestamps/\")' --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
+    "build:rss": "emacs --batch --load publish.el --eval '(setq org-publish-timestamp-directory \"./.org-timestamps/\")' --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
     "build:js": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --source-maps",
     "build:js:prod": "npx babel site-assets/scripts/index.js --out-file dist/static/scripts/index.js --minified",
-    "build:rss": "emacs --batch --load publish.el --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
-    "build": "npm run build:org && npm run build:html && npm run build:css && npm run build:js",
+    "build": "npm run build:org && npm run build:rss && npm run build:css && npm run build:js",
     "optimize": "node sharp-optimizer.js",
-    "dist": "npm run clean && npm run build:org && npm run build:html && npm run build:css && npm run build:js:prod && npm run build:rss && npm run optimize"
+    "dist": "npm run clean && npm run build:org && npm run build:rss && npm run build:css && npm run build:js:prod && npm run optimize"
   }
 }
