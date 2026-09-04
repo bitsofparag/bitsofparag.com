@@ -37,7 +37,7 @@ serve-dist port="8788":
     @npx wrangler pages dev dist --port {{port}}
 
 # Upload a built artifact to Cloudflare Pages.
-deploy-production project="bitsofparag": verify-public-build
+deploy-production project="bitsofparag-com-live": verify-public-build
     @npx wrangler pages deploy dist --project-name {{project}} --branch main
 
 # Check the deployed content streams.
