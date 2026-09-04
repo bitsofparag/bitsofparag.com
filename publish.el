@@ -27,9 +27,9 @@
 
 (defconst bip-url-home "https://bitsofparag.com/"
   "The home page URL of the website.")
-(defconst bip-title "Parag's Personal Website"
+(defconst bip-title "Parag Majumdar — Writings & Microblog"
   "Title of the website.")
-(defconst bip-desc "Writings and microblog posts by Parag Majumdar."
+(defconst bip-desc "Writings and microblog posts by Parag Majumdar about anything that wanders my way."
   "Description of the website.")
 (defconst bip-keywords "parag, parag m, blog, opinion, thoughts, technology, experiments"
   "Website keywords for SEO.")
@@ -104,7 +104,8 @@ Only writings and microblog entries belong in the feed."
 (defun bip-generate-rss-feed (title list)
   "Generate an Org source document for the RSS feed.
 TITLE is the feed title. LIST contains sitemap entries."
-  (concat "#+TITLE: " title "\n\n"
+  (concat "#+TITLE: " title "\n"
+          "#+DESCRIPTION: " bip-desc "\n\n"
           (org-list-to-subtree list 1 '(:icount "" :istart ""))))
 
 (defun bip-org-rss-publish-to-rss (plist filename pub-dir)
@@ -217,7 +218,7 @@ PUB-DIR is the output directory."
                                     "now.org" "notes" "privacy.org" "rss.org"
                                     "drafts" "blog/index.org" "microblog/index.org"))
              :table-of-contents nil
-             :rss-image-url (concat bip-url-home "static/images/og-logo.png")
+             :rss-image-url (concat bip-url-home "static/images/android-chrome-512x512.png")
              :rss-extension "xml"
              :rss-feed-url (concat bip-url-home "rss.xml")
              :auto-sitemap t

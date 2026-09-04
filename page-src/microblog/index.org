@@ -1,6 +1,7 @@
-#+TITLE: My Feed
+#+TITLE: Microblog
 #+AUTHOR: Parag Majumdar
-#+OPTIONS: toc:nil
+#+DESCRIPTION: Short updates, photos, sketches, links, and other fragments from Parag Majumdar.
+#+OPTIONS: toc:nil author:nil
 
 Welcome to my microblog, a Tumblr-like feed where I share small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information.
 
