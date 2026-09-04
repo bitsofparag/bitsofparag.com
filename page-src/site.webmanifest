@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Parag Majumdar - Writings & Microblog",
+  "short_name": "Bitsofparag",
+  "description": "Writings and microblog posts by Parag Majumdar about anything that wanders my way.",
   "icons": [
     {
       "src": "/static/images/android-chrome-192x192.png",
@@ -13,7 +14,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#4e3455",
+  "background_color": "#dbd7d7",
   "display": "standalone"
 }
