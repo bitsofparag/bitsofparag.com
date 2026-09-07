@@ -84,8 +84,21 @@
     });
   }
 
+  function revealEmailAddresses() {
+    const emailCodes = [97, 100, 109, 105, 110, 64, 98, 105, 116, 115, 111, 102, 112, 97, 114, 97, 103, 46, 99, 111, 109];
+    const email = String.fromCharCode(...emailCodes);
+
+    document.querySelectorAll('.email-address').forEach((element) => {
+      const link = document.createElement('a');
+      link.href = `mailto:${email}`;
+      link.textContent = email;
+      element.replaceChildren(link);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     enableScrollableHeader();
+    revealEmailAddresses();
   });
   window.addEventListener('load', () => {
     copyToClipboard();

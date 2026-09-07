@@ -27,4 +27,7 @@ The site may contain a couple of links to other sites (the badges, for example).
 
 * Contact me
 
-If you have any questions or suggestions about the Privacy Policy, do not hesitate to contact me. My contact email can be found on the home page.
+If you have any questions or suggestions about the Privacy Policy, do not hesitate to contact me at
+#+begin_export html
+<span class="email-address">admin [at] bitsofparag [dot] com</span>.
+#+end_export
