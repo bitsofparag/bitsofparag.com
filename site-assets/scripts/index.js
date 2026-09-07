@@ -33,8 +33,7 @@
     };
   } /* enableScrollableHeader */
 
-  let messageHelpCounter = 0;
-  function showMessage(element, eventType, msg, isSuccessful = true) {
+  function showMessage(element, msg, isSuccessful = true) {
     if (!msg) return;
     let message = document.createElement('span');
     message.className = 'copied-message ' + (isSuccessful ? 'success-message' : 'error-message');
@@ -59,9 +58,9 @@
       code.addEventListener('click', (e) => {
         if (navigator.clipboard) {
           navigator.clipboard.writeText(e.target.textContent).then(function() {
-            showMessage(e.target, e.type, 'Copied');
+            showMessage(e.target, 'Copied');
           }, function(err) {
-            showMessage(e.target, e.type, 'Error copying', false);
+            showMessage(e.target, 'Error copying', false);
             console.error('Could not copy text: ', err);
           });
         } else {
@@ -73,9 +72,9 @@
           try {
             var successful = document.execCommand('copy');
             var msg = successful ? 'Copied!' : 'Error copying!';
-            showMessage(e.target, e.type, msg, successful);
+            showMessage(e.target, msg, successful);
           } catch (err) {
-            showMessage(e.target, e.type, 'Error copying!', false);
+            showMessage(e.target, 'Error copying!', false);
             console.error('Could not copy text: ', err);
           }
           document.body.removeChild(textArea);

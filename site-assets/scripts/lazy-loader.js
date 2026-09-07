@@ -23,7 +23,7 @@
       window.removeEventListener('resize', lazyLoad);
       window.removeEventListener('orientationchange', lazyLoad);
     }
-  };
+  }
 
   window.addEventListener('load', () => {
     if ("IntersectionObserver" in window) {

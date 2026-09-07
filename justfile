@@ -27,8 +27,33 @@ format-image-optimizer:
 optimize-images:
     @cd tools/image-optimizer && go run . ../../dist/static/images
 
+# Keep linked JavaScript and CSS below required max size.
+verify-bundle-size max_bytes="33655":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    MAX_BYTES="{{max_bytes}}"
+    FILES=(
+        dist/static/styles/index.css
+        dist/static/scripts/index.js
+        dist/static/scripts/lazy-loader.js
+    )
+    TOTAL=0
+    for file in "${FILES[@]}"; do
+        if [ ! -s "$file" ]; then
+            echo "FAIL: missing bundle asset: $file"
+            exit 1
+        fi
+        SIZE=$(wc -c < "$file")
+        TOTAL=$((TOTAL + SIZE))
+    done
+    if [ "$TOTAL" -gt "$MAX_BYTES" ]; then
+        echo "FAIL: JS + CSS bundle is $TOTAL bytes; budget is $MAX_BYTES bytes"
+        exit 1
+    fi
+    echo "Bundle size passed: $TOTAL / $MAX_BYTES bytes"
+
 # Check public pages and the RSS feed.
-verify-public-build:
+verify-public-build: verify-bundle-size
     #!/usr/bin/env bash
     set -euo pipefail
     for page in dist/index.html dist/blog/index.html dist/microblog/index.html dist/rss.xml; do
