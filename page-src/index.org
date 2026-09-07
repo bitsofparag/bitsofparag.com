@@ -1,4 +1,4 @@
-#+TITLE: Parag Majumdar - Writings & Microblog
+#+TITLE: Microblog
 #+AUTHOR: Parag Majumdar
 #+DESCRIPTION: Writings and microblog posts by Parag Majumdar about anything that wanders my way.
 #+SETUPFILE: ./.setup/macros

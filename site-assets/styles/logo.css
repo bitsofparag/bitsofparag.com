@@ -8,6 +8,9 @@
 
 #logo .letters {
   @apply relative top-0 left-0 inline-block text-logo leading-none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 5.2rem;
+  top: -10px;
 }
 
 #logo .circle {

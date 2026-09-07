@@ -23,13 +23,11 @@ code {
   display: inline;
 }
 
-@media (prefers-color-scheme: dark) {
-  pre.example,
-  code,
-  .org-src-container {
-    @apply text-content-color-darkmode-900;
-    @apply bg-charcoal-dark;
-  }
+html[data-theme="dark"] pre.example,
+html[data-theme="dark"] code,
+html[data-theme="dark"] .org-src-container {
+  @apply text-content-color-darkmode-900;
+  @apply bg-charcoal-dark;
 }
 
 #copied-message-tmpl,

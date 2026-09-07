@@ -11,12 +11,13 @@
 
 html {
   @apply bg-nutty-light text-content-color-900;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    @apply bg-pflaume-dark text-content-color-darkmode-900;
-  }
+html[data-theme="dark"] {
+  @apply text-content-color-darkmode-900;
+  background-color: rgb(30, 30, 30);
+  color-scheme: dark;
 }
 
 /* ------ Grids ---------- */
@@ -68,12 +69,12 @@ a:hover, .org-ul a:hover {
   @apply text-link-color-700;
 }
 
-@media (prefers-color-scheme: dark) {
-  a, .org-ul a {
-    @apply text-link-color-darkmode-900;
-  }
+html[data-theme="dark"] a,
+html[data-theme="dark"] .org-ul a {
+  @apply text-link-color-darkmode-900;
+}
 
-  a:hover, .org-ul a:hover {
-    @apply text-link-color-darkmode-700;
-  }
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] .org-ul a:hover {
+  @apply text-link-color-darkmode-700;
 }

@@ -80,10 +80,8 @@
   background-color: rgba(0, 0, 0, 65%);
 }
 
-@media (prefers-color-scheme: dark) {
-  #content #isso-thread {
-    background-color: rgba(44, 44, 44, 65%);
-  }
+html[data-theme="dark"] #content #isso-thread {
+  background-color: rgba(44, 44, 44, 65%);
 }
 
 #content #isso-thread p,

@@ -47,10 +47,8 @@
   @apply text-primary-color-700 font-light italic text-h4;
 }
 
-@media (prefers-color-scheme: dark) {
-  #content .phonetic {
-    @apply text-primary-color-darkmode-700;
-  }
+html[data-theme="dark"] #content .phonetic {
+  @apply text-primary-color-darkmode-700;
 }
 
 #content .photo-box,
@@ -71,10 +69,8 @@
   @apply block lg:invisible w-full bg-white text-left z-10 lg:absolute lg:bottom-0 p-2.5;
 }
 
-@media (prefers-color-scheme: dark) {
-  #content .highlight-photo-tooltip {
-    @apply text-primary-color-900;
-  }
+html[data-theme="dark"] #content .highlight-photo-tooltip {
+  @apply text-primary-color-900;
 }
 
 #content .photo-box:hover .highlight-photo-tooltip {
@@ -164,14 +160,12 @@
   @apply text-link-color-700;
 }
 
-@media (prefers-color-scheme: dark) {
-  #content label {
-    @apply text-link-color-darkmode-900;
-  }
+html[data-theme="dark"] #content label {
+  @apply text-link-color-darkmode-900;
+}
 
-  #content label:hover {
-    @apply text-link-color-darkmode-700;
-  }
+html[data-theme="dark"] #content label:hover {
+  @apply text-link-color-darkmode-700;
 }
 
 #content label::before {
@@ -275,10 +269,8 @@
   @apply mb-0;
 }
 
-@media (prefers-color-scheme: dark) {
-  #content .info p {
-    @apply text-white;
-  }
+html[data-theme="dark"] #content .info p {
+  @apply text-white;
 }
 
 #content .bullet-separator {

@@ -6,11 +6,9 @@
   @apply transition duration-300 ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  #header {
-    @apply bg-pflaume-dark;
-    @apply border-b-pflaume-darker;
-  }
+html[data-theme="dark"] #header {
+  background-color: rgb(30, 30, 30);
+  @apply border-b-pflaume-darker;
 }
 
 .scroll-down #header {
@@ -57,9 +55,14 @@
   @apply lg:transform-none;
 }
 
-@media (prefers-color-scheme: dark) {
-  #nav .menu {
-    @apply bg-pflaume-dark lg:bg-transparent border-l-pflaume-darker lg:border-none;
+html[data-theme="dark"] #nav .menu {
+  @apply lg:bg-transparent border-l-pflaume-darker lg:border-none;
+  background-color: rgb(30, 30, 30);
+}
+
+@media (min-width: 1024px) {
+  html[data-theme="dark"] #nav .menu {
+    @apply bg-transparent border-none;
   }
 }
 
@@ -85,15 +88,13 @@
   @apply block;
 }
 
-@media (prefers-color-scheme: dark) {
-  #nav a.nav-link {
-    @apply text-link-color-darkmode-900;
-  }
+html[data-theme="dark"] #nav a.nav-link {
+  @apply text-link-color-darkmode-900;
+}
 
-  #nav a.nav-link:hover,
-  #nav a.nav-link:focus {
-    @apply text-link-color-darkmode-700;
-  }
+html[data-theme="dark"] #nav a.nav-link:hover,
+html[data-theme="dark"] #nav a.nav-link:focus {
+  @apply text-link-color-darkmode-700;
 }
 
 #nav a.nav-link::after {
@@ -123,4 +124,69 @@
   background-size: contain;
   text-indent: -9999px;
   overflow: hidden;
+}
+
+#nav .theme-toggle {
+  @apply block relative ml-6 mt-4 lg:mt-0;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: currentColor;
+  cursor: pointer;
+}
+
+#nav .theme-toggle:hover,
+#nav .theme-toggle:focus-visible {
+  @apply text-link-color-700;
+}
+
+#nav .theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.theme-toggle-icon {
+  display: block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+
+.theme-toggle-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0.08rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.theme-toggle-icon::after {
+  content: "";
+  position: absolute;
+  top: -0.05rem;
+  right: -0.03rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: #dbd7d7;
+}
+
+html[data-theme="dark"] .theme-toggle-icon::before {
+  content: "☀";
+  position: static;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 0.8;
+  background: none;
+}
+
+html[data-theme="dark"] .theme-toggle-icon::after {
+  display: none;
+}
+
+html[data-theme="dark"] #nav .theme-toggle:hover,
+html[data-theme="dark"] #nav .theme-toggle:focus-visible {
+  @apply text-link-color-darkmode-700;
 }

@@ -96,10 +96,55 @@
     });
   }
 
+  function getStoredTheme() {
+    try {
+      return window.localStorage.getItem('bitsofparag-theme');
+    } catch {
+      return null;
+    }
+  }
+
+  function setTheme(theme, toggle) {
+    const isDark = theme === 'dark';
+    const root = document.documentElement;
+    root.dataset.theme = isDark ? 'dark' : 'light';
+    toggle.setAttribute('aria-pressed', String(isDark));
+    toggle.setAttribute(
+      'aria-label',
+      isDark ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+    toggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+
+    const themeColor = document.querySelector('#theme-color');
+    if (themeColor) {
+      themeColor.content = isDark ? 'rgb(30, 30, 30)' : '#dbd7d7';
+    }
+  }
+
+  function enableThemeToggle() {
+    const toggle = document.querySelector('#theme-toggle');
+    if (!toggle) return;
+
+    const initialTheme = getStoredTheme() === 'dark' ? 'dark' : 'light';
+    setTheme(initialTheme, toggle);
+    toggle.addEventListener('click', () => {
+      const nextTheme = document.documentElement.dataset.theme === 'dark'
+        ? 'light'
+        : 'dark';
+      setTheme(nextTheme, toggle);
+      try {
+        window.localStorage.setItem('bitsofparag-theme', nextTheme);
+      } catch {
+        return;
+      }
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     enableScrollableHeader();
     revealEmailAddresses();
   });
+  enableThemeToggle();
   window.addEventListener('load', () => {
     copyToClipboard();
   });

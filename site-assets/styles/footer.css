@@ -4,10 +4,8 @@
   @apply border-0 border-t border-solid border-t-nutty-dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  #footer {
-    @apply border-t-pflaume-darker;
-  }
+html[data-theme="dark"] #footer {
+  @apply border-t-pflaume-darker;
 }
 
 #footer .container {
