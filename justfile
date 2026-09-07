@@ -15,6 +15,18 @@ build:
 build-production:
     @npm run dist
 
+# Run image optimizer tests with race detection and coverage.
+test-image-optimizer:
+    @cd tools/image-optimizer && go test -race -cover ./...
+
+# Format image optimizer source.
+format-image-optimizer:
+    @cd tools/image-optimizer && gofmt -w *.go
+
+# Convert published JPEG and PNG images to WebP.
+optimize-images:
+    @cd tools/image-optimizer && go run . ../../dist/static/images
+
 # Check public pages and the RSS feed.
 verify-public-build:
     #!/usr/bin/env bash
