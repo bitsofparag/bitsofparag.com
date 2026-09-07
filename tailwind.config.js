@@ -55,8 +55,8 @@ module.exports = {
   content: ['./page-src/**/*.{html,js,org}', './site-assets/**/*.js'],
   theme: {
     fontFamily: {
-      sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
-      serif: ['Newsreader', ...defaultTheme.fontFamily.serif],
+      sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
+      serif: ['Lora', ...defaultTheme.fontFamily.serif],
     },
     fontSize: {
       hero: '4rem',
