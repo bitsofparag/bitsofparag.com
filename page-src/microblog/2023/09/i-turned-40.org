@@ -16,7 +16,10 @@ Published on 16 Sep 2023
 
 #+begin_export html
 <div class="photo-box">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/64hXFXU1LTM?si=X-wcw-3vMNevvMkL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <button class="video-placeholder" type="button" data-youtube-id="64hXFXU1LTM" data-youtube-title="I turned 40">
+    <span class="video-play-icon" aria-hidden="true"></span>
+    <span>Play video</span>
+  </button>
 </div>
 #+end_export
 

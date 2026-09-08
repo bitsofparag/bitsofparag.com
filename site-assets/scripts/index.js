@@ -1,3 +1,5 @@
+import { enableVideoEmbeds } from './video-embed.mjs';
+
 (function() {
   const body = document.body;
 
@@ -142,6 +144,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     enableScrollableHeader();
     revealEmailAddresses();
+    enableVideoEmbeds();
   });
   enableThemeToggle();
   window.addEventListener('load', () => {

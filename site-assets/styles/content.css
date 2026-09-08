@@ -61,35 +61,43 @@ html[data-theme="dark"] #content .phonetic {
   @apply p-2 md:p-3 bg-white;
 }
 
-#content .highlight-photo {
-  @apply mt-2;
+#content .video-placeholder,
+#content .photo-box > iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
-#content .highlight-photo-tooltip {
-  @apply block lg:invisible w-full bg-white text-left z-10 lg:absolute lg:bottom-0 p-2.5;
+#content .video-placeholder {
+  @apply flex items-center justify-center gap-3 font-sans cursor-pointer;
+  background-color: rgb(30, 30, 30);
+  color: white;
 }
 
-html[data-theme="dark"] #content .highlight-photo-tooltip {
-  @apply text-primary-color-900;
+#content .video-placeholder:hover {
+  @apply text-link-color-darkmode-900;
 }
 
-#content .photo-box:hover .highlight-photo-tooltip {
-  @apply lg:visible;
+html[data-theme="dark"] #content .video-placeholder {
+  @apply bg-charcoal-dark;
 }
 
-#content .photo-me {
-  @apply flex items-start flex-col;
-  @apply md:-z-10;
+#content .video-placeholder:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: -6px;
 }
 
-#content .photo-me picture {
-  @apply bg-white p-2;
+#content .video-play-icon {
+  width: 0;
+  height: 0;
+  border-top-width: 0.5rem;
+  border-bottom-width: 0.5rem;
+  border-left: 0.8rem solid currentColor;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 
-#content .sticky-tape {
-  @apply ml-2 z-10 bg-gray-50/50 backdrop-grayscale-0 backdrop-blur;
-  width: 184px;
-  height: 37px;
+#content .photo-box > iframe {
+  border: 0;
 }
 
 /* ----- Blog intro ----- */
