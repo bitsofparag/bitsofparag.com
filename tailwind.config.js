@@ -53,6 +53,11 @@ const palette = {
 
 module.exports = {
   content: ['./page-src/**/*.{html,js,org}', './site-assets/**/*.js'],
+  blocklist: [
+    'contents',
+    'grow',
+    'table',
+  ],
   theme: {
     fontFamily: {
       sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
