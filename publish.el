@@ -237,6 +237,7 @@ PUB-DIR is the output directory."
        (list "bitsofparag-static"
              :base-directory (concat bip-root "site-assets")
              :base-extension site-attachments
+             :exclude "fonts/.*-latin-ext\\.woff2\\'"
              :publishing-directory (concat bip-root "dist/static")
              :publishing-function 'org-publish-attachment
              :recursive t)
