@@ -1,16 +1,20 @@
 <nav id="nav" class="container">
 
   <!-- logo -->
-  <a href="/" id="logo">
-    <span class="letters-container">
-      <span class="letters letters-right">p</span>
-    </span>
+  <a href="/" id="logo" aria-label="Home">
+    <svg class="logo-mark" viewBox="-55 -50 650 700" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="logo-stem-cut">
+          <rect x="-55" y="-50" width="650" height="680" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#logo-stem-cut)">
+        <path d="M42 -255V-225Q70 -225 81.5 -206Q93 -187 96.5 -155.5Q100 -124 103 -85Q110 1 117.5 81.5Q125 162 131.5 228.5Q138 295 142 342Q146 389 146 408Q146 428 142.5 444.5Q139 461 119 461Q103 461 82.5 439Q62 417 47 364L18 370Q21 388 30.5 411.5Q40 435 56 458Q72 481 95 496Q118 511 148 511Q193 511 208.5 479.5Q224 448 224 406Q224 376 219.5 345.5Q215 315 210 292H213Q241 384 270.5 431Q300 478 331 494.5Q362 511 391 511Q437 511 467 484.5Q497 458 511.5 414Q526 370 526 317Q526 220 492.5 146Q459 72 393.5 30.5Q328 -11 231 -11Q218 -11 206.5 -10Q195 -9 184 -8Q179 -84 176.5 -125.5Q174 -167 172.5 -186.5Q171 -206 168 -217Q184 -216 199.5 -215.5Q215 -215 231 -214V-255ZM248 23Q290 23 322 40Q354 57 376.5 85.5Q399 114 413 150Q427 186 433.5 224.5Q440 263 440 299Q440 345 434 382.5Q428 420 413 442Q398 464 370 464Q343 464 316 435Q289 406 266 357.5Q243 309 225 250Q207 191 198 130Q194 108 191.5 84.5Q189 61 187 35Q203 30 217.5 26.5Q232 23 248 23Z" transform="matrix(1 0 0 -1 0 511)" />
+      </g>
+    </svg>
     <span class="circle circle-outer animate-spin-slow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 103">
-        <g>
-          <title>Path Circle</title>
-          <ellipse stroke-width="2" stroke-dasharray="5,5" ry="49.5" rx="49.5" id="path-circle" cy="51.5" cx="51.5"></ellipse>
-        </g>
+      <svg viewBox="0 0 103 103" aria-hidden="true" focusable="false">
+        <ellipse stroke-width="2" stroke-dasharray="5,5" ry="49.5" rx="49.5" id="path-circle" cy="51.5" cx="51.5"></ellipse>
       </svg>
     </span>
     <span class="circle circle-inner"></span>

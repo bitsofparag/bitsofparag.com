@@ -16,8 +16,10 @@ type optimizerOptions struct {
 	ImagesRoot string
 }
 
-type imageEncoder func(source, target string) error
-type commandRunner func(name string, args ...string) ([]byte, error)
+type (
+	imageEncoder  func(source, target string) error
+	commandRunner func(name string, args ...string) ([]byte, error)
+)
 
 func main() {
 	if err := run(os.Args[1:]); err != nil {
@@ -69,6 +71,7 @@ func discoverImages(imagesRoot string) ([]string, error) {
 	if err != nil {
 		return nil, fmt.Errorf("scan images in %s: %w", imagesRoot, err)
 	}
+
 	slices.Sort(images)
 	return images, nil
 }
