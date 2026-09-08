@@ -28,7 +28,7 @@ optimize-images:
     @cd tools/image-optimizer && go run . ../../dist/static/images
 
 # Keep linked JavaScript and CSS below required max size.
-verify-bundle-size max_bytes="30207":
+verify-bundle-size max_bytes="29061":
     #!/usr/bin/env bash
     set -euo pipefail
     MAX_BYTES="{{max_bytes}}"
