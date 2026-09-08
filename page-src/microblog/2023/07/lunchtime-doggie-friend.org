@@ -1,8 +1,10 @@
+#+TITLE: Lunchtime doggie friend
 #+author: Parag Majumdar
+#+DESCRIPTION: A lunchtime encounter with an Australian Shepherd and the kind stranger who walks him every workday.
 #+DATE: [2023-07-13 Thu]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * Lunchtime doggie friend

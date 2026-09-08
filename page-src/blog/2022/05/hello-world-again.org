@@ -1,5 +1,6 @@
 #+title: Hello World, Again
 #+author: Parag M.
+#+DESCRIPTION: A return to personal blogging after twelve years, with memories of the early social web and plans for a simpler website.
 #+DATE: <2022-05-28 Sat>
 #+Time-stamp: <2022-05-28 20:00:44 parag>
 #+SETUPFILE: ../../../.setup/macros

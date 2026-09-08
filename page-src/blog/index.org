@@ -1,4 +1,5 @@
 #+TITLE: Writings
+#+DESCRIPTION: Long-form writings by Parag Majumdar about life, technology, and personal experiments.
 
 - [[file:2023/06/operating-principles-of-my-life.org][Operating Principles of My Life]] =2023-06-16=
 - [[file:2022/05/hello-world-again.org][Hello World, Again]] =2022-05-28=

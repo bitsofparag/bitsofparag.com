@@ -1,4 +1,5 @@
 #+TITLE: 404
+#+DESCRIPTION: The requested page could not be found on bitsofparag.com.
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
 

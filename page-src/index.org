@@ -3,10 +3,7 @@
 #+DESCRIPTION: Writings and microblog posts by Parag Majumdar about anything that wanders my way.
 #+SETUPFILE: ./.setup/macros
 #+SETUPFILE: ./.setup/options
-#+OPTIONS: broken-links:mark H:2 author:nil
+#+OPTIONS: broken-links:mark H:2
 #+LANGUAGE: en
-#+HTML_HEAD_EXTRA: <meta name="author" content="Parag Majumdar" />
-#+HTML_HEAD_EXTRA: <link rel="canonical" href="https://bitsofparag.com/" />
-#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://bitsofparag.com/" />
 
 #+INCLUDE: microblog/index.org :lines "5-"

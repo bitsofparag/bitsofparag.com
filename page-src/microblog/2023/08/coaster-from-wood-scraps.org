@@ -1,8 +1,10 @@
+#+TITLE: Coaster from wood scraps
 #+author: Parag Majumdar
+#+DESCRIPTION: Turning scrap wood into a pear-shaped coaster with a bandsaw, router, wood stain, and beeswax.
 #+DATE: [2023-08-02 Wed]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * Coaster from wood scraps

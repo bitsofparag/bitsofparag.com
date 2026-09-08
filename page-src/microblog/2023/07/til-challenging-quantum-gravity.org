@@ -1,8 +1,10 @@
+#+TITLE: TIL: Challenging Quantum Gravity
 #+author: Parag Majumdar
+#+DESCRIPTION: A note on Jonathan Oppenheim's hybrid theory for reconciling probabilistic quantum fields with classical gravity.
 #+DATE: [2023-07-18 Tue]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * TIL: Challenging Quantum Gravity

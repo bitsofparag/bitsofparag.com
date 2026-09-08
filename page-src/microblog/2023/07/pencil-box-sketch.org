@@ -1,8 +1,10 @@
+#+TITLE: Pencil Box Sketch
 #+author: Parag Majumdar
+#+DESCRIPTION: A hand-drawn exploded diagram for an oak pencil box with an outer case and inner tray.
 #+DATE: [2023-07-13 Thu]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * Pencil Box Sketch

@@ -1,8 +1,10 @@
+#+TITLE: I Turned 40
 #+author: Parag Majumdar
+#+DESCRIPTION: A reflection on turning 40, gratitude, memory, and choosing when to let the kite come down.
 #+DATE: [2023-09-16 Sat]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * I Turned 40

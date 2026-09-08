@@ -1,5 +1,6 @@
 #+title: Operating Principles of My Life
 #+author: Parag Majumdar
+#+DESCRIPTION: The personal principles Parag Majumdar uses to navigate work, relationships, loss, and everyday life.
 #+DATE: <2023-06-16 Fri>
 #+Time-stamp: <2023-06-16 Fri>
 #+SETUPFILE: ../../../.setup/macros

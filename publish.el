@@ -13,26 +13,14 @@
 (require 'htmlize)
 (require 'ox-rss)
 
-;;; If using f.el, uncomment the following lines
-;; (require 'f)
-;; (defvar *weblog-html-preamble*
-;;   (f-read-text "./page-src/preamble.html" 'utf-8))
-;; (defvar *weblog-html-postamble*
-;;   (f-read-text "./page-src/postamble.html" 'utf-8))
-;; (defvar *weblog-html-common-head*
-;;   (f-read-text "./page-src/common-head.html" 'utf-8))
-;; (defvar *weblog-html-extra-head*
-;;   ""
-;;   )
-
 (defconst bip-url-home "https://bitsofparag.com/"
   "The home page URL of the website.")
 (defconst bip-title "Parag Majumdar - Writings & Microblog"
   "Title of the website.")
 (defconst bip-desc "Writings and microblog posts by Parag Majumdar about anything that wanders my way."
   "Description of the website.")
-(defconst bip-keywords "parag, parag m, blog, opinion, thoughts, technology, experiments"
-  "Website keywords for SEO.")
+(defconst bip-writings-desc "Long-form writings by Parag Majumdar about life, technology, and personal experiments."
+  "Description of the writings index.")
 
 (defvar *weblog-html-postamble* (with-temp-buffer
                                   (insert-file-contents "./page-src/postamble.html")
@@ -66,7 +54,69 @@
       org-html-metadata-timestamp-format "%Y-%m-%d"
       org-html-checkbox-type 'html)
 
-;; --------------------------------
+(defun bip-html-meta-tags (info)
+  "Return author and description tags from export INFO."
+  (let ((author (and (plist-get info :with-author)
+                     (org-element-interpret-data (plist-get info :author))))
+        (description (plist-get info :description)))
+    (delq nil
+          (list
+           (when (org-string-nw-p author) (list "name" "author" author))
+           (when (org-string-nw-p description)
+             (list "name" "description" description))))))
+
+(defun bip-html-page-url (info)
+  "Return the public URL for HTML export INFO."
+  (let* ((source (plist-get info :input-file))
+         (relative (file-relative-name source (concat bip-root "page-src/")))
+         (html-path (concat (file-name-sans-extension relative) ".html"))
+         (page-path
+          (cond
+           ((string= html-path "index.html") "")
+           ((string-suffix-p "/index.html" html-path)
+            (substring html-path 0 (- (length html-path) 10)))
+           (t html-path))))
+    (concat bip-url-home page-path)))
+
+(defun bip-document-title (info)
+  "Return a unique browser title for HTML export INFO."
+  (let ((title (org-export-data (plist-get info :title) info)))
+    (if (string= (bip-html-page-url info) bip-url-home)
+        bip-title
+      (format "%s - Parag Majumdar" title))))
+
+(defun bip-add-html-page-metadata (output backend info)
+  "Add page metadata to HTML OUTPUT for BACKEND using INFO."
+  (if (not (eq backend 'html)) output
+    (let* ((url (bip-html-page-url info))
+           (title (bip-document-title info))
+           (description
+            (org-html-encode-plain-text (plist-get info :description)))
+           (head-metadata
+            (format
+             (concat "<link rel=\"canonical\" href=\"%s\" />\n"
+                     "<meta property=\"og:url\" content=\"%s\" />\n"
+                     "<meta property=\"og:title\" content=\"%s\" />\n"
+                     "<meta property=\"og:description\" content=\"%s\" />\n"
+                     "</head>")
+             url url title description)))
+      (when (string-match "<title>[^<]*</title>" output)
+        (setq output
+              (replace-match (format "<title>%s</title>" title)
+                             t t output)))
+      (replace-regexp-in-string "</head>" head-metadata output t t))))
+
+(defun bip-generate-writings-sitemap (title list)
+  "Generate a writings sitemap with TITLE and LIST."
+  (concat "#+TITLE: " title "\n"
+          "#+DESCRIPTION: " bip-writings-desc "\n\n"
+          (org-list-to-org list)))
+
+(setq org-html-meta-tags #'bip-html-meta-tags
+      org-export-timestamp-file nil)
+(add-to-list 'org-export-filter-final-output-functions
+             #'bip-add-html-page-metadata)
+
 ;; Custom sitemap generator code
 ;; Derived from https://nicolasknoebber.com/posts/blogging-with-emacs-and-org.html
 (defun bip-format-sitemap-entry (entry _style project)
@@ -78,13 +128,6 @@ Formats the entry title and publication date."
 	    (org-publish-find-title entry project)
 	    (format-time-string "%Y-%m-%d" (org-publish-find-date entry project)))))
 
-;; (defun bip-format-exported-timestamps(timestamp _backend _channel)
-;;   "Remove <> from exported org TIMESTAMP."
-;;   (print (replace-regexp-in-string "&[lg]t;" "" timestamp))
-;;   (replace-regexp-in-string "&[lg]t;" "" timestamp)
-;; )
-
-;; ---------------------------------------
 ;; Custom RSS feed generator code.
 (defun bip-format-rss-feed-entry (entry _style project)
   "Format public content ENTRY for the RSS feed.
@@ -115,7 +158,6 @@ PUB-DIR is the output directory."
   (when (equal "rss.org" (file-name-nondirectory filename))
     (org-rss-publish-to-rss plist filename pub-dir)))
 
-;; ---------------------------------------
 ;; Publish list
 (setq org-publish-project-alist
       (list
@@ -131,7 +173,6 @@ PUB-DIR is the output directory."
              :language "en"
              :title bip-title
              :description bip-desc
-             :keywords bip-keywords
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
@@ -157,8 +198,7 @@ PUB-DIR is the output directory."
              :html-doctype "html5"
              :language "en"
              :title bip-title
-             :description bip-desc
-             :keywords bip-keywords
+             :description bip-writings-desc
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil
@@ -176,6 +216,7 @@ PUB-DIR is the output directory."
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title "Writings"
+             :sitemap-function 'bip-generate-writings-sitemap
              :sitemap-format-entry 'bip-format-sitemap-entry
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
@@ -191,7 +232,6 @@ PUB-DIR is the output directory."
              :language "en"
              :title "Microblog"
              :description "Parag's microblog, a Tumblr-like feed where he shares small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information."
-             :keywords bip-keywords
              :with-date t
              :html-head-include-default-style nil      ;; Do not include predefined header scripts.
              :html-head-include-scripts nil

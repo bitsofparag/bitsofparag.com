@@ -1,8 +1,10 @@
+#+TITLE: TIL: Laban Technique
 #+author: Parag Majumdar
+#+DESCRIPTION: Learning the Laban movement technique for building physical, quirky, and emotional theatre characters.
 #+DATE: [2023-08-12 Sat]
 #+SETUPFILE: ../../../.setup/macros
 #+SETUPFILE: ../../../.setup/options
-#+OPTIONS: broken-links:mark H:3 title:t
+#+OPTIONS: broken-links:mark H:3 title:nil
 #+STARTUP: fninline
 
 * TIL: Laban Technique

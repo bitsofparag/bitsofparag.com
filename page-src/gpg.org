@@ -1,5 +1,6 @@
 #+title: Public PGP Key
 #+author: Parag Majumdar
+#+DESCRIPTION: Parag Majumdar's public OpenPGP key and instructions for importing it.
 #+DATE: <2023-06-26 Mon>
 #+Time-stamp: <2023-06-26 Mon>
 #+SETUPFILE: ./.setup/macros

@@ -1,5 +1,6 @@
 #+title: Privacy Policy
 #+author: Parag Majumdar
+#+DESCRIPTION: Privacy practices for bitsofparag.com, including analytics and contact details.
 #+DATE: <2023-07-02 Sun>
 #+Time-stamp: <2023-07-02 Sun>
 #+SETUPFILE: ./.setup/macros

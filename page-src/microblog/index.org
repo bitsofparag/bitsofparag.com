@@ -1,13 +1,13 @@
 #+TITLE: Microblog
 #+AUTHOR: Parag Majumdar
 #+DESCRIPTION: Short updates, photos, sketches, links, and other fragments from Parag Majumdar.
-#+OPTIONS: toc:nil author:nil
+#+OPTIONS: toc:nil
 
 My name is Parag. Welcome to my microblog, a Tumblr-like feed where I share small updates - thoughts, learnings, photos, sketches, interesting links, favorite quotes and other fragments of information.
 
-#+include: "./2023/09/i-turned-40.org"
-#+include: "./2023/08/til-laban-technique.org"
-#+include: "./2023/08/coaster-from-wood-scraps.org"
-#+include: "./2023/07/til-challenging-quantum-gravity.org"
-#+include: "./2023/07/lunchtime-doggie-friend.org"
-#+include: "./2023/07/pencil-box-sketch.org"
+#+include: "./2023/09/i-turned-40.org" :lines "10-"
+#+include: "./2023/08/til-laban-technique.org" :lines "10-"
+#+include: "./2023/08/coaster-from-wood-scraps.org" :lines "10-"
+#+include: "./2023/07/til-challenging-quantum-gravity.org" :lines "10-"
+#+include: "./2023/07/lunchtime-doggie-friend.org" :lines "10-"
+#+include: "./2023/07/pencil-box-sketch.org" :lines "10-"
