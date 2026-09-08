@@ -17,8 +17,8 @@ Published on 02 Aug 2023
 #+begin_export html
 <div class="photo-box">
   <picture>
-    <source class="lazy" data-srcset="/static/images/microblog/coaster-wood-scraps.webp" />
-    <img class="lazy" data-src="/static/images/microblog/coaster-wood-scraps.jpg" alt="Photo of a wooden coaster" />
+    <source srcset="/static/images/microblog/coaster-wood-scraps.webp" />
+    <img loading="lazy" decoding="async" src="/static/images/microblog/coaster-wood-scraps.jpg" alt="Photo of a wooden coaster" />
   </picture>
 </div>
 #+end_export

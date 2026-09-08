@@ -17,8 +17,8 @@ Published on ${PUB_DATE}
 #+begin_export html
 <div class="photo-box">
   <picture>
-    <source class="lazy" data-srcset="/static/images/microblog/placeholder.webp" />
-    <img class="lazy" data-src="/static/images/microblog/placeholder.jpg" alt="Placeholder image" />
+    <source srcset="/static/images/microblog/placeholder.webp" />
+    <img loading="lazy" decoding="async" src="/static/images/microblog/placeholder.jpg" alt="Placeholder image" />
   </picture>
 </div>
 #+end_export

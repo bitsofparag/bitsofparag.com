@@ -17,8 +17,8 @@ Published on 13 Jul 2023
 #+begin_export html
 <div class="photo-box-border">
   <picture>
-    <source class="lazy" data-srcset="/static/images/microblog/doggie-friend.webp" />
-    <img class="lazy" data-src="/static/images/microblog/doggie-friend.jpg" alt="Photo of an Australian Shepherd" />
+    <source srcset="/static/images/microblog/doggie-friend.webp" />
+    <img loading="lazy" decoding="async" src="/static/images/microblog/doggie-friend.jpg" alt="Photo of an Australian Shepherd" />
   </picture>
 </div>
 #+end_export

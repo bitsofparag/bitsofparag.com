@@ -28,14 +28,13 @@ optimize-images:
     @cd tools/image-optimizer && go run . ../../dist/static/images
 
 # Keep linked JavaScript and CSS below required max size.
-verify-bundle-size max_bytes="33655":
+verify-bundle-size max_bytes="32585":
     #!/usr/bin/env bash
     set -euo pipefail
     MAX_BYTES="{{max_bytes}}"
     FILES=(
         dist/static/styles/index.css
         dist/static/scripts/index.js
-        dist/static/scripts/lazy-loader.js
     )
     TOTAL=0
     for file in "${FILES[@]}"; do

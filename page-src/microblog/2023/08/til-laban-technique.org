@@ -17,8 +17,8 @@ Published on 12 Aug 2023
 #+begin_export html
 <div class="photo-box">
   <picture>
-    <source class="lazy" data-srcset="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" />
-    <img class="lazy" data-src="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" alt="Placeholder image" />
+    <source srcset="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" />
+    <img loading="lazy" decoding="async" src="https://i.pinimg.com/originals/3d/33/ac/3d33acd21da1cfde9e687882483aecbb.jpg" alt="Placeholder image" />
   </picture>
 </div>
 #+end_export
