@@ -53,6 +53,9 @@ const palette = {
 
 module.exports = {
   content: ['./page-src/**/*.{html,js,org}', './site-assets/**/*.js'],
+  corePlugins: {
+    preflight: false,
+  },
   blocklist: [
     'contents',
     'grow',

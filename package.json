@@ -55,8 +55,8 @@
     "build:org": "mkdir -p .org-timestamps && emacs --batch --load publish.el --eval '(setq org-publish-timestamp-directory \"./.org-timestamps/\")' --eval '(org-publish-remove-all-timestamps)' --eval '(org-publish \"website\")' $EXTRA_EMACS_ARGS",
     "build:rss": "mkdir -p .org-timestamps && emacs --batch --load publish.el --eval '(setq org-publish-timestamp-directory \"./.org-timestamps/\")' --eval '(org-publish-remove-all-timestamps)' --eval '(org-publish \"rss\")' $EXTRA_EMACS_ARGS",
     "build:css": "postcss site-assets/styles/index.css -o dist/static/styles/index.css",
-    "build:js": "esbuild site-assets/scripts/index.js --outdir=dist/static/scripts --sourcemap --target=es2017",
-    "build:js:prod": "esbuild site-assets/scripts/index.js --outdir=dist/static/scripts --minify --target=es2017",
+    "build:js": "esbuild site-assets/scripts/index.js --bundle --outdir=dist/static/scripts --sourcemap --target=es2017",
+    "build:js:prod": "esbuild site-assets/scripts/index.js --bundle --outdir=dist/static/scripts --minify --target=es2017",
     "build": "npm run build:org && npm run build:rss && npm run build:css && npm run build:js",
     "optimize": "just optimize-images",
     "dist": "npm run clean && npm run build:org && npm run build:rss && npm run build:css && npm run build:js:prod && npm run optimize"
