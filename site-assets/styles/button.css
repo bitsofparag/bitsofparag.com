@@ -1,14 +1,14 @@
 /* Button CSS */
 #content button,
-#content input[type="button"],
-#content input[type="reset"],
-#content input[type="submit"] {
+#content input[type='button'],
+#content input[type='reset'],
+#content input[type='submit'] {
   @apply bg-amber-400 text-white border-amber-900;
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 48px;
@@ -19,33 +19,32 @@
   padding: 0 17px;
   text-align: center;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 #content button:focus,
-#content input[type="button"]:focus,
-#content input[type="reset"]:focus,
-#content input[type="submit"]:focus {
+#content input[type='button']:focus,
+#content input[type='reset']:focus,
+#content input[type='submit']:focus {
   color: #171e29;
 }
 
 #content button:active,
-#content input[type="button"]:active,
-#content input[type="reset"]:active,
-#content input[type="submit"]:active {
+#content input[type='button']:active,
+#content input[type='reset']:active,
+#content input[type='submit']:active {
   background-color: #3385ff;
   border-color: #3385ff;
   fill: #06f;
 }
 
-
 #content button:hover,
-#content input[type="button"]:hover,
-#content input[type="reset"]:hover,
-#content input[type="submit"]:hover {
+#content input[type='button']:hover,
+#content input[type='reset']:hover,
+#content input[type='submit']:hover {
   background-color: #3385ff;
   border-color: #3385ff;
   fill: #06f;
@@ -53,8 +52,8 @@
 
 @media (min-width: 768px) {
   #content button,
-  #content input[type="button"],
-  #content input[type="reset"],
-  #content input[type="submit"] {
+  #content input[type='button'],
+  #content input[type='reset'],
+  #content input[type='submit'] {
   }
 }

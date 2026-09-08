@@ -56,15 +56,11 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  blocklist: [
-    'contents',
-    'grow',
-    'table',
-  ],
+  blocklist: ['contents', 'grow', 'table'],
   theme: {
     fontFamily: {
-      sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
-      serif: ['Lora', ...defaultTheme.fontFamily.serif],
+      sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      serif: ['Spectral', ...defaultTheme.fontFamily.serif],
     },
     fontSize: {
       hero: '4rem',

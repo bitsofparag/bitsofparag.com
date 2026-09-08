@@ -28,7 +28,7 @@ optimize-images:
     @cd tools/image-optimizer && go run . ../../dist/static/images
 
 # Keep linked JavaScript and CSS below required max size.
-verify-bundle-size max_bytes="22171":
+verify-bundle-size max_bytes="21816":
     #!/usr/bin/env bash
     set -euo pipefail
     MAX_BYTES="{{max_bytes}}"
@@ -51,8 +51,28 @@ verify-bundle-size max_bytes="22171":
     fi
     echo "Bundle size passed: $TOTAL / $MAX_BYTES bytes"
 
+# Keep published web fonts below the optimized payload.
+verify-font-size max_bytes="67444":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    MAX_BYTES="{{max_bytes}}"
+    TOTAL=0
+    for file in dist/static/fonts/*.woff2; do
+        if [ ! -s "$file" ]; then
+            echo "FAIL: missing font asset: $file"
+            exit 1
+        fi
+        SIZE=$(wc -c < "$file")
+        TOTAL=$((TOTAL + SIZE))
+    done
+    if [ "$TOTAL" -gt "$MAX_BYTES" ]; then
+        echo "FAIL: web fonts are $TOTAL bytes; budget is $MAX_BYTES bytes"
+        exit 1
+    fi
+    echo "Font size passed: $TOTAL / $MAX_BYTES bytes"
+
 # Check public pages and the RSS feed.
-verify-public-build: verify-bundle-size
+verify-public-build: verify-bundle-size verify-font-size
     #!/usr/bin/env bash
     set -euo pipefail
     for page in dist/index.html dist/blog/index.html dist/microblog/index.html dist/rss.xml; do
