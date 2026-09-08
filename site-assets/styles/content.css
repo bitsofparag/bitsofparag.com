@@ -24,6 +24,10 @@
   @apply font-serif text-body-blog leading-body-blog mb-6 tracking-normal;
 }
 
+#content p {
+  letter-spacing: -0.5px;
+}
+
 #content ul {
   @apply list-inside list-square mb-4;
 }

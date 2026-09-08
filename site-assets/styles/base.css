@@ -119,11 +119,6 @@ html[data-theme='dark'] {
 }
 
 /* ------ Grids ---------- */
-.bp-grid-2 {
-  @apply grid grid-cols-1 gap-4 place-items-stretch;
-  @apply md:grid-cols-2;
-}
-
 .bp-grid-3 {
   @apply grid grid-cols-1 gap-4 place-items-stretch md:grid-cols-3;
 }
